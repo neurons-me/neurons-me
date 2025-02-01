@@ -1,352 +1,67 @@
+<img src="media/neurons-me-cover.png" alt="neurons.me cover">
 
+# **Introduction to neurons.me**
 
-# **PortFolio**
+> **Empowering Users with Self-Sovereign AI**
 
-Easy to use portfolio builder where you can create a portfolio page automatically by just providing your GitHub username. You can make your own copy.
+**neurons.me is designed to give users control over their AI.** Instead of hidden algorithms manipulating behavior for profit, **neurons.me** ensures **you** define and manage your intelligence to serve your goals
 
-To view a live example, **[click here](https://suign.github.io/portfolio)**.
+So instead of being passively shaped by AI systems **built for corporations**, **this ecosystem** lets you **actively build and control** the intelligence that works for you.
 
+## **Go Algorithmic.**
 
-## 🛠 Installation & Setup
+We believe **algorithms should work for you—not control you.**
 
-There are three ways to use **GitProfile**. Use any.
+Unlike **AI** that exploits user data for profit, **neurons.me** puts AI in your hands, ensuring it serves **your** goals, not hidden business models.
 
-- [Forking this repo _(recommended)_](#forking-this-repo)
-- [Setting up locally](#setting-up-locally)
-- [Installing as package](#installing-as-package)
+- **Your algorithm, your rules.** AI should serve you, not control you.
+- **Data belongs to you.** Own your datasets and shape your intelligence.
+- **Full transparency.** No black-box manipulation—only clear, user-driven intelligence. You **see** how the algorithm operates
 
-### Forking this repo
+**AI should ensure sovereignty over **data and **algorithms**. Hidden models shouldn’t dictate how intelligence evolves around us.
 
-These instructions will get you a copy of the project and deploy your portfolio online using GitHub Pages!
+> **The code is the ultimate truth.** If you can see the code, you can trust the system.
 
-- **Fork repo:** Click [here](https://github.com/arifszn/gitprofile/fork) to fork the repo so you have your own project to customize. A "fork" is a copy of a repository.
-- **Rename repo:**
-  - If you want to host your portfolio at `https://<USERNAME>.github.io`, rename your forked repository to `username.github.io` in GitHub, where `username` is your GitHub username (or organization name).
-  - If you want to host your portfolio at `https://<USERNAME>.github.io/<REPO_NAME>` (e.g. `https://<USERNAME>.github.io/portfolio`), rename your forked repository to `<REPO_NAME>` (e.g. `portfolio`) in GitHub.
-- **Enable workflows:** Go to your repo's **Actions** tab and enable workflows.
+## **Core Projects**
 
-- **Base Value:** Open `vite.config.js`, and change `base`'s value.
+| **Project**     | **Purpose**                                                  |
+| --------------- | ------------------------------------------------------------ |
+| **All.This**    | A framework for modular **data structuring**, optimizing ML pipelines. |
+| **neurons.me**  | The **intelligence core**—processing structured data into adaptive AI. |
+| **i.mLearning** | A system for users to **create, manage, and refine datasets** for ML. |
+| **this.me**     | A user-centric system providing **visibility into AI processes** and dataset evolution. |
+| **Cleaker**     | A **decentralized identity** and authentication system for dApps. |
+| **Netget**      | A **peer-to-peer networking** solution for fully independent AI applications. |
 
-  - If you are deploying to `https://<USERNAME>.github.io`, set `base` to `'/'`.
+<img src="media/neurons-me-8bit-art-removebg-preview.png" alt="neurons.me cover">
 
-  - If you are deploying to `https://<USERNAME>.github.io/<REPO_NAME>` (e.g. `https://<USERNAME>.github.io/portfolio`), then set `base` to `'/<REPO_NAME>/'` (e.g. `'/portfolio/'`).
+## **How It Works**
 
-  ```js
-  // vite.config.js
-  {
-    base: '/',
-    // ...
-  }
-  ```
+A **.me (user)** structures their data through **i.mLearning**, using **All.This** for efficient data handling. The curated datasets then feed into **neurons.me** for deep learning. **AI** training and adaptation remain **fully visible to the user**, ensuring they understand and **control their own learning processes.**
 
-- **Commit the changes:** Now commit to your **main** branch with your changes. Wait a few minutes so that the CI/CD pipeline can publish your website to GitHub Pages. You can check the progress in the [Actions](https://github.com/arifszn/gitprofile/actions) tab.
+## **Key Takeaways**
 
-Your portfolio website will be live shortly. Any time you commit a change to the **main** branch, the website will be automatically updated. If you face any issue viewing the website, double-check the `base` value in the `vite.config.js` file. Also, check if **Source** is set to **GitHub Actions** in **Settings** ➜ **Pages** ➜ **Build and deployment**.
+1. **User-centric approach**: `neurons.me` prioritizes user control and autonomy over AI decision-making processes.
+2. **Transparency and visibility**: The ecosystem ensures users can see how algorithms operate and make decisions.
+3. **Data ownership**: Users retain ownership and control over their data, which is used to train AI models.
+4. **Modular architecture**: The ecosystem consists of multiple projects, each serving a specific purpose, such as data structuring, intelligence core, and decentralized identity.
 
-If you wish to add a custom domain, no CNAME file is required. Just add it to your repo's **Settings** ➜ **Pages** ➜ **Custom domain**.
+## **Our Philosophy**
 
-As this is a Vite project, you can also host your website to Netlify, Vercel, Heroku, or other popular services. 
+- **Your algorithm, your autonomy.** You should see how AI shapes your experience.
+- **Own your intelligence.** Your data trains your AI—not someone else’s business model.
+- **Interoperability is key.** Every component integrates seamlessly for **user-driven deep learning**.
 
-Please refer to this [doc](https://vitejs.dev/guide/static-deploy.html) for a detailed deployment guide to other services. Also, if you are not deploying to GitHub pages, `base:` might need to be deleted from `vite.config.js`.
+## **Join the Movement**
 
-### Setting up locally
+**Your AI, your rules. Join neurons.me, fork the code, and take control. 🚀**
 
-- Clone the project and change directory.
+**License & Policies**
 
-  ```shell
-  git clone https://github.com/suign/portfolio.git
-  cd portfolio
-  ```
+**\- Learn more at: ** https://neurons.me
 
-- Install dependencies.
+  [Terms](https://docs.neurons.me/terms-and-conditions) | [Privacy](https://docs.neurons.me/privacy-policy)
 
-  ```shell
-  npm install
-  ```
 
-- Run dev server.
 
-  ```shell
-  npm run dev
-  ```
-
-- Finally, visit [`http://localhost:5173/portfolio/`](http://localhost:5173/gitprofile/) from your browser.
-
-### Installing as package
-
-You can also use **GitProfile** by installing as an NPM package.
-
-First Install **GitProfile** via <a href="https://www.npmjs.com/package/@arifszn/gitprofile">NPM</a>.
-
-```sh
-npm install @arifszn/gitprofile
-```
-
-Then, import the package, import and style and provide the config.
-
-```js
-import GitProfile from '@arifszn/gitprofile';
-import '@arifszn/gitprofile/dist/style.css';
-
-function App() {
-  return (
-    <GitProfile
-      config={{
-        github: {
-          username: 'arifszn',
-        },
-      }}
-    />
-  );
-}
-
-export default App;
-```
-
-List of all config [here](#-customization).
-
-**If you face any problems or have any questions, open an issue [here](https://github.com/arifszn/gitprofile/issues).**
-
-## 🎨 Customization
-
-All the magic happens in the file `gitprofile.config.js`. Open it and modify it according to your preference.
-
-### Themes
-
-There are 30 themes available that can be selected from the dropdown.
-
-The default theme can be specified.
-
-```js
-// gitprofile.config.js
-const config = {
-  // ...
-  themeConfig: {
-    defaultTheme: 'light',
-    // ...
-  },
-};
-```
-
-
-You can create your own custom theme by modifying these values. Theme `procyon` will have the custom styles.
-
-```js
-// gitprofile.config.js
-const config = {
-  // ...
-  themeConfig: {
-    customTheme: {
-      primary: '#fc055b',
-      secondary: '#219aaf',
-      accent: '#e8d03a',
-      neutral: '#2A2730',
-      'base-100': '#E3E3ED',
-      '--rounded-box': '3rem',
-      '--rounded-btn': '3rem',
-    },
-    // ...
-  },
-};
-```
-
-### Google Analytics
-
-**GitProfile** supports both GA3 and GA4. If you do not want to use Google Analytics, keep the `id` empty.
-
-```js
-// gitprofile.config.js
-const config = {
-  // ...
-  googleAnalytics: {
-    id: '',
-  },
-};
-```
-
-Besides tracking visitors, it will track `click events` on projects and blog posts, and send them to Google Analytics.
-
-### SEO
-
-Meta tags will be auto-generated from configs dynamically. However, you can also manually add meta tags in `public/index.html`.
-
-### Avatar and Bio
-
-Your avatar and bio will be fetched from GitHub automatically.
-
-### Social Links
-
-You can link your social media services you're using, including LinkedIn, Twitter, Mastodon, Facebook, Instagram, YouTube, Dribbble, Behance, Medium, dev, Stack Overflow, Skype, Telegram, personal website, phone and email.
-
-```js
-// gitprofile.config.js
-const config = {
-  // ...
-  social: {
-    linkedin: 'suign',
-    twitter: 'suign',
-    mastodon: '',
-    facebook: '',
-    instagram: 'jabella.e',
-    youtube: '',
-    dribbble: '',
-    behance: '',
-    medium: 'suign',
-    dev: '',
-    stackoverflow: '',
-    skype: '',
-    telegram: '',
-    website: 'abellae.me',
-    phone: '',
-    email: 'me@neurons.me',
-  },
-};
-```
-
-### Skills
-
-To showcase your skills provide them here.
-
-```js
-// gitprofile.config.js
-const config = {
-  // ...
-  skills: ['JavaScript', 'React.js'],
-};
-```
-
-Empty array will hide the skills section.
-
-### Experience
-
-Provide your job history in `experiences`.
-
-```js
-// gitprofile.config.js
-const config = {
-  // ...
-  experiences: [
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
-    },
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
-    },
-  ],
-};
-```
-
-Empty array will hide the experience section.
-
-### Education
-Provide your education history in `education`.
-```js
-// gitprofile.config.js
-const config = {
-  // ...
-  education: [
-    {
-      institution: 'Institution name 1',
-      degree: 'Bachelor of Science',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution name 2',
-      degree: 'Higher Secondary Certificate (HSC)',
-      from: '2012',
-      to: '2014',
-    },
-  ],
-};
-```
-Empty array will hide the education section.
-
-### Certifications
-Provide your industry certifications in `certifications`.
-```js
-// gitprofile.config.js
-const config = {
-  // ...
-  certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
-  ],
-};
-```
-Empty array will hide the certifications section.
-
-### Projects
-
-#### Github Projects
-
-Your public repo from GitHub will be displayed in the `Github Projects` section automatically. You can limit how many projects do you want to be displayed. Also, you can hide forked or specific repo.
-
-```js
-// gitprofile.config.js
-const config = {
-  // ...
-  github: {
-    username: 'arifszn',
-    sortBy: 'stars',
-    limit: 8,
-    exclude: {
-      forks: false,
-      projects: ['my-project1', 'my-project2'],
-    },
-  },
-};
-```
-
-#### External Projects
-In this section you can showcase your external/personal projects.
-```js
-// gitprofile.config.js
-const config = {
-  // ...
-  externalProjects: [
-    {
-      title: 'Project Name',
-      description: 'Description',
-      link: 'https://example.com',
-      imageUrl: 'https://via.placeholder.com/250x250',
-    },
-  ],
-};
-```
-
-### Blog Posts
-If you have [medium](https://medium.com) or [dev](https://dev.to) account, you can show your recent blog posts in here just by providing your medium/dev username. You can limit how many posts to display (Max is `10`).
-
-```js
-// gitprofile.config.js
-const config = {
-  // ...
-  blog: {
-    source: 'dev',
-    username: 'arifszn',
-    limit: 5,
-  },
-};
-```
-
-![Blog](https://arifszn.netlify.app/assets/img/hosted/gitprofile/blog.png)
-
-## Support
-
-<p>You can show your support by starring this project. ★</p>
-## 📄 License
-
-[MIT](https://github.com/arifszn/gitprofile/blob/main/LICENSE)
+  <img src="https://docs.neurons.me/neurons.me.webp" alt="neurons.me logo" width="89" height="89">

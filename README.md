@@ -37,6 +37,12 @@ Unlike **AI** that exploits user data for profit, **neurons.me** puts AI in your
 ## **How It Works**
 A **.me (user)** structures their data through **i.mLearning**, using **All.This** for efficient data handling. The curated datasets then feed into **neurons.me** for deep learning. **AI** training and adaptation remain **fully visible to the user**, ensuring they understand and **control their own learning processes.**
 
+
+
+<img src="media/neurons-me-8bit-art-removebg-preview.png" alt="neurons.me ecosystem" width="377" style="float: left; margin-left: 3px;">
+
+
+
 ## **Key Takeaways**
 1. **User-centric approach**: `neurons.me` prioritizes user control and autonomy over AI decision-making processes.
 2. **Transparency and visibility**: The ecosystem ensures users can see how algorithms operate and make decisions.
@@ -45,19 +51,20 @@ A **.me (user)** structures their data through **i.mLearning**, using **All.This
 
 
 
-<img src="media/neurons-me-8bit-art-removebg-preview.png" alt="neurons.me ecosystem" width="610" style="float: left; margin-left: 3px;" align="left">
-
-
-
 ## **Our Philosophy**
 - **Your algorithm, your autonomy.** You should see how AI shapes your experience.
 - **Own your intelligence.** Your data trains your AI—not someone else’s business model.
 - **Interoperability is key.** Every component integrates seamlessly for **user-driven deep learning**.
 
+
+
 ## **Join the Movement**
 **Your AI, your rules. Join neurons.me, fork the code, and take control. 🚀**
+
 **License & Policies**
+
 **Learn more at: ** https://neurons.me
+
   [Terms](https://docs.neurons.me/terms-and-conditions) | [Privacy](https://docs.neurons.me/privacy-policy)
 
 

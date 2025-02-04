@@ -6,7 +6,7 @@
 
 So instead of being passively shaped by AI systems **built for corporations**, **this ecosystem** lets you **actively build and control** the intelligence that works for you.
 
-<img src="https://docs.neurons.me/media/neurons-me.png" alt="neurons.me cover" width="277" style="float: right; margin-left: 10px;">
+<img src="https://docs.neurons.me/media/neurons-me.png" alt="neurons.me cover" width="277" style="float: right; margin-left: 10px;" align="right">
 
 ## **Go Algorithmic.**
 We believe **algorithms should work for you—not control you.**
@@ -53,4 +53,6 @@ A **.me (user)** structures their data through **i.mLearning**, using **All.This
   [Terms](https://docs.neurons.me/terms-and-conditions) | [Privacy](https://docs.neurons.me/privacy-policy)
 
 
-  <img src="https://docs.neurons.me/neurons.me.webp" alt="neurons.me logo" width="89" height="89">
+
+
+  <img src="https://docs.neurons.me/neurons.me.webp" alt="neurons.me logo" width="89" height="89" align="center">

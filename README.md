@@ -32,16 +32,8 @@ Unlike **AI** that exploits user data for profit, **neurons.me** puts AI in your
 | **Cleaker**     | A **decentralized identity** and authentication system for dApps. |
 | **Netget**      | A **peer-to-peer networking** solution for fully independent AI applications. |
 
-
-
 ## **How It Works**
 A **.me (user)** structures their data through **i.mLearning**, using **All.This** for efficient data handling. The curated datasets then feed into **neurons.me** for deep learning. **AI** training and adaptation remain **fully visible to the user**, ensuring they understand and **control their own learning processes.**
-
-
-
-<img src="media/neurons-me-8bit-art-removebg-preview.png" alt="neurons.me ecosystem" width="377" style="float: left; margin-left: 3px;" align="left">
-
-
 
 ## **Key Takeaways**
 1. **User-centric approach**: `neurons.me` prioritizes user control and autonomy over AI decision-making processes.
@@ -49,16 +41,12 @@ A **.me (user)** structures their data through **i.mLearning**, using **All.This
 3. **Data ownership**: Users retain ownership and control over their data, which is used to train AI models.
 4. **Modular architecture**: The ecosystem consists of multiple projects, each serving a specific purpose, such as data structuring, intelligence core, and decentralized identity.
 
-
-
 ## **Our Philosophy**
 - **Your algorithm, your autonomy.** You should see how AI shapes your experience.
 - **Own your intelligence.** Your data trains your AI—not someone else’s business model.
 - **Interoperability is key.** Every component integrates seamlessly for **user-driven deep learning**.
 
-
-
-## **Join the Movement**
+## **Collaborate**
 **Your AI, your rules. Join neurons.me, fork the code, and take control. 🚀**
 
 **License & Policies**

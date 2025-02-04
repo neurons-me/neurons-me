@@ -1,6 +1,9 @@
-<img src="https://docs.neurons.me/media/neurons-me.png" alt="neurons.me cover">
+<img src="https://docs.neurons.me/media/neurons-me.png" alt="neurons.me cover" width=277>
+
+
 
 # **Introduction to neurons.me**
+
 > **Empowering Users with Self-Sovereign AI**
 
 **neurons.me is designed to give users control over their AI.** Instead of hidden algorithms manipulating behavior for profit, **neurons.me** ensures **you** define and manage your intelligence to serve your goals

@@ -6,6 +6,8 @@
 
 So instead of being passively shaped by AI systems **built for corporations**, **this ecosystem** lets you **actively build and control** the intelligence that works for you.
 
+
+
 <img src="https://docs.neurons.me/media/neurons-me.png" alt="neurons.me cover" width="277" style="float: right; margin-left: 10px;" align="right">
 
 ## **Go Algorithmic.**
@@ -30,7 +32,7 @@ Unlike **AI** that exploits user data for profit, **neurons.me** puts AI in your
 | **Cleaker**     | A **decentralized identity** and authentication system for dApps. |
 | **Netget**      | A **peer-to-peer networking** solution for fully independent AI applications. |
 
-<img src="media/neurons-me-8bit-art-removebg-preview.png" alt="neurons.me cover">
+
 
 ## **How It Works**
 A **.me (user)** structures their data through **i.mLearning**, using **All.This** for efficient data handling. The curated datasets then feed into **neurons.me** for deep learning. **AI** training and adaptation remain **fully visible to the user**, ensuring they understand and **control their own learning processes.**
@@ -40,6 +42,12 @@ A **.me (user)** structures their data through **i.mLearning**, using **All.This
 2. **Transparency and visibility**: The ecosystem ensures users can see how algorithms operate and make decisions.
 3. **Data ownership**: Users retain ownership and control over their data, which is used to train AI models.
 4. **Modular architecture**: The ecosystem consists of multiple projects, each serving a specific purpose, such as data structuring, intelligence core, and decentralized identity.
+
+
+
+<img src="media/neurons-me-8bit-art-removebg-preview.png" alt="neurons.me ecosystem" width="610" style="float: left; margin-left: 3px;" align="left">
+
+
 
 ## **Our Philosophy**
 - **Your algorithm, your autonomy.** You should see how AI shapes your experience.
@@ -55,4 +63,7 @@ A **.me (user)** structures their data through **i.mLearning**, using **All.This
 
 
 
-  <img src="https://docs.neurons.me/neurons.me.webp" alt="neurons.me logo" width="89" height="89" align="center">
+
+<img src="https://docs.neurons.me/neurons.me.webp" alt="neurons.me logo" width="89" height="89" style="display: block; margin: auto;">
+
+

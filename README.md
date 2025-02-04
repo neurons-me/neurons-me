@@ -1,3 +1,5 @@
+<img src="https://docs.neurons.me/media/neurons-me.png" alt="neurons.me cover">
+
 # **Introduction to neurons.me**
 > **Empowering Users with Self-Sovereign AI**
 

@@ -39,7 +39,7 @@ A **.me (user)** structures their data through **i.mLearning**, using **All.This
 
 
 
-<img src="media/neurons-me-8bit-art-removebg-preview.png" alt="neurons.me ecosystem" width="377" style="float: left; margin-left: 3px;">
+<img src="media/neurons-me-8bit-art-removebg-preview.png" alt="neurons.me ecosystem" width="377" style="float: left; margin-left: 3px;" align="left">
 
 
 

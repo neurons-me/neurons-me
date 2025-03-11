@@ -1,7 +1,8 @@
 # **Introduction to neurons.me**
 
 > **Empowering Users with Self-Sovereign AI**
-So instead of being passively shaped by AI systems **built for corporations**, **this ecosystem** lets you **actively build and control** the intelligence that works for you.
+
+Instead of being passively shaped by AI systems **built for corporations**, **this ecosystem** lets you **actively build and control** the intelligence that works for you.
 
 <img src="https://docs.neurons.me/media/neurons-me.png" alt="neurons.me cover" width="277" style="float: right; margin-left: 10px;" align="right">
 

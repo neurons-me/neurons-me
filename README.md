@@ -27,7 +27,7 @@ Instead of being passively shaped by AI systems **built for corporations**, **th
 | **Netget**      | A **peer-to-peer networking** solution for fully independent AI applications. |
 
 ## **How It Works**
-A **user** structures their data then feed into **neurons.me** for deep learning. **AI** training and adaptation remain **fully visible to the user**, ensuring they understand and **control their own learning processes.**
+A **user** gathers and structures their data through normal web navigation then feed it to **neurons.me** for deep learning. **AI** training and adaptation remain **fully visible to the user**, ensuring they understand and **control their own learning processes.**
 
 - **Own your intelligence.** Your data trains your AI—not someone else’s business model.
 - **Interoperability is key.** Every component integrates seamlessly for **user-driven deep learning**.

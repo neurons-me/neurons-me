@@ -36,7 +36,6 @@ Visit: https://neurons.me for more information.
 
 ## **Collaborate**
 **License & Policies**
-**Learn more at:** https://neurons.me
   [Terms](https://docs.neurons.me/terms-and-conditions) | [Privacy](https://docs.neurons.me/privacy-policy)
 
 

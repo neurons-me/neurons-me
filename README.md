@@ -1,12 +1,7 @@
 # **Introduction to neurons.me**
 
 > **Empowering Users with Self-Sovereign AI**
-
-**neurons.me is designed to give users control over their AI.** Instead of hidden algorithms manipulating behavior for profit, **neurons.me** ensures **you** define and manage your intelligence to serve your goals
-
 So instead of being passively shaped by AI systems **built for corporations**, **this ecosystem** lets you **actively build and control** the intelligence that works for you.
-
-
 
 <img src="https://docs.neurons.me/media/neurons-me.png" alt="neurons.me cover" width="277" style="float: right; margin-left: 10px;" align="right">
 
@@ -18,7 +13,8 @@ Unlike **AI** that exploits user data for profit, **neurons.me** puts AI in your
 - **Data belongs to you.** Own your datasets and shape your intelligence.
 - **Full transparency.** No black-box manipulation—only clear, user-driven intelligence. You **see** how the algorithm operates
 
-**AI should ensure sovereignty over **data and **algorithms**. Hidden models shouldn’t dictate how intelligence evolves around us.
+**AI should ensure sovereignty over** data and **algorithms**. Hidden models shouldn’t dictate how intelligence evolves around us.
+
 > **The code is the ultimate truth.** If you can see the code, you can trust the system.
 
 ## **Core Projects**
@@ -26,9 +22,9 @@ Unlike **AI** that exploits user data for profit, **neurons.me** puts AI in your
 | **Project**     | **Purpose**                                                  |
 | --------------- | ------------------------------------------------------------ |
 | **All.This**    | A framework for modular **data structuring**, optimizing ML pipelines. |
-| **neurons.me**  | The **intelligence core**—processing structured data into adaptive AI. |
+| **neurons.me**  | The **intelligence core **— providing **visibility into AI processes** and dataset evolution. |
 | **i.mLearning** | A system for users to **create, manage, and refine datasets** for ML. |
-| **this.me**     | A user-centric system providing **visibility into AI processes** and dataset evolution. |
+| **this.me**     | A user-centric system.                                       |
 | **Cleaker**     | A **decentralized identity** and authentication system for dApps. |
 | **Netget**      | A **peer-to-peer networking** solution for fully independent AI applications. |
 
@@ -51,7 +47,7 @@ A **.me (user)** structures their data through **i.mLearning**, using **All.This
 
 **License & Policies**
 
-**Learn more at: ** https://neurons.me
+**Learn more at:** https://neurons.me
 
   [Terms](https://docs.neurons.me/terms-and-conditions) | [Privacy](https://docs.neurons.me/privacy-policy)
 

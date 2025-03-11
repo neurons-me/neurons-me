@@ -27,17 +27,12 @@ Instead of being passively shaped by AI systems **built for corporations**, **th
 | **Netget**      | A **peer-to-peer networking** solution for fully independent AI applications. |
 
 ## **How It Works**
-A **user** structures their data through then feed into **neurons.me** for deep learning. **AI** training and adaptation remain **fully visible to the user**, ensuring they understand and **control their own learning processes.**
+A **user** structures their data then feed into **neurons.me** for deep learning. **AI** training and adaptation remain **fully visible to the user**, ensuring they understand and **control their own learning processes.**
 
-## **Key Takeaways**
-1. **User-centric approach**: `neurons.me` prioritizes user control and autonomy over AI decision-making processes.
-2. **Transparency and visibility**: The ecosystem ensures users can see how algorithms operate and make decisions.
-3. **Data ownership**: Users retain ownership and control over their data, which is used to train AI models.
-4. **Modular architecture**: The ecosystem consists of multiple projects, each serving a specific purpose, such as data structuring, intelligence core, and decentralized identity.
-
-- **Your algorithm, your autonomy.** You should see how AI shapes your experience.
 - **Own your intelligence.** Your data trains your AI—not someone else’s business model.
 - **Interoperability is key.** Every component integrates seamlessly for **user-driven deep learning**.
+
+Visit: https://neurons.me for more information.
 
 ## **Collaborate**
 **License & Policies**

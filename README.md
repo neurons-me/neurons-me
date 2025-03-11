@@ -8,7 +8,6 @@ Instead of being passively shaped by AI systems **built for corporations**, **th
 
 ## **Go Algorithmic.**
 **Algorithms should work for you—not control you.**
-Unlike **AI** that exploits user data for profit, **neurons.me** puts AI in your hands, ensuring it serves **your** goals, not hidden business models.
 
 - **Your algorithm, your rules.** AI should serve you, not control you.
 - **Data belongs to you.** Own your datasets and shape your intelligence.

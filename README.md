@@ -9,8 +9,6 @@ Instead of being passively shaped by AI systems **built for corporations**, **th
 ## **Go Algorithmic.**
 **Algorithms should work for you—not control you.**
 
-- **Your algorithm, your rules.** AI should be a clear and visible extension of oneself and the collective.
-- **Data belongs to you.** Own your datasets and shape your intelligence.
 - **Full transparency.** No black-box manipulation—only clear, user-driven intelligence. You **see** how the algorithm operates
 
 **AI**  should ensure sovereignty over data and **algorithms**. Hidden models shouldn’t dictate how intelligence evolves around us.

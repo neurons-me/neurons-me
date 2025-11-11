@@ -1,18 +1,20 @@
 # **Welcome to Neurons.me**
 > **Self-Sovereign AI**
->
-> **Actively build and control** the intelligence that works for you.
 
 <img src="https://docs.neurons.me/media/neurons-me.png" alt="neurons.me cover" width="277" style="float: right; margin-left: 10px;" align="right">
 
 ## **Go Algorithmic.**
-Build **artificial intelligence** that exposes its logic — **evolve it** consciously and **collectively.**
+Build **artificial intelligence** that reveals its logic — **evolve it** consciously and **collectively.**
 
-**How It Works**: A **user** gathers and structures their data through normal web navigation then feed it to **neurons.me** for deep learning. **AI** training and adaptation remain **fully visible to the user**, ensuring they understand and **control their own learning processes and relationships .**
+###### **How it works:** 
+Each **user** gathers and structures their data through everyday web, then feeds it to **neurons.me** for deep learning.
 
+The entire process of **AI training** and adaptation remains **fully transparent**, allowing users to understand, audit, and **control their own learning systems and relationships.**
+
+Actively **build, evolve, and direct** the intelligence that works for **.me.**
 | <a href="https://github.com/neurons-me/neurons.me"><img src="https://www.neurons.me/neurons.me.png" width="89"/></a> | [**neurons.me**](https://github.com/neurons-me/neurons.me) | DeepLearning Proccesses. |
 |-----------|--------------|-------------|
-| <a href="https://github.com/neurons-me/this.me"><img src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1760759569/me_pio6qj.png" width="89"/></a> | [**.me**](https://github.com/neurons-me/this.me) | User-Centric. |
+| <a href="https://github.com/neurons-me/this.me"><img src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1761150938/me_jqspa5.png" width="89"/></a> | [**.me**](https://github.com/neurons-me/this.me) | User-Centric. |
 | <a href="https://github.com/neurons-me/i.mlearning"><img src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1760775630/mlearning.studio_efg7wd.png" width="89"/></a> | **[i.mLearning](https://github.com/neurons-me/i.mlearning)** | **Join, Create, manage, and refine datasets** for ML. |
 | <a href="https://github.com/neurons-me/all.this"><img src="https://www.neurons.me/media/all-this/webp/all.this.webp" width="89"/></a> | [**All.This**](https://github.com/neurons-me/all.this) | A framework for modular **data structuring**, optimizing ML pipelines. |
 | <a href="https://github.com/neurons-me/this.wallet"><img src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1760629144/this.wallet_wqa7bc.png" width="89"/></a> | <a href="https://github.com/neurons-me/this.GUI"><img src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1760629119/this.gui.neurons.me_mkapde.png" width="89"/></a> | <a href="https://github.com/neurons-me/this.audio"><img src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1760759974/this.audio_2_n753rv.webp" width="89"/></a> |

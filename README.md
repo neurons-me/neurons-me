@@ -2,7 +2,7 @@
 > **Self-Sovereign AI**
 
 <img src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1766033591/neurons-me_v.png" alt="neurons.me cover" width="277" style="float: right; margin-left: 10px;">
-https://neurons-me.github.io/
+
 ## **Go Algorithmic.**
 Build **artificial intelligence** that reveals its logic — **evolve it** consciously and **collectively.**
 
@@ -30,7 +30,4 @@ Each module forms part of a larger ecosystem for **user-driven** artificial inte
 **License & Policies**
 [Terms](https://neurons.me) | [Privacy](https://neurons.me)
 [neurons.me](https://neurons.me)
-
-
-
-<img src="https://docs.neurons.me/neurons.me.webp" alt="neurons.me logo" width="89" height="89" style="display: block; margin: auto;">
+https://neurons-me.github.io/

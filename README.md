@@ -1,7 +1,7 @@
 # **Welcome to Neurons.me**
 > **Self-Sovereign AI**
 
-<img src="https://docs.neurons.me/media/neurons-me.png" alt="neurons.me cover" width="277" style="float: right; margin-left: 10px;">
+<img src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1760629064/neurons.me_b50f6a.png" alt="neurons.me cover" width="277" style="float: right; margin-left: 10px;">
 
 ## **Go Algorithmic.**
 Build **artificial intelligence** that reveals its logic — **evolve it** consciously and **collectively.**

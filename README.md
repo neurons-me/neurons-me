@@ -14,7 +14,7 @@ The entire process of **AI training** and adaptation remains **fully transparent
 
 Actively **build, evolve, and direct** the intelligence that works for **.me.**
 
-| <a href="https://github.com/neurons-me/neurons.me"><img src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1760629064/neurons.me_b50f6a.png" width="69"/></a> | [**neurons.me**](https://github.com/neurons-me/neurons.me) | **DeepLearning proccesses.** |
+| <a href="https://github.com/neurons-me/neurons.me"><img src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1760629064/neurons.me_b50f6a.png" width="69"/></a> | [**neurons.me**](https://github.com/neurons-me/neurons.me) | DeepLearning processes. |
 |-----------|--------------|-------------|
 | <a href="https://github.com/neurons-me/this.me"><img src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1761150938/me_jqspa5.png" width="89"/></a> | [**.me**](https://github.com/neurons-me/this.me) | User-Centric. |
 | <a href="https://github.com/neurons-me/i.mlearning"><img src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1760775630/mlearning.studio_efg7wd.png" width="89"/></a> | **[i.mLearning](https://github.com/neurons-me/i.mlearning)** | **Join, create, manage, and refine datasets** for **ML.** |

@@ -1,4 +1,4 @@
-# **Welcome to Neurons.me**
+# **Welcome to neurons.me**
 > **Self-Sovereign AI**
 
 <img src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1766033591/neurons-me_v.png" alt="neurons.me cover" width="277" style="float: right; margin-left: 10px;">
@@ -9,9 +9,7 @@ Build **artificial intelligence** that reveals its logic — **evolve it** consc
 ###### **How it works:** 
 
 Each **user** gathers and structures their data through everyday web, then feeds it to **neurons.me** for deep learning.
-
 The entire process of **AI training** and adaptation remains **fully transparent**, allowing users to understand, audit, and **control their own learning systems and relationships.**
-
 Actively **build, evolve, and direct** the intelligence that works for **.me.**
 
 | <a href="https://github.com/neurons-me/neurons.me"><img src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1760629064/neurons.me_b50f6a.png" width="69"/></a> | [**neurons.me**](https://github.com/neurons-me/neurons.me) | DeepLearning processes. |

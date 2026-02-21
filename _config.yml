@@ -1,0 +1,10 @@
+# GitHub Pages Configuration
+
+# Serve only the README from main branch
+
+# Set the theme
+theme: minima
+
+# Minimal settings
+baseurl: 
+url: https://neurons-me.github.io/neurons-me/

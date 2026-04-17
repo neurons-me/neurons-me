@@ -10,8 +10,6 @@ Build **artificial intelligence** that reveals its logic — **evolve it** consc
 The entire process of **AI training** and adaptation remains **fully transparent**, allowing users to understand, audit, and **control their own learning systems and relationships.**
 Actively **build, evolve, and direct** the intelligence that works for **.us.**
 
-Each module forms part of a larger ecosystem for **user-driven** artificial intelligence.
-
 > **Own your intelligence.**
 
 

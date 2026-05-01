@@ -12,7 +12,7 @@ Actively **build, evolve, and direct** the intelligence that works for **.us.**
 > **Own your intelligence.**
 
 .me — The ♡ of the System
-.me is the semantic knowledge graph engine ∴ at the center of neurons.me.
+Our semantic knowledge graph engine ∴ at the center of neurons.me.
 It is where intelligence becomes:
 
 Context-aware

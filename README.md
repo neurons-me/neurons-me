@@ -11,7 +11,8 @@ Actively **build, evolve, and direct** the intelligence that works for **.us.**
 
 > **Own your intelligence.**
 
-.me — The ♡ of the System
+### .me — The ♡ of the System
+
 Our semantic knowledge graph engine ∴ at the center of neurons.me.
 It is where intelligence becomes:
 

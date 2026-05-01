@@ -6,7 +6,6 @@
 ## **Go Algorithmic.**
 Build **artificial intelligence** that reveals its logic — **evolve it** consciously and **collectively.**
 
-### **How it works:** 
 The entire process of **AI training** and adaptation remains **fully transparent**, allowing users to understand, audit, and **control their own learning systems and relationships.**
 Actively **build, evolve, and direct** the intelligence that works for **.us.**
 

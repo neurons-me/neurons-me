@@ -1,7 +1,7 @@
 # **Welcome to .me**
 > **Own your intelligence.**
 
-<img src="[https://res.cloudinary.com/dkwnxf6gm/image/upload/v1766033591/neurons-me_v.png](https://res.cloudinary.com/dkwnxf6gm/image/upload/v1778177581/ChatGPT_Image_May_7_2026_12_12_28_PM_xzkwtc.png)" alt="neurons.me cover" width="277" style="float: right; margin-left: 10px;">
+<img src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1766033591/neurons-me_v.png" alt="neurons.me cover" width="277" style="float: right; margin-left: 10px;">
 
 ## **Go Algorithmic.**
 Build **artificial intelligence** that reveals its logic — **evolve it** consciously and **collectively.**

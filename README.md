@@ -1,5 +1,5 @@
 # **Welcome to neurons.me**
-> **Self-Sovereign AI**
+> **Own your intelligence.**
 
 <img src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1766033591/neurons-me_v.png" alt="neurons.me cover" width="277" style="float: right; margin-left: 10px;">
 
@@ -8,8 +8,6 @@ Build **artificial intelligence** that reveals its logic — **evolve it** consc
 
 The entire process of **AI training** and adaptation remains **fully transparent**, allowing users to understand, audit, and **control their own learning systems and relationships.**
 Actively **build, evolve, and direct** the intelligence that works for **.us.**
-
-> **Own your intelligence.**
 
 ### .me — The ♡ of the System
 

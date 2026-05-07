@@ -11,8 +11,7 @@ Actively **build, evolve, and direct** the intelligence that works for **.us.**
 
 ## .me — The ♡ of the System
 
-Our semantic knowledge graph engine ∴ at the center of neurons.me.
-It is where intelligence becomes:
+Our semantic knowledge graph engine ∴ is where intelligence becomes <a href="https://github.com/neurons-me/.me".me</a>
 
 Context-aware
 Automatically reactive (O(K))

@@ -1,4 +1,4 @@
-# **Welcome to neurons.me**
+# **Welcome to .me**
 > **Own your intelligence.**
 
 <img src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1766033591/neurons-me_v.png" alt="neurons.me cover" width="277" style="float: right; margin-left: 10px;">

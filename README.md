@@ -13,6 +13,9 @@ Actively **build, evolve, and direct** the intelligence that works for **.us.**
 ## .me — The ♡ of the System
 
 Our semantic knowledge graph engine ∴ is where intelligence becomes [`.me`]([./NRP/status.md](https://github.com/neurons-me/.me))
-
-Local First / Context-aware / Automatically reactive (O(K)) / Fully explainable / Structurally Private
+⬡ Local-first 
+⬡ Context-aware  
+⬡ Automatically reactive *O(K)*
+⬡ Fully explainable 
+⬡ Structurally Private
 

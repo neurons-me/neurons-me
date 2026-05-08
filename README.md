@@ -12,7 +12,7 @@ Actively **build, evolve, and direct** the intelligence that works for **.us.**
 
 ## .me — The ♡ of the System
 
-Our semantic knowledge graph engine ∴ is where intelligence becomes [`.me`]([/.me))
+Our semantic knowledge graph engine ∴ is where intelligence becomes [`.me`](https://github.com/neurons-me/.me))
 
 ⬡ Local-first 
 

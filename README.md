@@ -10,8 +10,7 @@ The entire process of **AI training** and adaptation remains **fully transparent
 
 Actively **build, evolve, and direct** the intelligence that works for **.us.**
 
-## .me — The ♡ of the System
-
+## .me —  ♡
 Our semantic knowledge graph engine ∴ is where intelligence becomes [`.me`](https://github.com/neurons-me/.me)
 
 ⬡ Local-first 

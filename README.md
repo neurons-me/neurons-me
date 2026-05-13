@@ -20,14 +20,14 @@ Actively **build, evolve, and direct** the intelligence that works for **.us.**
 
 <table>
 <tr>
-<td valign="top" width="50%">
+<td valign="top" width="55%">
 <code>𓉐&nbsp; local · first</code><br>
 <code>𓅓&nbsp; context · aware</code><br>
 <code>𓇽&nbsp; O(K) · reactive</code><br>
 <code>𓁺&nbsp; explainable</code><br>
 <code>𓊽&nbsp; structurally · private</code>
 </td>
-<td valign="top" width="50%">
+<td valign="top" width="45%">
 <em>Not trained on you.</em><br>
 <strong>MADE OF YOU.</strong><br>
 [ ⧇ offline_sovereignty ]<br>
@@ -46,7 +46,7 @@ Actively **build, evolve, and direct** the intelligence that works for **.us.**
 <td width="33%" valign="top" align="center">
 <img src="./media/robots_that_understand_context_gif.gif" alt="Robots that Understand Context" width="100%"><br><br>
 <b>Robots that Understand Context</b><br>
-Same physical object means something completely different depending on who is looking at it.
+Same object means something completely different depending on who is looking at it.
 </td>
 <td width="33%" valign="top" align="center">
 <img src="./media/smart_cities.gif" alt="Smart Cities" width="100%"><br><br>
@@ -62,7 +62,7 @@ Explainable relationship networks built on human connection.
 </table>
 </div>
 
+
 <p align="center">
   <i>Meaning is infrastructure.</i>
 </p>
-

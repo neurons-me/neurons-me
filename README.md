@@ -20,14 +20,14 @@ Actively **build, evolve, and direct** the intelligence that works for **.us.**
 
 <table>
 <tr>
-<td valign="top" width="55%">
+<td valign="top">
 <code>𓉐&nbsp; local · first</code><br>
 <code>𓅓&nbsp; context · aware</code><br>
 <code>𓇽&nbsp; O(K) · reactive</code><br>
 <code>𓁺&nbsp; explainable</code><br>
 <code>𓊽&nbsp; structurally · private</code>
 </td>
-<td valign="top" width="45%">
+<td valign="top">
 <em>Not trained on you.</em><br>
 <strong>MADE OF YOU.</strong><br>
 [ ⧇ offline_sovereignty ]<br>

@@ -43,12 +43,12 @@ Actively **build, evolve, and direct** the intelligence that works for **.us.**
 <table>
 <tr>
 <td width="33%" valign="top" align="center">
-<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExODNocDd6ejMxeDN2dGE1YWJhNXdpNTNsbWJrcWRkYWc1cTM5czB5byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78QqXfLJ4fQwa7eYBP/giphy.gif" alt="Robots that Understand Context" width="100%"><br><br>
+<img src="./media/robots_that_understand_context_gif.gif" alt="Robots that Understand Context" width="100%"><br><br>
 <b>Robots that Understand Context</b><br>
 Same physical object means something completely different depending on who is looking at it.
 </td>
 <td width="33%" valign="top" align="center">
-<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3k0b2N1M3hjd2Uyb2xnamRqM2lmbWN2dzgxejgwZ2djdmdnOHRzeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9nhxcwjWP9wOT1ls8J/giphy.gif" alt="Smart Cities" width="100%"><br><br>
+<img src="./media/smart_cities.gif" alt="Smart Cities" width="100%"><br><br>
 <b>Smart Cities</b><br>
 Living infrastructure coordinated through semantic systems.
 </td>

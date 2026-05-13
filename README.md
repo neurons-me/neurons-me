@@ -37,6 +37,7 @@ Actively **build, evolve, and direct** the intelligence that works for **.us.**
 </td>
 </tr>
 </table>
+
 #### ∴ Your mind, running locally.
 
 <div align="center">

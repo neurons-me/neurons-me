@@ -46,7 +46,8 @@ Actively **build, evolve, and direct** the intelligence that works for **.us.**
 <td width="33%" valign="top" align="center">
 <img src="./media/robots_that_understand_context_gif.gif" alt="Robots that Understand Context" width="100%"><br><br>
 <b>Robots that Understand Context</b><br>
-Same object means something completely different depending on who is looking at it.
+Same object means something completely different depending on who is looking at it.<br><br>
+<a href="https://neurons-me.github.io/.me/docs/Robots-That-Understand-Context.html"><kbd>Learn more →</kbd></a>
 </td>
 <td width="33%" valign="top" align="center">
 <img src="./media/smart_cities.gif" alt="Smart Cities" width="100%"><br><br>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title | escape }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/me-theme.css' | relative_url }}">
+</head>
+<body>
+  {% assign brand_label = site.me_theme.brand | default: site.title | default: '.me' %}
+  {% assign nav_items = site.me_theme.nav %}
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ brand_label }}</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        {% if nav_items %}
+          {% for item in nav_items %}
+            {% if item.relative_url %}
+              <a href="{{ item.relative_url | relative_url }}">{{ item.label }}</a>
+            {% else %}
+              <a href="{{ item.url }}">{{ item.label }}</a>
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          <a href="https://neurons-me.github.io/">Home</a>
+          <a href="https://neurons-me.github.io/all.this/">All.This</a>
+          <a href="https://www.npmjs.com/package/this.me">NPM</a>
+          <a href="{{ '/npm/typedocs/' | relative_url }}">TypeDocs</a>
+        {% endif %}
+      </nav>
+    </div>
+  </header>
+
+  <main class="markdown-body">
+    {{ content }}
+  </main>
+</body>
+</html>
+

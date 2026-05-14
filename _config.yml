@@ -1,10 +1,23 @@
-# GitHub Pages Configuration
-
-# Serve only the README from main branch
-
-# Set the theme
+title: neurons.me
+description: Shared docs home and remote theme source for .me.
 theme: minima
-
-# Minimal settings
-baseurl: 
+baseurl:
 url: https://neurons-me.github.io/neurons-me/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  parse_block_html: true
+  hard_wrap: false
+
+me_theme:
+  brand: .me
+  nav:
+    - label: Home
+      url: https://neurons-me.github.io/
+    - label: All.This
+      url: https://neurons-me.github.io/all.this/
+    - label: NPM
+      url: https://www.npmjs.com/package/this.me
+    - label: TypeDocs
+      relative_url: /npm/typedocs/

@@ -53,6 +53,7 @@ Same object means something completely different depending on who is looking at 
 <img src="./media/smart_cities.gif" alt="Smart Cities" width="100%"><br><br>
 <b>Smart Cities</b><br>
 Living infrastructure coordinated through semantic systems.
+<a href="https://neurons-me.github.io/.me/docs/Smart-Cities.html"><kbd>Learn more →</kbd></a>
 </td>
 <td width="33%" valign="top" align="center">
 <img src="./media/SocialGraph.jpg" alt="Social Graph" width="100%"><br><br>

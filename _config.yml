@@ -11,13 +11,11 @@ kramdown:
   hard_wrap: false
 
 me_theme:
-  brand: .me
+  brand: neurons.me
   nav:
     - label: Home
       url: https://neurons-me.github.io/
-    - label: All.This
-      url: https://neurons-me.github.io/all.this/
-    - label: NPM
-      url: https://www.npmjs.com/package/this.me
-    - label: TypeDocs
-      relative_url: /npm/typedocs/
+    - label: Github
+      url: https://github.com/neurons-me
+    - label: .me
+      relative_url: https://neurons-me.github.io/.me

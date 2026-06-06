@@ -52,12 +52,12 @@ Same object means something completely different depending on who is looking at 
 <td width="33%" valign="top" align="center">
 <img src="./media/smart_cities.gif" alt="Smart Cities" width="100%"><br><br>
 <b>Smart Cities</b><br>
-Living infrastructure coordinated through semantic systems.
+Living infrastructure coordinated through reactive knowledge graphs.
 <a href="https://neurons-me.github.io/.me/docs/Smart-Cities.html"><kbd>Learn more →</kbd></a>
 </td>
 <td width="33%" valign="top" align="center">
 <img src="./media/SocialGraph.jpg" alt="Social Graph" width="100%"><br><br>
-<b>Social Graph</b><br>
+<b>Social Networks</b><br>
 Explainable relationship networks built on human connection.
 </td>
 </tr>

@@ -44,38 +44,38 @@ Actively **build, evolve, and direct** the intelligence that works for **.us.**
 <table>
 <tr>
 <td width="33%" valign="top" align="center">
-<img src="./media/robots_that_understand_context_gif.gif" alt="Robots that Understand Context" width="100%"><br><br>
+<img src="./media/robots_that_understand_context_gif.gif" alt="Robots that Understand Context" width="100%" height="180" style="object-fit:cover;"><br><br>
 <b>Robots that Understand Context</b><br>
 Same object means something completely different depending on who is looking at it.<br><br>
 <a href="https://neurons-me.github.io/.me/docs/Robots-That-Understand-Context.html"><kbd>Learn more →</kbd></a>
 </td>
 <td width="33%" valign="top" align="center">
-<img src="./media/smart_cities.gif" alt="Smart Cities" width="100%"><br><br>
+<img src="./media/smart_cities.gif" alt="Smart Cities" width="100%" height="180" style="object-fit:cover;"><br><br>
 <b>Smart Cities</b><br>
 Living infrastructure coordinated through reactive knowledge graphs.
 <a href="https://neurons-me.github.io/.me/docs/Smart-Cities.html"><kbd>Learn more →</kbd></a>
 </td>
 <td width="33%" valign="top" align="center">
-<img src="./media/SocialGraph.jpg" alt="Social Graph" width="100%"><br><br>
+<img src="./media/SocialGraph.jpg" alt="Social Graph" width="100%" height="180" style="object-fit:cover;"><br><br>
 <b>Social Networks</b><br>
 Explainable relationship networks built on human connection.
 </td>
 </tr>
 <tr>
 <td width="33%" valign="top" align="center">
-<img src="./media/Encrypted_Audience_Algebra.gif" alt="Encrypted Audience Algebra" width="100%"><br><br>
+<img src="./media/Encrypted_Audience_Algebra.gif" alt="Encrypted Audience Algebra" width="100%" height="180" style="object-fit:cover;"><br><br>
 <b>Encrypted Audience Algebra</b><br>
 Who can see what, derived — not declared. Audience as algebra over secret scopes.<br><br>
 <a href="https://neurons-me.github.io/.me/docs/Algebra-of-Contexts.html"><kbd>Learn more →</kbd></a>
 </td>
 <td width="33%" valign="top" align="center">
-<img src="./media/split_bill.gif" alt="Wallet Split" width="100%"><br><br>
+<img src="./media/split_bill_wallet.gif" alt="Wallet Split" width="100%" height="180" style="object-fit:cover;"><br><br>
 <b>Wallet Split</b><br>
 Two friends share a trip wallet — split logic derived automatically from raw contributions.<br><br>
 <a href="https://neurons-me.github.io/.me/Typescript/typedocs/examples/WalletSplit.html"><kbd>Learn more →</kbd></a>
 </td>
 <td width="33%" valign="top" align="center">
-<img src="./media/affinity_model.gif" alt="Affinity Model" width="100%"><br><br>
+<img src="./media/affinity_model.gif" alt="Affinity Model" width="100%" height="180" style="object-fit:cover;"><br><br>
 <b>Affinity Model</b><br>
 Affinity is emergent — store reactions, derive affinity as executable graph logic.<br><br>
 <a href="https://neurons-me.github.io/.me/Typescript/typedocs/examples/Affinity-Model.html"><kbd>Learn more →</kbd></a>

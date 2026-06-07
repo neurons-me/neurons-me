@@ -16,29 +16,7 @@ The entire process of **AI training** and adaptation remains **fully transparent
 
 Actively **build, evolve, and direct** the intelligence that works for **.us.**
 
-## `.me` — ∴
-
-<table>
-<tr>
-<td valign="top">
-<code>𓉐&nbsp; local · first</code><br>
-<code>𓅓&nbsp; context · aware</code><br>
-<code>𓇽&nbsp; O(K) · reactive</code><br>
-<code>𓁺&nbsp; explainable</code><br>
-<code>𓊽&nbsp; structurally · private</code>
-</td>
-<td valign="top">
-<em>Not trained on you.</em><br>
-<strong>MADE OF YOU.</strong><br>
-[ ⧇ offline_sovereignty ]<br>
-[ 𓁹 zero_black_box ]<br>
-[ 𓀀 no middleman ]
-<br>
-</td>
-</tr>
-</table>
-
-#### ∴ Your mind, running locally.
+#### .me ∴ Your mind, running locally.
 
 <div align="center">
 <table>

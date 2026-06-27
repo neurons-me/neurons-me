@@ -16,6 +16,12 @@
   <header class="topbar">
     <div class="topbar-inner">
       <a class="brand" href="{{ '/' | relative_url }}">{{ brand_label }}</a>
+      <div
+        class="topbar-search"
+        data-gui-searchbar
+        data-src="https://neurons-me.github.io/index.json"
+        data-placeholder="Search in All.This"
+      ></div>
       <nav class="nav-links" aria-label="Main navigation">
         {% if nav_items %}
           {% for item in nav_items %}
@@ -38,6 +44,8 @@
   <main class="markdown-body">
     {{ content }}
   </main>
+
+  <script src="https://neurons-me.github.io/vendor/gui-searchbar.iife.js" defer></script>
 </body>
 </html>
 

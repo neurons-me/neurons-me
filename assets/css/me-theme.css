@@ -65,6 +65,12 @@ body {
   white-space: nowrap;
 }
 
+.topbar-search {
+  flex: 1 1 auto;
+  min-width: 120px;
+  max-width: 280px;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -232,6 +238,12 @@ tr:nth-child(2n) {
     flex-direction: column;
     gap: 8px;
     padding: 12px 16px;
+  }
+
+  .topbar-search {
+    order: 3;
+    width: 100%;
+    max-width: 100%;
   }
 
   .nav-links {

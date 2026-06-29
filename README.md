@@ -97,7 +97,7 @@ Push vs. pull and public vs. secret-scope cost — p50/p95/p99 latency baselines
 <table>
 <tr>
 <td width="50%" valign="top" align="center">
-<h1>𓅓</h1>
+<h3 style="font-size:5rem; border-bottom:none; margin:0;">𓅓</h3>
 
 <a href="https://github.com/neurons-me/monad/blob/main/Typescript/typedocs/docs/NRP/status.md">
 <b>NRP · Namespace Resolution Protocol</b>
@@ -105,7 +105,7 @@ Push vs. pull and public vs. secret-scope cost — p50/p95/p99 latency baselines
 Mesh-aware resolution for <code>me://</code> paths — discover, score, forward, learn. A living network of monads, not a static DNS table.
 </td>
 <td width="50%" valign="top" align="center">
-<h1>𓊽</h1>
+<h3 style="font-size:5rem; border-bottom:none; margin:0;">𓊽</h3>
 
 <a href="https://neurons-me.github.io/.me/docs/Axioms.html">
 <b>Axioms · The Kernel's Invariants</b>

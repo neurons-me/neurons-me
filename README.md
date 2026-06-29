@@ -83,22 +83,19 @@ Affinity is emergent — store reactions, derive affinity as executable graph lo
 <table>
 <tr>
 <td width="33%" valign="top" align="center">
-<h4>Phase 2 · Disk & Write Pressure</h4>
+<h3><a href="https://github.com/neurons-me/.me/tree/main/Typescript/tests/Phases">Phase 2 · Disk & Write Pressure</a></h3>
 
-Incremental disk persistence, explain-lookup latency, sustained write/rewrite pressure on the kernel.<br><br>
-<a href="https://github.com/neurons-me/.me/tree/main/Typescript/tests/Phases"><kbd>View tests →</kbd></a>
+Incremental disk persistence, explain-lookup latency, sustained write/rewrite pressure on the kernel.
 </td>
 <td width="33%" valign="top" align="center">
-<h4>Phase 3 · Vector Search</h4>
+<h3><a href="https://github.com/neurons-me/.me/tree/main/Typescript/tests/Phases">Phase 3 · Vector Search</a></h3>
 
-Exact vs. IVF semantic search at scale — corpus, tuning, and cascade-dependency benchmarks.<br><br>
-<a href="https://github.com/neurons-me/.me/tree/main/Typescript/tests/Phases"><kbd>View tests →</kbd></a>
+Exact vs. IVF semantic search at scale — corpus, tuning, and cascade-dependency benchmarks.
 </td>
 <td width="33%" valign="top" align="center">
-<h4>Secret Scope & Scaling</h4>
+<h3><a href="https://github.com/neurons-me/.me/tree/main/Typescript/tests/Benchmarks">Secret Scope & Scaling</a></h3>
 
-Push vs. pull and public vs. secret-scope cost — p50/p95/p99 latency baselines across node counts.<br><br>
-<a href="https://github.com/neurons-me/.me/tree/main/Typescript/tests/Benchmarks"><kbd>View tests →</kbd></a>
+Push vs. pull and public vs. secret-scope cost — p50/p95/p99 latency baselines across node counts.
 </td>
 </tr>
 </table>
@@ -109,20 +106,30 @@ Push vs. pull and public vs. secret-scope cost — p50/p95/p99 latency baselines
 <table>
 <tr>
 <td width="50%" valign="top" align="center">
-<img src="./assets/glyph-nrp.svg" width="140" alt="Owl glyph">
+<br>
+<a href="https://github.com/neurons-me/monad/blob/main/Typescript/typedocs/docs/NRP/status.md">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/glyph-nrp-dark.svg">
+  <img src="./assets/glyph-nrp-light.svg" width="100" alt="Owl glyph">
+</picture>
+</a>
 
-<h4>NRP · Namespace Resolution Protocol</h4>
+<h3><a href="https://github.com/neurons-me/monad/blob/main/Typescript/typedocs/docs/NRP/status.md">NRP · Namespace Resolution Protocol</a></h3>
 
-Mesh-aware resolution for <code>me://</code> paths — discover, score, forward, learn. A living network of monads, not a static DNS table.<br><br>
-<a href="https://github.com/neurons-me/monad/blob/main/Typescript/typedocs/docs/NRP/status.md"><kbd>Read more →</kbd></a>
+Mesh-aware resolution for <code>me://</code> paths — discover, score, forward, learn. A living network of monads, not a static DNS table.
 </td>
 <td width="50%" valign="top" align="center">
-<img src="./assets/glyph-axioms.svg" width="140" alt="Djed pillar glyph">
+<br>
+<a href="https://neurons-me.github.io/.me/docs/Axioms.html">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/glyph-axioms-dark.svg">
+  <img src="./assets/glyph-axioms-light.svg" width="100" alt="Djed pillar glyph">
+</picture>
+</a>
 
-<h4>Axioms · The Kernel's Invariants</h4>
+<h3><a href="https://neurons-me.github.io/.me/docs/Axioms.html">Axioms · The Kernel's Invariants</a></h3>
 
-The non-negotiable guarantees <code>.me</code> is built on — stealth disclosure, hash-chain integrity, deterministic conflict resolution.<br><br>
-<a href="https://neurons-me.github.io/.me/docs/Axioms.html"><kbd>Read more →</kbd></a>
+The non-negotiable guarantees <code>.me</code> is built on — stealth disclosure, hash-chain integrity, deterministic conflict resolution.
 </td>
 </tr>
 </table>

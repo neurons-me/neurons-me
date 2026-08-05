@@ -18,9 +18,8 @@ Shape the intelligence that works for **.us.**
 <td width="33%" valign="top" align="center">
 <a href="https://neurons-me.github.io/.me/docs/Robots-That-Understand-Context.html"><img src="./media/robots_that_understand_context_gif.gif" alt="Robots that Understand Context" width="100%" height="320" style="object-fit:cover;"></a>
 
-<h4>Robots that Understand Context</h4>
-
-Same object means something completely different depending on who is looking at it.<br><br>
+<h4>Context-Aware Robots</h4>
+The same object changes meaning depending on who, where, and why..<br><br>
 <a href="https://neurons-me.github.io/.me/docs/Robots-That-Understand-Context.html"><kbd>Learn more →</kbd></a>
 </td>
 <td width="33%" valign="top" align="center">

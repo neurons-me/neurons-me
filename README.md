@@ -9,16 +9,8 @@
        style="float: right; margin-left: 25px; margin-bottom: 15px; border-radius: 8px;">
 </picture>
 
-
-
-Build **AI** that reveals its logic — **evolve it consciously and collectively.**
-
-Shape the intelligence that works for **.us.**
-
-
-
 ## .me ∴ Your mind, running locally.
-
+Shape the intelligence that works for **.us.**
 
 <div align="center">
 <table>

@@ -9,7 +9,7 @@
        style="float: right; margin-left: 25px; margin-bottom: 15px; border-radius: 8px;">
 </picture>
 
-## .me ∴ Your mind, running locally.
+## ∴ Your mind, running locally.
 Shape the intelligence that works for **.us.**
 
 <div align="center">

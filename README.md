@@ -16,7 +16,7 @@ Shaping the intelligence that works for **.us**
 <table>
   <tr>
     <th colspan="3" align="left">
-      <h2>📊 Benchmarks & Performance</h2>
+      <h2>DEMOS</h2>
     </th>
   </tr>
 <tr>

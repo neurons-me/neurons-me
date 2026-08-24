@@ -14,18 +14,23 @@ Shaping the intelligence that works for **.us**
 
 <div align="center">
 <table>
+  <tr>
+    <th colspan="3" align="left">
+      <h2>📊 Benchmarks & Performance</h2>
+    </th>
+  </tr>
 <tr>
 <td width="33%" valign="top" align="center">
 <a href="https://neurons-me.github.io/.me/docs/Robots-That-Understand-Context.html"><img src="./media/robots_that_understand_context_gif.gif" alt="Robots that Understand Context" width="100%" height="320" style="object-fit:cover;"></a>
 
-<h2>Context-Aware Robots</h2>
+<h3>Context-Aware Robots</h3>
 The same object changes meaning depending on who, where, and why..<br><br>
 <a href="https://neurons-me.github.io/.me/docs/Robots-That-Understand-Context.html"><kbd>Learn more →</kbd></a>
 </td>
 <td width="33%" valign="top" align="center">
 <a href="https://neurons-me.github.io/.me/docs/Smart-Cities.html"><img src="./media/smart_cities.gif" alt="Smart Cities" width="100%" height="320" style="object-fit:cover;"></a>
 
-<h4>Smart Cities</h4>
+<h3>Smart Cities</h3>
 
 Living infrastructure coordinated through reactive knowledge graphs.
 <a href="https://neurons-me.github.io/.me/docs/Smart-Cities.html" target="_blank"><kbd>Learn more →</kbd></a>
@@ -33,7 +38,7 @@ Living infrastructure coordinated through reactive knowledge graphs.
 <td width="33%" valign="top" align="center">
 <a href="https://neurons-me.github.io/.me/docs/Social-Graph.html" target="_blank"><img src="./media/SocialGraph.jpg" alt="Social Graph" width="100%" height="320" style="object-fit:cover;"></a>
 
-<h4>Social Networks</h4>
+<h3>Social Networks</h3>
 
 Explainable relationship networks built on human connection.<br><br>
 <a href="https://neurons-me.github.io/.me/docs/Social-Graph.html" target="_blank"><kbd>Learn more →</kbd></a>
@@ -43,7 +48,7 @@ Explainable relationship networks built on human connection.<br><br>
 <td width="33%" valign="top" align="center">
 <a href="https://neurons-me.github.io/.me/Typescript/typedocs/Algebra-of-Contexts.html" target="_blank"><img src="./media/Encrypted_Audience_Algebra.gif" alt="Encrypted Audience Algebra" width="100%" height="320" style="object-fit:cover;"></a>
 
-<h4>Encrypted Audience Algebra</h4>
+<h3>Encrypted Audience Algebra</h3>
 
 Who can see what, derived — not declared. Audience as algebra over secret scopes.<br><br>
 <a href="https://neurons-me.github.io/.me/Typescript/typedocs/Algebra-of-Contexts.html" target="_blank"><kbd>Learn more →</kbd></a>
@@ -51,7 +56,7 @@ Who can see what, derived — not declared. Audience as algebra over secret scop
 <td width="33%" valign="top" align="center">
 <a href="https://neurons-me.github.io/.me/Typescript/typedocs/examples/WalletSplit.html" target="_blank"><img src="./media/split_bill_wallet.gif" alt="Wallet Split" width="100%" height="320" style="object-fit:cover;"></a>
 
-<h4>Wallet Split</h4>
+<h3>Wallet Split</h3>
 
 Two friends share a trip wallet — split logic derived automatically from raw contributions.<br><br>
 <a href="https://neurons-me.github.io/.me/Typescript/typedocs/examples/WalletSplit.html" target="_blank"><kbd>Learn more →</kbd></a>

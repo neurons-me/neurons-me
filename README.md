@@ -28,41 +28,41 @@ The same object changes meaning depending on who, where, and why..<br><br>
 <h4>Smart Cities</h4>
 
 Living infrastructure coordinated through reactive knowledge graphs.
-<a href="https://neurons-me.github.io/.me/docs/Smart-Cities.html"><kbd>Learn more →</kbd></a>
+<a href="https://neurons-me.github.io/.me/docs/Smart-Cities.html" target="_blank"><kbd>Learn more →</kbd></a>
 </td>
 <td width="33%" valign="top" align="center">
-<a href="https://neurons-me.github.io/.me/docs/Social-Graph.html"><img src="./media/SocialGraph.jpg" alt="Social Graph" width="100%" height="320" style="object-fit:cover;"></a>
+<a href="https://neurons-me.github.io/.me/docs/Social-Graph.html" target="_blank"><img src="./media/SocialGraph.jpg" alt="Social Graph" width="100%" height="320" style="object-fit:cover;"></a>
 
 <h4>Social Networks</h4>
 
 Explainable relationship networks built on human connection.<br><br>
-<a href="https://neurons-me.github.io/.me/docs/Social-Graph.html"><kbd>Learn more →</kbd></a>
+<a href="https://neurons-me.github.io/.me/docs/Social-Graph.html" target="_blank"><kbd>Learn more →</kbd></a>
 </td>
 </tr>
 <tr>
 <td width="33%" valign="top" align="center">
-<a href="https://neurons-me.github.io/.me/Typescript/typedocs/Algebra-of-Contexts.html"><img src="./media/Encrypted_Audience_Algebra.gif" alt="Encrypted Audience Algebra" width="100%" height="320" style="object-fit:cover;"></a>
+<a href="https://neurons-me.github.io/.me/Typescript/typedocs/Algebra-of-Contexts.html" target="_blank"><img src="./media/Encrypted_Audience_Algebra.gif" alt="Encrypted Audience Algebra" width="100%" height="320" style="object-fit:cover;"></a>
 
 <h4>Encrypted Audience Algebra</h4>
 
 Who can see what, derived — not declared. Audience as algebra over secret scopes.<br><br>
-<a href="https://neurons-me.github.io/.me/Typescript/typedocs/Algebra-of-Contexts.html"><kbd>Learn more →</kbd></a>
+<a href="https://neurons-me.github.io/.me/Typescript/typedocs/Algebra-of-Contexts.html" target="_blank"><kbd>Learn more →</kbd></a>
 </td>
 <td width="33%" valign="top" align="center">
-<a href="https://neurons-me.github.io/.me/Typescript/typedocs/examples/WalletSplit.html"><img src="./media/split_bill_wallet.gif" alt="Wallet Split" width="100%" height="320" style="object-fit:cover;"></a>
+<a href="https://neurons-me.github.io/.me/Typescript/typedocs/examples/WalletSplit.html" target="_blank"><img src="./media/split_bill_wallet.gif" alt="Wallet Split" width="100%" height="320" style="object-fit:cover;"></a>
 
 <h4>Wallet Split</h4>
 
 Two friends share a trip wallet — split logic derived automatically from raw contributions.<br><br>
-<a href="https://neurons-me.github.io/.me/Typescript/typedocs/examples/WalletSplit.html"><kbd>Learn more →</kbd></a>
+<a href="https://neurons-me.github.io/.me/Typescript/typedocs/examples/WalletSplit.html" target="_blank"><kbd>Learn more →</kbd></a>
 </td>
 <td width="33%" valign="top" align="center">
-<a href="https://neurons-me.github.io/.me/Typescript/typedocs/examples/Affinity-Model.html"><img src="./media/affinity_model.gif" alt="Affinity Model" width="100%" height="320" style="object-fit:cover;"></a>
+<a href="https://neurons-me.github.io/.me/Typescript/typedocs/examples/Affinity-Model.html" target="_blank"><img src="./media/affinity_model.gif" alt="Affinity Model" width="100%" height="320" style="object-fit:cover;"></a>
 
 <h4>Affinity Model</h4>
 
 Affinity is emergent — store reactions, derive affinity as executable graph logic.<br><br>
-<a href="https://neurons-me.github.io/.me/Typescript/typedocs/examples/Affinity-Model.html"><kbd>Learn more →</kbd></a>
+<a href="https://neurons-me.github.io/.me/Typescript/typedocs/examples/Affinity-Model.html" target="_blank"><kbd>Learn more →</kbd></a>
 </td>
 </tr>
 </table>
@@ -74,17 +74,17 @@ Affinity is emergent — store reactions, derive affinity as executable graph lo
 <table>
 <tr>
 <td width="33%" valign="top" align="center">
-<h3><a href="https://github.com/neurons-me/.me/tree/main/Typescript/tests/Phases">Phase 2 · Disk & Write Pressure</a></h3>
+<h3><a href="https://github.com/neurons-me/.me/tree/main/Typescript/tests/Phases" target="_blank">Phase 2 · Disk & Write Pressure</a></h3>
 
 Incremental disk persistence, explain-lookup latency, sustained write/rewrite pressure on the kernel.
 </td>
 <td width="33%" valign="top" align="center">
-<h3><a href="https://github.com/neurons-me/.me/tree/main/Typescript/tests/Phases">Phase 3 · Vector Search</a></h3>
+<h3><a href="https://github.com/neurons-me/.me/tree/main/Typescript/tests/Phases" target="_blank">Phase 3 · Vector Search</a></h3>
 
 Exact vs. IVF semantic search at scale — corpus, tuning, and cascade-dependency benchmarks.
 </td>
 <td width="33%" valign="top" align="center">
-<h3><a href="https://github.com/neurons-me/.me/tree/main/Typescript/tests/Benchmarks">Secret Scope & Scaling</a></h3>
+<h3><a href="https://github.com/neurons-me/.me/tree/main/Typescript/tests/Benchmarks" target="_blank">Secret Scope & Scaling</a></h3>
 
 Push vs. pull and public vs. secret-scope cost — p50/p95/p99 latency baselines across node counts.
 </td>
@@ -98,27 +98,27 @@ Push vs. pull and public vs. secret-scope cost — p50/p95/p99 latency baselines
 <tr>
 <td width="50%" valign="top" align="center">
 <br>
-<a href="https://github.com/neurons-me/monad/blob/main/Typescript/typedocs/docs/NRP/status.md">
+<a href="https://github.com/neurons-me/monad/blob/main/Typescript/typedocs/docs/NRP/status.md" target="_blank">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/glyph-nrp-dark.svg">
   <img src="./assets/glyph-nrp-light.svg" width="100" alt="Owl glyph">
 </picture>
 </a>
 
-<h3><a href="https://github.com/neurons-me/monad/blob/main/Typescript/typedocs/docs/NRP/status.md">NRP · Namespace Resolution Protocol</a></h3>
+<h3><a href="https://github.com/neurons-me/monad/blob/main/Typescript/typedocs/docs/NRP/status.md" target="_blank">NRP · Namespace Resolution Protocol</a></h3>
 
 Mesh-aware resolution for <code>me://</code> paths — discover, score, forward, learn. A living network of monads, not a static DNS table.
 </td>
 <td width="50%" valign="top" align="center">
 <br>
-<a href="https://neurons-me.github.io/.me/docs/Axioms.html">
+<a href="https://neurons-me.github.io/.me/docs/Axioms.html" target="_blank">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/glyph-axioms-dark.svg">
   <img src="./assets/glyph-axioms-light.svg" width="100" alt="Djed pillar glyph">
 </picture>
 </a>
 
-<h3><a href="https://neurons-me.github.io/.me/docs/Axioms.html">Axioms · The Kernel's Invariants</a></h3>
+<h3><a href="https://neurons-me.github.io/.me/docs/Axioms.html" target="_blank">Axioms · The Kernel's Invariants</a></h3>
 
 The non-negotiable guarantees <code>.me</code> is built on — stealth disclosure, hash-chain integrity, deterministic conflict resolution.
 </td>

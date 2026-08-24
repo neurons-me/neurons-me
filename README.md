@@ -10,7 +10,7 @@
 </picture>
 
 ## ∴ Your mind, running locally.
-Shape the intelligence that works for **.us.**
+Shaping the intelligence that works for **.us**
 
 <div align="center">
 <table>

@@ -71,6 +71,22 @@ body {
   max-width: 280px;
 }
 
+/* gui-searchbar ships as a self-contained widget with inline styles. These
+   overrides keep the remote-theme topbar visually aligned with the neurons.me
+   index page instead of falling back to the widget's default white surface. */
+[data-gui-searchbar] input {
+  min-width: 0;
+}
+
+[data-gui-searchbar] > div > div {
+  border-color: rgba(9, 105, 218, 0.24) !important;
+}
+
+[data-gui-searchbar] > div > div:focus-within {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.12);
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -232,6 +248,42 @@ tr:nth-child(2n) {
   background-color: var(--subtle);
 }
 
+@media (prefers-color-scheme: dark) {
+  [data-gui-searchbar] > div > div {
+    background: #111a1f !important;
+    border-color: rgba(232, 237, 237, 0.1) !important;
+  }
+
+  [data-gui-searchbar] > div > div:focus-within {
+    border-color: #4fd1c5 !important;
+    box-shadow: 0 0 0 3px rgba(79, 209, 197, 0.12);
+  }
+
+  [data-gui-searchbar] input {
+    color: #e8eded !important;
+  }
+
+  [data-gui-searchbar] input::placeholder {
+    color: #98a7b3 !important;
+    opacity: 1 !important;
+  }
+
+  [data-gui-searchbar] > div > div > span:last-of-type {
+    background: rgba(232, 237, 237, 0.1) !important;
+    color: #98a7b3 !important;
+  }
+
+  [data-gui-searchbar] a[role="option"] {
+    color: #e8eded !important;
+    border-bottom-color: rgba(232, 237, 237, 0.08) !important;
+  }
+
+  [data-gui-searchbar] a[role="option"] > span:nth-child(2) > span:last-child,
+  [data-gui-searchbar] a[role="option"] > span:last-child {
+    color: #98a7b3 !important;
+  }
+}
+
 @media (max-width: 767px) {
   .topbar-inner {
     align-items: flex-start;
@@ -258,4 +310,3 @@ tr:nth-child(2n) {
     padding: 24px 16px;
   }
 }
-

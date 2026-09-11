@@ -10,7 +10,12 @@
 </picture>
 
 ## ∴ Your mind, running locally.
-Shaping the intelligence that works for **.us**
+```typescript
+me.profile.name("Ana")
+me("profile.name")  // "Ana"
+```
+
+
 
 <div align="center">
 <table>

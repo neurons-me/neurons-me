@@ -12,14 +12,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0d1117;
+    --bg: #0b1114;
     --fg: #c9d1d9;
     --muted: #8b949e;
     --border: #30363d;
     --subtle: #161b22;
     --accent: #58a6ff;
     --code-bg: rgba(110, 118, 129, 0.4);
-    --nav-bg: rgba(13, 17, 23, 0.86);
+    --nav-bg: rgba(11, 17, 20, 0.86);
   }
 }
 

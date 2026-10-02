@@ -66,14 +66,30 @@ body {
   max-width: 980px;
   margin: 0 auto;
   padding: 12px 32px;
+  min-height: 48px;
+  box-sizing: border-box;
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   color: var(--fg);
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0;
   white-space: nowrap;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
+  border-radius: 4px;
+  flex: 0 0 auto;
 }
 
 .topbar-search {
@@ -325,6 +341,7 @@ tr:nth-child(2n) {
     flex-direction: column;
     gap: 8px;
     padding: 12px 16px;
+    min-height: 0;
   }
 
   .topbar-search {

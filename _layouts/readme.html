@@ -46,7 +46,10 @@
 
   <header class="topbar">
     <div class="topbar-inner">
-      <a class="brand" href="{{ '/' | relative_url }}">{{ brand_label }}</a>
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <img class="brand-logo" src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1760629064/neurons.me_b50f6a.png" alt="" width="20" height="20" />
+        <span>{{ brand_label }}</span>
+      </a>
       <div
         class="topbar-search"
         data-gui-searchbar
@@ -63,7 +66,6 @@
             {% endif %}
           {% endfor %}
         {% else %}
-          <a href="https://neurons-me.github.io/">Home</a>
           <a href="https://neurons-me.github.io/all.this/">All.This</a>
           <a href="https://www.npmjs.com/package/this.me">NPM</a>
           <a href="{{ '/npm/typedocs/' | relative_url }}">TypeDocs</a>

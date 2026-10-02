@@ -15,8 +15,6 @@ me.profile.name("Ana")
 me("profile.name")  // "Ana"
 ```
 
-
-
 <div align="center">
 <table>
   <tr>
@@ -33,12 +31,12 @@ The same object changes meaning depending on who, where, and why..<br><br>
 <a href="https://neurons-me.github.io/.me/docs/Robots-That-Understand-Context.html"><kbd>Learn more →</kbd></a>
 </td>
 <td width="33%" valign="top" align="center">
-<a href="https://neurons-me.github.io/.me/docs/Smart-Cities.html"><img src="./media/smart_cities.gif" alt="Smart Cities" width="100%" height="320" style="object-fit:cover;"></a>
+<a href="https://neurons-me.github.io/smart-cities/"><img src="./media/smart_cities.gif" alt="Smart Cities" width="100%" height="320" style="object-fit:cover;"></a>
 
 <h3>Smart Cities</h3>
 
 Living infrastructure coordinated through reactive knowledge graphs.
-<a href="https://neurons-me.github.io/.me/docs/Smart-Cities.html" target="_blank"><kbd>Learn more →</kbd></a>
+<a href="https://neurons-me.github.io/smart-cities/" target="_blank"><kbd>Learn more →</kbd></a>
 </td>
 <td width="33%" valign="top" align="center">
 <a href="https://neurons-me.github.io/.me/docs/Social-Graph.html" target="_blank"><img src="./media/SocialGraph.jpg" alt="Social Graph" width="100%" height="320" style="object-fit:cover;"></a>

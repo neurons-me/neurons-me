@@ -1,8 +1,11 @@
 title: neurons.me
 description: Shared docs home and remote theme source for .me.
 theme: minima
-baseurl:
-url: https://neurons-me.github.io/neurons-me/
+# url is the host only; the project path goes in baseurl. With the path in
+# url, GitHub Pages also injected baseurl=/neurons-me, so the canonical and
+# og:url came out as /neurons-me//neurons-me/ (a 404).
+url: https://neurons-me.github.io
+baseurl: "/neurons-me"
 
 markdown: kramdown
 kramdown:

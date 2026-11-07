@@ -1,6 +1,7 @@
 // Compact two-column me.whatever(what) figure for the neurons-me index.
 // Hover or click a line / node to select the same path on both sides.
-// GitHub's README drops this script; the static table in the markdown stays as fallback.
+// Loaded from the Pages layout (not the README) so GitHub never prints the script tag.
+// The static table in the markdown stays as the GitHub fallback.
 (function () {
   "use strict";
   var NS = "http://www.w3.org/2000/svg";
@@ -299,7 +300,29 @@
     };
   }
 
+  function syncThemedPictures() {
+    var mq = window.matchMedia("(prefers-color-scheme: dark)");
+    function apply() {
+      var pics = document.querySelectorAll("picture");
+      for (var i = 0; i < pics.length; i++) {
+        var sources = pics[i].querySelectorAll("source");
+        for (var j = 0; j < sources.length; j++) {
+          var s = sources[j];
+          var orig = s.getAttribute("data-media") || s.getAttribute("media") || "";
+          if (!/prefers-color-scheme/.test(orig)) continue;
+          if (!s.getAttribute("data-media")) s.setAttribute("data-media", orig);
+          var wantsDark = /prefers-color-scheme:\s*dark/.test(s.getAttribute("data-media"));
+          s.media = mq.matches === wantsDark ? "all" : "not all";
+        }
+      }
+    }
+    if (mq.addEventListener) mq.addEventListener("change", apply);
+    else if (mq.addListener) mq.addListener(apply);
+    apply();
+  }
+
   function boot() {
+    syncThemedPictures();
     var host = document.getElementById("whatever-live");
     if (!host || host.getAttribute("data-wl") === "1") return;
     host.setAttribute("data-wl", "1");

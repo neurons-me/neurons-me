@@ -6,6 +6,32 @@
   "use strict";
   var NS = "http://www.w3.org/2000/svg";
 
+  var GUI_ICONS = {
+    "receipt_long": { viewBox: "0 -960 960 960", d: "M222-80q-43.75 0-74.37-30.63Q117-141.25 117-185v-95q0-12.75 8.63-21.38Q134.25-310 147-310h97v-552q0-5.25 4.5-7.13Q253-871 257-867l36 36q4.64 5 10.82 5 6.18 0 11.18-5l38-38q4.64-5 10.82-5 6.18 0 11.18 5l37 38q4.64 5 10.82 5 6.18 0 11.18-5l38-38q4.64-5 10.82-5 6.18 0 11.18 5l38 38q4.64 5 10.82 5 6.18 0 11.18-5l38-38q4.64-5 10.82-5 6.18 0 11.18 5l38 38q4.64 5 10.82 5 6.18 0 11.18-5l38-38q4.64-5 10.82-5 6.18 0 11.18 5l38 38q4.64 5 10.82 5 6.18 0 11.18-5l36-36q4-4 8.5-2.13 4.5 1.88 4.5 7.13v677q0 43.75-30.62 74.37Q781.75-80 738-80H222Zm516-60q20 0 32.5-12.5T783-185v-595H304v470h359q12.75 0 21.38 8.62Q693-292.75 693-280v94.85q0 20.15 12.5 32.65T738-140ZM387-682h180q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H387q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5Zm0 134h180q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H387q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5Zm303-74q-12 0-21-9t-9-21q0-12 9-21t21-9q12 0 21 9t9 21q0 12-9 21t-21 9Zm0 129q-12 0-21-9t-9-21q0-12 9-21t21-9q12 0 21 9t9 21q0 12-9 21t-21 9ZM221-140h412v-110H177v65q0 20 12.65 32.5T221-140Zm-44 0v-110 110Z" },
+    "groups": { viewBox: "0 -960 960 960", d: "M30-240q-12.75 0-21.37-8.63Q0-257.25 0-270v-23q0-38.57 41.5-62.78Q83-380 150.38-380q12.16 0 23.39.5t22.23 2.15q-8 17.35-12 35.17-4 17.81-4 37.18v65H30Zm240 0q-12.75 0-21.37-8.63Q240-257.25 240-270v-35q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v35q0 12.75-8.62 21.37Q702.75-240 690-240H270Zm510 0v-65q0-19.86-3.5-37.43T765-377.27q11-1.73 22.17-2.23 11.17-.5 22.83-.5 67.5 0 108.75 23.77T960-293v23q0 12.75-8.62 21.37Q942.75-240 930-240H780Zm-480-60h360v-6q0-37-50.5-60.5T480-390q-79 0-129.5 23.5T300-305v5ZM149.57-410q-28.57 0-49.07-20.56Q80-451.13 80-480q0-29 20.56-49.5Q121.13-550 150-550q29 0 49.5 20.5t20.5 49.93q0 28.57-20.5 49.07T149.57-410Zm660 0q-28.57 0-49.07-20.56Q740-451.13 740-480q0-29 20.56-49.5Q781.13-550 810-550q29 0 49.5 20.5t20.5 49.93q0 28.57-20.5 49.07T809.57-410ZM480-480q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm.35-60Q506-540 523-557.35t17-43Q540-626 522.85-643t-42.5-17q-25.35 0-42.85 17.15t-17.5 42.5q0 25.35 17.35 42.85t43 17.5ZM480-300Zm0-300Z" },
+    "pie_chart": { viewBox: "0 -960 960 960", d: "M510-510h309q-11-122-98.5-211.5T510-819v309Zm-60 369v-678q-131 11-220.5 109T140-480q0 132 89.5 230T450-141Zm60 0q123-8 210.5-97.5T819-450H510v309Zm-30-339Zm0 400q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z" },
+    "payments": { viewBox: "0 -960 960 960", d: "M540-420q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM220-280q-24.75 0-42.37-17.63Q160-315.25 160-340v-400q0-24.75 17.63-42.38Q195.25-800 220-800h640q24.75 0 42.38 17.62Q920-764.75 920-740v400q0 24.75-17.62 42.37Q884.75-280 860-280H220Zm100-60h440q0-42 29-71t71-29v-200q-42 0-71-29t-29-71H320q0 42-29 71t-71 29v200q42 0 71 29t29 71Zm450 180H100q-24.75 0-42.37-17.63Q40-195.25 40-220v-430q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v430h670q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5ZM220-340v-400 400Z" },
+  };
+
+  // Same tokens as this.gui <Icon name="receipt_long" /> (Material Symbols rounded).
+  function guiIcon(name, size) {
+    var spec = GUI_ICONS[name];
+    var node = document.createElementNS(NS, "svg");
+    node.setAttribute("class", "wl-gui-icon");
+    node.setAttribute("viewBox", spec ? spec.viewBox : "0 0 24 24");
+    node.setAttribute("width", String(size));
+    node.setAttribute("height", String(size));
+    node.setAttribute("aria-hidden", "true");
+    node.setAttribute("focusable", "false");
+    if (spec) {
+      var path = document.createElementNS(NS, "path");
+      path.setAttribute("d", spec.d);
+      node.appendChild(path);
+    }
+    return node;
+  }
+
+
   var LANGS = [
     { lang: "en", name: "English" },
     { lang: "es", name: "Español" },
@@ -18,8 +44,34 @@
   var FRAMES = [
     { id: "whatever", label: "whatever", kind: "pair" },
     { id: "ours", label: "ours", kind: "triple" },
-    { id: "both", label: "both", kind: "triple" }
+    { id: "both", label: "both", kind: "triple" },
+    { id: "bills", kind: "triple", life: true,
+      label: { en: "bills", es: "cuentas", fr: "factures", de: "rechnungen", it: "conti", pt: "contas" },
+      icon: "receipt_long",
+      hint: { en: "rent and power this month", es: "renta y luz del mes", fr: "loyer et élec du mois", de: "miete und strom im monat", it: "affitto e luce del mese", pt: "aluguel e luz do mês" } },
+    { id: "team", kind: "triple", life: true,
+      label: { en: "team", es: "equipo", fr: "équipe", de: "team", it: "squadra", pt: "equipe" },
+      icon: "groups",
+      hint: { en: "people in the studio", es: "quiénes están en el estudio", fr: "les gens du studio", de: "wer im studio ist", it: "chi è nello studio", pt: "quem está no estúdio" } },
+    { id: "share", kind: "triple", life: true,
+      label: { en: "share", es: "parte", fr: "part", de: "anteil", it: "quota", pt: "parte" },
+      icon: "pie_chart",
+      hint: { en: "split the check", es: "partir la cuenta", fr: "diviser la note", de: "die rechnung teilen", it: "dividere il conto", pt: "dividir a conta" } },
+    { id: "pay", kind: "triple", life: true,
+      label: { en: "pay", es: "pago", fr: "paie", de: "lohn", it: "paga", pt: "pagamento" },
+      icon: "payments",
+      hint: { en: "hours times the rate", es: "horas por la tarifa", fr: "heures fois le tarif", de: "stunden mal den tarif", it: "ore per la tariffa", pt: "horas vezes a tarifa" } }
   ];
+
+  function frameText(map, lang, fallback) {
+    if (!map) return fallback || "";
+    if (typeof map === "string") return map;
+    return map[lang] || map.en || fallback || "";
+  }
+
+  function frameLabel(frame, lang) {
+    return frameText(frame.label, lang, frame.id);
+  }
 
   var EXAMPLES = {
     whatever: {
@@ -45,6 +97,38 @@
       de: { text: "setze [dies|a] auf [8|a] und [das|b] auf [3|b], und lass [beides|t] [dies|a] mal [das|b] plus eins sein", sets: [{ path: "dies", value: 8 }, { path: "das", value: 3 }], define: { name: "beides", expr: "dies * das + 1", result: 25 } },
       it: { text: "metti [questo|a] a [8|a] e [quello|b] a [3|b], e che [entrambi|t] sia [questo|a] per [quello|b] più uno", sets: [{ path: "questo", value: 8 }, { path: "quello", value: 3 }], define: { name: "entrambi", expr: "questo * quello + 1", result: 25 } },
       pt: { text: "põe [isto|a] em [8|a] e [aquilo|b] em [3|b], e que [ambos|t] sejam [isto|a] vezes [aquilo|b] mais um", sets: [{ path: "isto", value: 8 }, { path: "aquilo", value: 3 }], define: { name: "ambos", expr: "isto * aquilo + 1", result: 25 } }
+    },
+    bills: {
+      en: { text: "set [rent|a] to [1200|a] and [power|b] to [85|b], and let [month|t] be [rent|a] plus [power|b]", sets: [{ path: "rent", value: 1200 }, { path: "power", value: 85 }], define: { name: "month", expr: "rent + power", result: 1285 } },
+      es: { text: "pon [renta|a] en [1200|a] y [luz|b] en [85|b], y que [mes|t] sea [renta|a] más [luz|b]", sets: [{ path: "renta", value: 1200 }, { path: "luz", value: 85 }], define: { name: "mes", expr: "renta + luz", result: 1285 } },
+      fr: { text: "mets [loyer|a] à [1200|a] et [élec|b] à [85|b], et que [mois|t] soit [loyer|a] plus [élec|b]", sets: [{ path: "loyer", value: 1200 }, { path: "elec", value: 85 }], define: { name: "mois", expr: "loyer + elec", result: 1285 } },
+      de: { text: "setze [miete|a] auf [1200|a] und [strom|b] auf [85|b], und lass [monat|t] [miete|a] plus [strom|b] sein", sets: [{ path: "miete", value: 1200 }, { path: "strom", value: 85 }], define: { name: "monat", expr: "miete + strom", result: 1285 } },
+      it: { text: "metti [affitto|a] a [1200|a] e [luce|b] a [85|b], e che [mese|t] sia [affitto|a] più [luce|b]", sets: [{ path: "affitto", value: 1200 }, { path: "luce", value: 85 }], define: { name: "mese", expr: "affitto + luce", result: 1285 } },
+      pt: { text: "põe [aluguel|a] em [1200|a] e [luz|b] em [85|b], e que [mês|t] seja [aluguel|a] mais [luz|b]", sets: [{ path: "aluguel", value: 1200 }, { path: "luz", value: 85 }], define: { name: "mes", expr: "aluguel + luz", result: 1285 } }
+    },
+    team: {
+      en: { text: "set [design|a] to [4|a] and [eng|b] to [11|b], and let [studio|t] be [design|a] plus [eng|b]", sets: [{ path: "design", value: 4 }, { path: "eng", value: 11 }], define: { name: "studio", expr: "design + eng", result: 15 } },
+      es: { text: "pon [diseño|a] en [4|a] y [ingeniería|b] en [11|b], y que [estudio|t] sea [diseño|a] más [ingeniería|b]", sets: [{ path: "diseno", value: 4 }, { path: "ingenieria", value: 11 }], define: { name: "estudio", expr: "diseno + ingenieria", result: 15 } },
+      fr: { text: "mets [design|a] à [4|a] et [dev|b] à [11|b], et que [studio|t] soit [design|a] plus [dev|b]", sets: [{ path: "design", value: 4 }, { path: "dev", value: 11 }], define: { name: "studio", expr: "design + dev", result: 15 } },
+      de: { text: "setze [design|a] auf [4|a] und [technik|b] auf [11|b], und lass [studio|t] [design|a] plus [technik|b] sein", sets: [{ path: "design", value: 4 }, { path: "technik", value: 11 }], define: { name: "studio", expr: "design + technik", result: 15 } },
+      it: { text: "metti [design|a] a [4|a] e [sviluppo|b] a [11|b], e che [studio|t] sia [design|a] più [sviluppo|b]", sets: [{ path: "design", value: 4 }, { path: "sviluppo", value: 11 }], define: { name: "studio", expr: "design + sviluppo", result: 15 } },
+      pt: { text: "põe [design|a] em [4|a] e [dev|b] em [11|b], e que [estúdio|t] seja [design|a] mais [dev|b]", sets: [{ path: "design", value: 4 }, { path: "dev", value: 11 }], define: { name: "estudio", expr: "design + dev", result: 15 } }
+    },
+    share: {
+      en: { text: "set [bill|a] to [86|a] and [people|b] to [4|b], and let [share|t] be [bill|a] divided by [people|b]", sets: [{ path: "bill", value: 86 }, { path: "people", value: 4 }], define: { name: "share", expr: "bill / people", result: 21.5 } },
+      es: { text: "pon [cuenta|a] en [86|a] y [personas|b] en [4|b], y que [parte|t] sea [cuenta|a] entre [personas|b]", sets: [{ path: "cuenta", value: 86 }, { path: "personas", value: 4 }], define: { name: "parte", expr: "cuenta / personas", result: 21.5 } },
+      fr: { text: "mets [note|a] à [86|a] et [gens|b] à [4|b], et que [part|t] soit [note|a] divisé par [gens|b]", sets: [{ path: "note", value: 86 }, { path: "gens", value: 4 }], define: { name: "part", expr: "note / gens", result: 21.5 } },
+      de: { text: "setze [rechnung|a] auf [86|a] und [leute|b] auf [4|b], und lass [anteil|t] [rechnung|a] geteilt durch [leute|b] sein", sets: [{ path: "rechnung", value: 86 }, { path: "leute", value: 4 }], define: { name: "anteil", expr: "rechnung / leute", result: 21.5 } },
+      it: { text: "metti [conto|a] a [86|a] e [persone|b] a [4|b], e che [quota|t] sia [conto|a] diviso [persone|b]", sets: [{ path: "conto", value: 86 }, { path: "persone", value: 4 }], define: { name: "quota", expr: "conto / persone", result: 21.5 } },
+      pt: { text: "põe [conta|a] em [86|a] e [pessoas|b] em [4|b], e que [parte|t] seja [conta|a] dividido por [pessoas|b]", sets: [{ path: "conta", value: 86 }, { path: "pessoas", value: 4 }], define: { name: "parte", expr: "conta / pessoas", result: 21.5 } }
+    },
+    pay: {
+      en: { text: "set [hours|a] to [8|a] and [rate|b] to [25|b], and let [pay|t] be [hours|a] times [rate|b]", sets: [{ path: "hours", value: 8 }, { path: "rate", value: 25 }], define: { name: "pay", expr: "hours * rate", result: 200 } },
+      es: { text: "pon [horas|a] en [8|a] y [tarifa|b] en [25|b], y que [pago|t] sea [horas|a] por [tarifa|b]", sets: [{ path: "horas", value: 8 }, { path: "tarifa", value: 25 }], define: { name: "pago", expr: "horas * tarifa", result: 200 } },
+      fr: { text: "mets [heures|a] à [8|a] et [tarif|b] à [25|b], et que [paie|t] soit [heures|a] fois [tarif|b]", sets: [{ path: "heures", value: 8 }, { path: "tarif", value: 25 }], define: { name: "paie", expr: "heures * tarif", result: 200 } },
+      de: { text: "setze [stunden|a] auf [8|a] und [tarif|b] auf [25|b], und lass [lohn|t] [stunden|a] mal [tarif|b] sein", sets: [{ path: "stunden", value: 8 }, { path: "tarif", value: 25 }], define: { name: "lohn", expr: "stunden * tarif", result: 200 } },
+      it: { text: "metti [ore|a] a [8|a] e [tariffa|b] a [25|b], e che [paga|t] sia [ore|a] per [tariffa|b]", sets: [{ path: "ore", value: 8 }, { path: "tariffa", value: 25 }], define: { name: "paga", expr: "ore * tariffa", result: 200 } },
+      pt: { text: "põe [horas|a] em [8|a] e [tarifa|b] em [25|b], e que [pagamento|t] seja [horas|a] vezes [tarifa|b]", sets: [{ path: "horas", value: 8 }, { path: "tarifa", value: 25 }], define: { name: "pagamento", expr: "horas * tarifa", result: 200 } }
     }
   };
 
@@ -66,7 +150,14 @@
       return { text: "me." + s.path + "(" + s.value + ");", path: s.path };
     });
     lines.push({ text: 'me["="](' + JSON.stringify(def.name) + ", " + JSON.stringify(def.expr) + ");", path: t });
-    lines.push({ text: 'me("' + t + '");              // → ' + def.result, path: t });
+    var reads = sets.map(function (sv) {
+      return { text: 'me("' + sv.path + '");', path: sv.path, value: String(sv.value) };
+    });
+    reads.push({ text: 'me("' + t + '");', path: t, value: String(def.result), der: true });
+    if (frame.icon) {
+      lines.push({ text: "me." + t + ".icon(" + JSON.stringify(frame.icon) + ");", path: t + ".icon" });
+      reads.push({ text: 'me("' + t + '.icon");', path: t + ".icon", icon: frame.icon });
+    }
 
     var nodes, edges, depsE;
     if (frame.kind === "pair") {
@@ -96,8 +187,14 @@
         { src: sets[0].path, dst: t, d: "M140 250 Q180 286 220 298" },
         { src: sets[1].path, dst: t, d: "M356 250 Q316 286 276 298" }
       ];
+      if (frame.icon) {
+        nodes[3].r = 50;
+        nodes[3].vy = 338;
+        nodes[3].icon = frame.icon;
+        nodes.push({ path: t + ".icon", x: 248, y: 292, r: 13, iconGlyph: frame.icon, ghost: true });
+      }
     }
-    return { frame: frame, lang: langMeta, q: t, segs: segs, lines: lines, nodes: nodes, edges: edges, deps: depsE };
+    return { frame: frame, lang: langMeta, q: t, segs: segs, lines: lines, reads: reads, nodes: nodes, edges: edges, deps: depsE };
   }
 
   var MODELS = FRAMES.map(function (frame) {
@@ -122,7 +219,17 @@
     "@media (max-width:720px){.whatever-live .wl-pair{grid-template-columns:1fr}}",
     ".whatever-live .wl-script-col{min-width:0}",
     ".whatever-live .wl-links{margin:8px 2px 0;font:12px/1.4 system-ui,-apple-system,sans-serif;color:var(--muted,#656d76)}.whatever-live .wl-links a{color:inherit;text-decoration:none}.whatever-live .wl-links a:hover{color:var(--accent,#0969da)}",
-    ".whatever-live .wl-script{margin:0;padding:12px 8px;border:1px solid var(--border,#d0d7de);border-radius:10px;background:var(--subtle,#f6f8fa);overflow:auto;font:13px/1.7 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--fg,#24292f)}",
+    ".whatever-live .wl-script-wrap{border:1px solid var(--border,#d0d7de);border-radius:10px;background:var(--subtle,#f6f8fa);overflow:hidden}",
+    ".whatever-live .wl-script{margin:0;padding:12px 8px 8px;border:none;border-radius:0;background:transparent;overflow:auto;font:13px/1.7 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--fg,#24292f)}",
+    ".whatever-live .wl-reads{margin:0;padding:8px 8px 10px;border-top:1px solid var(--border,#d0d7de)}",
+    ".whatever-live .wl-read{display:flex;align-items:baseline;gap:12px;padding:3px 10px;border-radius:6px;cursor:pointer;border-left:3px solid transparent}",
+    ".whatever-live .wl-read:hover{background:color-mix(in srgb,var(--accent,#0969da) 10%,transparent)}",
+    ".whatever-live .wl-read.on{background:color-mix(in srgb,var(--accent,#0969da) 14%,transparent);border-left-color:var(--accent,#0969da)}",
+    ".whatever-live .wl-read-call{flex:1;min-width:0;font:13px/1.7 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}",
+    ".whatever-live .wl-read-arrow{font:13px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--muted,#656d76)}",
+    ".whatever-live .wl-read-val{font:italic 20px/1 Georgia,'DejaVu Serif',serif;color:var(--fg,#24292f);min-width:2ch;text-align:right}",
+    ".whatever-live .wl-read.der .wl-read-val,.whatever-live .wl-read.der .wl-read-arrow{color:var(--wl-sun,#c69026)}",
+    ".whatever-live .wl-read.der.on{border-left-color:var(--wl-sun,#c69026)}",
     ".whatever-live .wl-line{display:block;padding:2px 10px;margin:0;border-radius:6px;cursor:pointer;white-space:pre-wrap;border-left:3px solid transparent}",
     ".whatever-live .wl-line:hover{background:color-mix(in srgb,var(--accent,#0969da) 10%,transparent)}",
     ".whatever-live .wl-line.on{background:color-mix(in srgb,var(--accent,#0969da) 14%,transparent);border-left-color:var(--accent,#0969da)}",
@@ -155,7 +262,17 @@
     ".whatever-live .n .root{fill:var(--accent,#0969da);font-size:15px;text-anchor:middle}",
     ".whatever-live{--wl-sun:#c69026}",
     "@media (prefers-color-scheme:dark){.whatever-live{--wl-sun:#d29922}}",
-    "@media (prefers-reduced-motion:reduce){.whatever-live .dd{animation:none}}"
+    "@media (prefers-reduced-motion:reduce){.whatever-live .dd{animation:none}}",
+    ".whatever-live .wl-frames-more{margin:10px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:6px}",
+    ".whatever-live .wl-pill.desc{display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;column-gap:8px;align-items:center;border-radius:10px;padding:8px 12px;letter-spacing:0;width:100%;text-align:left}",
+    ".whatever-live .wl-pill-icon{grid-row:1/span 2;width:22px;height:22px;fill:currentColor}",
+    ".whatever-live .wl-pill-name{grid-column:2;font:600 11px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.06em}",
+    ".whatever-live .wl-pill-hint{grid-column:2;font:400 12px/1.35 system-ui,-apple-system,sans-serif;color:var(--muted,#656d76)}",
+    ".whatever-live .wl-gui-icon{display:block;fill:currentColor}",
+    ".whatever-live .n .wl-gui-icon{fill:var(--wl-sun,#c69026)}",
+    ".whatever-live .n.ghost circle{fill:transparent;stroke:none}",
+    ".whatever-live .wl-read-icon{display:flex;align-items:center;min-width:1.4em;color:var(--wl-sun,#c69026)}",
+    ".whatever-live .wl-read-icon .wl-gui-icon{width:22px;height:22px;fill:currentColor}"
   ].join("\n");
 
   function el(tag, attrs, parent) {
@@ -242,14 +359,33 @@
       return b;
     });
     var frames = el("div", { class: "wl-frames", role: "tablist", "aria-label": "example" });
+    var framesMore = el("div", { class: "wl-frames wl-frames-more", role: "tablist", "aria-label": "everyday examples" });
+    function paintFramePill(b, F, lang, on) {
+      b.className = "wl-pill" + (F.life ? " desc" : "") + (on ? " on" : "");
+      b.setAttribute("aria-selected", on ? "true" : "false");
+      var name = frameLabel(F, lang);
+      if (!F.life) {
+        b.textContent = name;
+        return;
+      }
+      b.textContent = "";
+      if (F.icon) {
+        var ic = guiIcon(F.icon, 22);
+        ic.setAttribute("class", "wl-gui-icon wl-pill-icon");
+        b.appendChild(ic);
+      }
+      el("span", { class: "wl-pill-name", text: name }, b);
+      el("span", { class: "wl-pill-hint", text: frameText(F.hint, lang) }, b);
+    }
     var frameEls = FRAMES.map(function (F, i) {
       var b = el("button", {
-        class: "wl-pill" + (i === 0 ? " on" : ""),
+        class: "wl-pill" + (F.life ? " desc" : "") + (i === 0 ? " on" : ""),
         type: "button",
         role: "tab",
-        "aria-selected": i === 0 ? "true" : "false",
-        text: F.label
-      }, frames);
+        "data-id": F.id,
+        "aria-selected": i === 0 ? "true" : "false"
+      }, F.life ? framesMore : frames);
+      paintFramePill(b, F, "en", i === 0);
       b.addEventListener("click", function () { show(li, i); });
       return b;
     });
@@ -315,6 +451,7 @@
         var g = nodeEls[n.path];
         var cls = "n";
         if (n.der) cls += " der";
+        if (n.ghost) cls += " ghost";
         if (n.path === current) cls += " sel";
         else if (on[n.path] || rel[n.path]) cls += " path";
         g.setAttribute("class", cls);
@@ -352,8 +489,7 @@
         b.setAttribute("aria-selected", i === li ? "true" : "false");
       });
       frameEls.forEach(function (b, i) {
-        b.className = "wl-pill" + (i === fi ? " on" : "");
-        b.setAttribute("aria-selected", i === fi ? "true" : "false");
+        paintFramePill(b, FRAMES[i], G.lang.lang, i === fi);
       });
 
       say.textContent = "";
@@ -375,11 +511,12 @@
       pair.textContent = "";
       var graph = el("div", { class: "wl-graph" }, pair);
       var col = el("div", { class: "wl-script-col" }, pair);
-      var pane = el("pre", { class: "wl-script", "aria-label": "me.whatever(what) script" }, col);
+      var wrap = el("div", { class: "wl-script-wrap" }, col);
+      var pane = el("pre", { class: "wl-script", "aria-label": "me.whatever(what) script" }, wrap);
       var svgRoot = svg("svg", {
         viewBox: "20 20 460 360",
         role: "img",
-        "aria-label": "Path tree: " + G.frame.label + " in " + G.lang.name
+        "aria-label": "Path tree: " + frameLabel(G.frame, G.lang.lang) + " in " + G.lang.name
       }, graph);
       var defs = svg("defs", {}, svgRoot);
       var filter = svg("filter", { id: "wlGlow", x: "-20%", y: "-20%", width: "140%", height: "140%" }, defs);
@@ -400,6 +537,27 @@
         paint(ln.text, row);
         lineEls.push(row);
         bind(row, ln.path);
+      });
+      var reads = el("div", { class: "wl-reads", "aria-label": "get" }, wrap);
+      (G.reads || []).forEach(function (rd) {
+        var row = el("div", {
+          class: "wl-read" + (rd.der ? " der" : ""),
+          tabindex: "0",
+          role: "button",
+          "data-path": rd.path,
+          "aria-label": rd.text + " " + rd.value
+        }, reads);
+        var call = el("span", { class: "wl-read-call" }, row);
+        paint(rd.text, call);
+        el("span", { class: "wl-read-arrow", text: "→" }, row);
+        if (rd.icon) {
+          var ival = el("span", { class: "wl-read-val wl-read-icon" }, row);
+          ival.appendChild(guiIcon(rd.icon, 22));
+        } else {
+          el("span", { class: "wl-read-val", text: rd.value }, row);
+        }
+        lineEls.push(row);
+        bind(row, rd.path);
       });
 
       edgeEls = [];
@@ -423,7 +581,12 @@
         }, gN);
         svg("circle", { cx: String(n.x), cy: String(n.y), r: String(n.r) }, g);
         if (n.root) svg("text", { class: "root", x: n.x, y: n.y + 5, text: "me" }, g);
-        else {
+        else if (n.iconGlyph) {
+          var glyph = guiIcon(n.iconGlyph, 22);
+          glyph.setAttribute("x", String(n.x - 11));
+          glyph.setAttribute("y", String(n.y - 11));
+          g.appendChild(glyph);
+        } else {
           svg("text", { class: "lb", x: n.lx != null ? n.lx : n.x, y: n.ly, text: n.label }, g);
           if (n.value) svg("text", { class: "v", x: n.x, y: n.vy, text: n.value }, g);
         }
@@ -431,6 +594,7 @@
         bind(g, n.path);
       });
       apply(pinned);
+      col.appendChild(framesMore);
     }
 
     function show(newLi, newFi) {

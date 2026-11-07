@@ -364,19 +364,45 @@ tr:nth-child(2n) {
 }
 
 
-/* GitHub shows beetle | graph in #gh-hero; Pages keeps only the beetle. */
-#gh-hero table {
+/* GitHub shows beetle | graph in #gh-hero; Pages keeps only the beetle.
+   The beetle PNG is 1024px (dark) / 500px (light); cap it and let it shrink. */
+#gh-hero {
+  text-align: center;
+}
+#gh-hero table,
+#gh-hero tbody,
+#gh-hero tr {
   display: block;
-  width: auto;
+  width: 100%;
   max-width: 100%;
 }
 #gh-hero td {
+  display: block;
+  width: auto !important;
+  max-width: 100%;
   padding: 0;
   border: 0;
   background: transparent;
 }
 #gh-hero td:last-child {
   display: none;
+}
+#gh-hero picture {
+  display: block;
+  margin: 0 auto;
+  width: min(220px, 42vw);
+  max-width: 100%;
+}
+#gh-hero img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 767px) {
+  #gh-hero picture {
+    width: min(140px, 36vw);
+  }
 }
 
 /* me.whatever(what) pair: graph left (under beetle), script right; no data-table chrome */

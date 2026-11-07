@@ -1,14 +1,19 @@
-<svg viewBox="0 0 720 90" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg viewBox="0 0 720 144" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">me.whatever(what)</title>
-  <desc id="desc">Colored .me script: whatever follows what times two plus one.</desc>
+  <desc id="desc">Say what, derive whatever, then get both values.</desc>
   <style>
-    svg { --ink:#24292f; --me:#0969da; --str:#0a7d3f; --num:#b45309; --com:#6b7280; }
+    svg { --ink:#24292f; --me:#0969da; --str:#0a7d3f; --num:#b45309; --com:#6b7280; --sun:#c69026; --mut:#656d76; }
     @media (prefers-color-scheme: dark) {
-      svg { --ink:#c9d1d9; --me:#58a6ff; --str:#86efac; --num:#fbbf24; --com:#8b949e; }
+      svg { --ink:#c9d1d9; --me:#58a6ff; --str:#86efac; --num:#fbbf24; --com:#8b949e; --sun:#d29922; --mut:#8b949e; }
     }
     text { font: 15px/1.7 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre; }
   </style>
     <text x="4" y="22"><tspan fill="var(--me)">me</tspan><tspan fill="var(--ink)">.what(</tspan><tspan fill="var(--num)">8</tspan><tspan fill="var(--ink)">);</tspan></text>
     <text x="4" y="48"><tspan fill="var(--me)">me</tspan><tspan fill="var(--ink)">[</tspan><tspan fill="var(--str)">&quot;=&quot;</tspan><tspan fill="var(--ink)">](</tspan><tspan fill="var(--str)">&quot;whatever&quot;</tspan><tspan fill="var(--ink)">, </tspan><tspan fill="var(--str)">&quot;what * 2 + 1&quot;</tspan><tspan fill="var(--ink)">);</tspan></text>
-    <text x="4" y="74"><tspan fill="var(--me)">me</tspan><tspan fill="var(--ink)">(</tspan><tspan fill="var(--str)">&quot;whatever&quot;</tspan><tspan fill="var(--ink)">);              </tspan><tspan fill="var(--com)" font-style="italic">// → 17</tspan></text>
+    <text x="4" y="96"><tspan fill="var(--me)">me</tspan><tspan fill="var(--ink)">(</tspan><tspan fill="var(--str)">&quot;what&quot;</tspan><tspan fill="var(--ink)">);</tspan></text>
+    <text x="420" y="96" text-anchor="start" fill="var(--mut)">→</text>
+    <text x="448" y="96" font-style="italic" fill="var(--ink)" font-size="20" font-family="Georgia, 'DejaVu Serif', serif">8</text>
+    <text x="4" y="124"><tspan fill="var(--me)">me</tspan><tspan fill="var(--ink)">(</tspan><tspan fill="var(--str)">&quot;whatever&quot;</tspan><tspan fill="var(--ink)">);</tspan></text>
+    <text x="420" y="124" text-anchor="start" fill="var(--mut)">→</text>
+    <text x="448" y="124" font-style="italic" fill="var(--sun)" font-size="20" font-family="Georgia, 'DejaVu Serif', serif">17</text>
 </svg>

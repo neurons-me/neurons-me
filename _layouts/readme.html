@@ -7,6 +7,11 @@
   {% assign page_title = page.title | default: site.title | escape %}
   {% assign page_description = page.description | default: site.description | escape %}
   {% assign social_image = page.image | default: site.me_theme.social_image | default: site.image %}
+  {% if social_image %}
+    {% unless social_image contains "://" %}
+      {% assign social_image = social_image | absolute_url %}
+    {% endunless %}
+  {% endif %}
   {% assign page_url = page.url | absolute_url %}
   <title>{{ page_title }}</title>
   <meta name="description" content="{{ page_description }}" />
@@ -29,6 +34,9 @@
   {% if social_image %}
   <meta property="og:image" content="{{ social_image }}" />
   <meta property="og:image:secure_url" content="{{ social_image }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="neurons.me beetle" />
   {% endif %}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{{ page_title }}" />

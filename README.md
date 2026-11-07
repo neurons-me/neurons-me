@@ -5,15 +5,37 @@
   <source media="(prefers-color-scheme: dark)" srcset="./assets/beatle.me.png">
   <img src="./assets/black.beatle.me.png" 
        alt="neurons.me — Sovereign Semantic Runtime" 
-       width="280" 
-       style="float: right; margin-left: 25px; margin-bottom: 15px; border-radius: 8px;">
+       width="220" 
+       style="border-radius: 8px;">
 </picture>
 
-## ∴ Your mind, running locally.
-```typescript
-me.profile.name("Ana")
-me("profile.name")  // "Ana"
-```
+<div class="whatever-live" id="whatever-live">
+<table>
+<tr>
+<td valign="top" align="center" width="280">
+<a href="https://neurons-me.github.io/.me/docs/me-whatever-what.html">
+<img src="./assets/whatever-tree.svg" width="280" alt="Path tree: pantry.seeds and pantry.honey derive food; food and bees derive ration" />
+</a>
+</td>
+<td valign="top">
+<h2>me.whatever(what)</h2>
+<pre><code>me.colony.pantry.seeds(40);
+me.colony.pantry.honey(12);
+me.colony.bees(4);
+me.colony["="]("food", "pantry.seeds + pantry.honey");
+me.colony["="]("ration", "food / bees");
+me("colony.food");            // → 52
+me.colony.pantry.seeds(48);   // more seeds arrive
+me("colony.food");            // → 60, recomputed
+me("colony.ration");          // → 15, recomputed
+</code></pre>
+<p><small><a href="https://neurons-me.github.io/.me/docs/Syntax.html">.me syntax</a> · <a href="https://neurons-me.github.io/.me/docs/Operators.html">operators</a> · <a href="https://neurons-me.github.io/.me/docs/Explain.html">me.explain()</a></small></p>
+</td>
+</tr>
+</table>
+</div>
+<script src="./assets/whatever-live.js" defer></script>
+
 
 <div align="center">
 <table>

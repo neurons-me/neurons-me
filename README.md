@@ -12,12 +12,12 @@
 <div class="whatever-live" id="whatever-live">
 <table width="100%">
 <tr>
-<td valign="top" align="center" width="280">
+<td valign="top" align="center" width="420">
 <a href="https://neurons-me.github.io/.me/docs/me-whatever-what.html">
-<img src="./assets/whatever-tree.svg" width="280" alt="Path tree: pantry.seeds and pantry.honey derive food; food and bees derive ration" />
+<img src="./assets/whatever-tree.svg" width="400" alt="Path tree: pantry.seeds and pantry.honey derive food; food and bees derive ration" />
 </a>
 </td>
-<td valign="top" width="720">
+<td valign="top" width="580">
 <h2>me.whatever(what)</h2>
 <pre><code>me.colony.pantry.seeds(40);
 me.colony.pantry.honey(12);

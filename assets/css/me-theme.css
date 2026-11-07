@@ -287,16 +287,16 @@ table {
 th,
 td {
   padding: 6px 13px;
-  border: 1px solid var(--border);
+  border: 0;
 }
 
 tr {
-  background-color: var(--bg);
-  border-top: 1px solid var(--border);
+  background-color: transparent;
+  border: 0;
 }
 
 tr:nth-child(2n) {
-  background-color: var(--subtle);
+  background-color: transparent;
 }
 
 @media (prefers-color-scheme: dark) {

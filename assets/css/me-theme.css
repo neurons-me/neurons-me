@@ -364,6 +364,21 @@ tr:nth-child(2n) {
 }
 
 
+/* GitHub shows beetle | graph in #gh-hero; Pages keeps only the beetle. */
+#gh-hero table {
+  display: block;
+  width: auto;
+  max-width: 100%;
+}
+#gh-hero td {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+#gh-hero td:last-child {
+  display: none;
+}
+
 /* me.whatever(what) pair: graph left (under beetle), script right; no data-table chrome */
 .whatever-live {
   clear: both;

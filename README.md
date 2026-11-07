@@ -1,6 +1,10 @@
 # **Welcome to .me**
 > **Go Algorithmic.**
 
+<div id="gh-hero">
+<table>
+<tr>
+<td valign="middle" align="center" width="240">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/beatle.me.png">
   <img src="./assets/black.beatle.me.png" 
@@ -8,31 +12,21 @@
        width="220" 
        style="border-radius: 8px;">
 </picture>
-
-<div class="whatever-live" id="whatever-live">
-<table width="100%">
-<tr>
-<td valign="top" align="center" width="420">
-<a href="https://neurons-me.github.io/.me/docs/me-whatever-what.html">
-<img src="./assets/whatever-tree.svg" width="400" alt="Path tree: pantry.seeds and pantry.honey derive food; food and bees derive ration" />
-</a>
 </td>
-<td valign="top" width="580">
-<h2>me.whatever(what)</h2>
-<pre><code>me.colony.pantry.seeds(40);
-me.colony.pantry.honey(12);
-me.colony.bees(4);
-me.colony["="]("food", "pantry.seeds + pantry.honey");
-me.colony["="]("ration", "food / bees");
-me("colony.food");            // → 52
-me.colony.pantry.seeds(48);   // more seeds arrive
-me("colony.food");            // → 60, recomputed
-me("colony.ration");          // → 15, recomputed
-</code></pre>
-<p><small><a href="https://neurons-me.github.io/.me/docs/Syntax.html">.me syntax</a> · <a href="https://neurons-me.github.io/.me/docs/Operators.html">operators</a> · <a href="https://neurons-me.github.io/.me/docs/Explain.html">me.explain()</a></small></p>
+<td valign="middle" align="center" width="420">
+<a href="https://neurons-me.github.io/.me/docs/me-whatever-what.html">
+<img src="./assets/whatever-tree.svg" width="400" alt="Path tree: what derives whatever" />
+</a>
 </td>
 </tr>
 </table>
+</div>
+
+<div class="whatever-live" id="whatever-live">
+<h2>me.whatever(what)</h2>
+<p><em>“set what to 8 and let whatever follow what times two plus one”</em></p>
+<img src="./assets/whatever-script.svg" width="720" alt="me.whatever(what) script: whatever follows what times two plus one" />
+<p><small><a href="https://neurons-me.github.io/.me/docs/Syntax.html">.me syntax</a> · <a href="https://neurons-me.github.io/.me/docs/Operators.html">operators</a> · <a href="https://neurons-me.github.io/.me/docs/Explain.html">me.explain()</a></small></p>
 </div>
 
 

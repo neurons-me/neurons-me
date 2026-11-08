@@ -1,4 +1,4 @@
-// .GUI topbar (this.gui@4.4.1) for Pages layout: readme. Mounts only the shared
+// .GUI topbar (this.gui@4.4.2) for Pages layout: readme. Mounts only the shared
 // landing topbar (logo, me:// path, SearchBar, Docs, GitHub, theme, mode, gear)
 // into #gui-root. The markdown body and whatever-live widget stay as they are.
 // The static #static-topbar header is the no-JS / CDN-failure fallback.

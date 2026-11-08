@@ -1,6 +1,6 @@
-// Compact me.whatever(what) figure: the title stays; examples and languages cycle.
+// Compact me.whatever(what) figure: the title stays; examples cycle.
 // Hover a word, a line or a node to see the same path on every side.
-// Language pills cycle like the .me/LLMS hero (without depending on that project).
+// Countries are a filter: each one marks a language; no language is privileged.
 // Loaded from the Pages layout, not the README.
 (function () {
   "use strict";
@@ -33,12 +33,13 @@
 
 
   var LANGS = [
-    { lang: "en", name: "English" },
-    { lang: "es", name: "Español" },
-    { lang: "fr", name: "Français" },
-    { lang: "de", name: "Deutsch" },
-    { lang: "it", name: "Italiano" },
-    { lang: "pt", name: "Português" }
+    { lang: "es", country: "MXN", name: "México" },
+    { lang: "en", country: "UK", name: "United Kingdom" },
+    { lang: "en", country: "USA", name: "United States" },
+    { lang: "fr", country: "FRA", name: "France" },
+    { lang: "de", country: "GER", name: "Deutschland" },
+    { lang: "it", country: "ITA", name: "Italia" },
+    { lang: "pt", country: "BRA", name: "Brasil" }
   ];
 
   var FRAMES = [
@@ -209,7 +210,7 @@
     ".whatever-live .wl-title{margin:0}",
     ".whatever-live .wl-langs,.whatever-live .wl-frames{display:flex;flex-wrap:wrap;gap:6px}",
     ".whatever-live .wl-frames{margin:0 0 12px}",
-    ".whatever-live .wl-pill{font:600 11px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.06em;padding:5px 10px;border-radius:999px;border:1px solid var(--border,#d0d7de);background:transparent;color:var(--muted,#656d76);cursor:pointer}",
+    ".whatever-live .wl-pill{display:inline-flex;align-items:center;gap:7px;font:600 11px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.06em;padding:5px 11px;border-radius:999px;border:1px solid var(--border,#d0d7de);background:transparent;color:var(--muted,#656d76);cursor:pointer}",
     ".whatever-live .wl-pill:hover{color:var(--fg,#24292f)}",
     ".whatever-live .wl-pill.on{border-color:var(--accent,#0969da);color:var(--accent,#0969da);background:color-mix(in srgb,var(--accent,#0969da) 12%,transparent)}",
     ".whatever-live .wl-say{font:600 17px/1.45 system-ui,-apple-system,sans-serif;margin:0 0 14px;color:var(--fg,#24292f)}",
@@ -344,7 +345,7 @@
 
     var head = el("div", { class: "wl-head" });
     el("h2", { class: "wl-title", text: "me.whatever(what)" }, head);
-    var pills = el("div", { class: "wl-langs", role: "tablist", "aria-label": "language" }, head);
+    var pills = el("div", { class: "wl-langs", role: "tablist", "aria-label": "country" }, head);
     var pillEls = LANGS.map(function (L, i) {
       var b = el("button", {
         class: "wl-pill" + (i === 0 ? " on" : ""),
@@ -353,8 +354,9 @@
         "aria-selected": i === 0 ? "true" : "false",
         lang: L.lang,
         title: L.name,
-        text: L.lang.toUpperCase()
+        "data-country": L.country
       }, pills);
+      el("span", { class: "wl-pill-code", text: L.country }, b);
       b.addEventListener("click", function () { show(i, fi); });
       return b;
     });

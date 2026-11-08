@@ -33,9 +33,8 @@
 
 
   var LANGS = [
-    { lang: "es", country: "MXN", name: "México" },
-    { lang: "en", country: "UK", name: "United Kingdom" },
-    { lang: "en", country: "USA", name: "United States" },
+    { lang: "es", country: "ESP", name: "Español" },
+    { lang: "en", country: "ENG", name: "English" },
     { lang: "fr", country: "FRA", name: "France" },
     { lang: "de", country: "GER", name: "Deutschland" },
     { lang: "it", country: "ITA", name: "Italia" },

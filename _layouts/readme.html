@@ -48,47 +48,39 @@
   <link rel="icon" type="image/png" href="{{ favicon_url }}">
   <link rel="apple-touch-icon" href="{{ favicon_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/me-theme.css' | relative_url }}">
+  <!-- .GUI topbar (this.gui@4.4.1) via assets/readme-gui.js; the header below stays as the no-JS / CDN-failure fallback.
+       Page-scoped theme keys; default mode follows the stored choice or prefers-color-scheme. -->
+  <script>
+    window.__thisGuiThemeScope = { scopeId: "neurons-me-readme", themeModeKey: "neurons-me-readme.themeMode", themeIdKey: "neurons-me-readme.themeId", defaultMode: "dark" };
+    try {
+      if (!localStorage.getItem("neurons-me-readme.themeId")) localStorage.setItem("neurons-me-readme.themeId", "neurons.me");
+      var storedMode = localStorage.getItem("neurons-me-readme.themeMode");
+      var prefDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.guiMode = storedMode || (prefDark ? "dark" : "light");
+    } catch (e) {}
+    document.documentElement.classList.add("gui-boot");
+  </script>
+  <style>.material-symbols-rounded,.material-symbols-outlined,.material-icons{display:none!important}</style>
+  <script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/this.gui@4.4.1/dist/this.gui.umd.js" integrity="sha384-OZx86v8qCNNkYnyDgQeAH07PwqdOSw3peEXABwQqb0dmXV1u1rPETLUI1BicbEbY" crossorigin="anonymous"></script>
 </head>
 <body>
-  {% assign brand_label = site.me_theme.brand | default: site.title | default: '.me' %}
-  {% assign nav_items = site.me_theme.nav %}
-
-  <header class="topbar">
-    <div class="topbar-inner">
-      <a class="brand" href="https://neurons-me.github.io/">
-        <img class="brand-logo" src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1760629064/neurons.me_b50f6a.png" alt="" width="28" height="28" />
-        <span>{{ brand_label }}</span>
-      </a>
-      <div
-        class="topbar-search"
-        data-gui-searchbar
-        data-src="https://neurons-me.github.io/index.json"
-        data-placeholder="Search in All.This"
-      ></div>
-      <nav class="nav-links" aria-label="Main navigation">
-        {% if nav_items %}
-          {% for item in nav_items %}
-            {% if item.relative_url %}
-              <a href="{{ item.relative_url | relative_url }}">{{ item.label }}</a>
-            {% else %}
-              <a href="{{ item.url }}">{{ item.label }}</a>
-            {% endif %}
-          {% endfor %}
-        {% else %}
-          <a href="https://neurons-me.github.io/all.this/">All.This</a>
-          <a href="https://www.npmjs.com/package/this.me">NPM</a>
-          <a href="{{ '/npm/typedocs/' | relative_url }}">TypeDocs</a>
-        {% endif %}
-      </nav>
-    </div>
+  <div id="gui-root"></div>
+  <header class="topbar" id="static-topbar">
+    <a class="logo" href="https://neurons-me.github.io/" title="neurons.me"><img src="https://res.cloudinary.com/dkwnxf6gm/image/upload/v1760629064/neurons.me_b50f6a.png" alt="neurons.me" width="28" height="28" /></a>
+    <div class="mepath"><a href="https://neurons-me.github.io/.me/" title=".me">me://</a></div>
+    <span class="spacer"></span>
+    <a class="act" data-topbar="docs" href="https://neurons-me.github.io/.me/docs/">Docs</a>
+    <a class="gh" href="https://github.com/neurons-me">GitHub</a>
   </header>
 
   <main class="markdown-body">
     {{ content }}
   </main>
 
-  <script src="https://neurons-me.github.io/vendor/gui-searchbar.iife.js" defer></script>
-  <script src="{{ '/assets/whatever-live.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/readme-gui.js' | relative_url }}"></script>
+  <script src="{{ '/assets/whatever-live.js' | relative_url }}"></script>
 </body>
 </html>
 

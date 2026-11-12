@@ -26,7 +26,6 @@
 <h2>me.whatever(what)</h2>
 <p><em>“set what to 8 and let whatever follow what times two plus one”</em></p>
 <img src="./assets/whatever-script.svg?v=9" width="720" alt="me.whatever(what) script: whatever follows what times two plus one" />
-<p><small><a href="https://neurons-me.github.io/.me/docs/Syntax.html">.me syntax</a> · <a href="https://neurons-me.github.io/.me/docs/Operators.html">operators</a> · <a href="https://neurons-me.github.io/.me/docs/Explain.html">me.explain()</a></small></p>
 </div>
 
 

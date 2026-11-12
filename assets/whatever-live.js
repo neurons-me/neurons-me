@@ -42,7 +42,12 @@
   ];
 
   var FRAMES = [
-    { id: "whatever", label: "whatever", kind: "pair" },
+    { id: "y", kind: "paths",
+      label: { en: "y", es: "y", fr: "y", de: "y", it: "y", pt: "y" } },
+    { id: "letter", kind: "kv",
+      label: { en: "letter", es: "letra", fr: "lettre", de: "buchstabe", it: "lettera", pt: "letra" } },
+    { id: "number", kind: "kv",
+      label: { en: "number", es: "número", fr: "nombre", de: "zahl", it: "numero", pt: "número" } },
     { id: "ours", label: "ours", kind: "triple" },
     { id: "both", label: "both", kind: "triple" },
     { id: "bills", kind: "triple", life: true,
@@ -74,13 +79,29 @@
   }
 
   var EXAMPLES = {
-    whatever: {
-      en: { text: "set [what|w] to [8|w] and let [whatever|W] follow [what|w] times two plus one", sets: [{ path: "what", value: 8 }], define: { name: "whatever", expr: "what * 2 + 1", result: 17 } },
-      es: { text: "pon [qué|w] en [8|w] y que [cualquiera|W] siga a [qué|w] por dos más uno", sets: [{ path: "que", value: 8 }], define: { name: "cualquiera", expr: "que * 2 + 1", result: 17 } },
-      fr: { text: "mets [quoi|w] à [8|w] et que [quelconque|W] suive [quoi|w] fois deux plus un", sets: [{ path: "quoi", value: 8 }], define: { name: "quelconque", expr: "quoi * 2 + 1", result: 17 } },
-      de: { text: "setze [was|w] auf [8|w] und lass [beliebig|W] [was|w] mal zwei plus eins folgen", sets: [{ path: "was", value: 8 }], define: { name: "beliebig", expr: "was * 2 + 1", result: 17 } },
-      it: { text: "metti [cosa|w] a [8|w] e lascia che [qualunque|W] segua [cosa|w] per due più uno", sets: [{ path: "cosa", value: 8 }], define: { name: "qualunque", expr: "cosa * 2 + 1", result: 17 } },
-      pt: { text: "põe [o que|w] em [8|w] e que [qualquer|W] siga [o que|w] vezes dois mais um", sets: [{ path: "que", value: 8 }], define: { name: "qualquer", expr: "que * 2 + 1", result: 17 } }
+    y: {
+      en: { text: "set [a|a] to [2|a], [b|b] to [3|b] and [x|x] to [4|x], and let [y|t] be [a|a] times [x|x] plus [b|b]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 } },
+      es: { text: "pon [a|a] en [2|a], [b|b] en [3|b] y [x|x] en [4|x], y que [y|t] sea [a|a] por [x|x] más [b|b]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 } },
+      fr: { text: "mets [a|a] à [2|a], [b|b] à [3|b] et [x|x] à [4|x], et que [y|t] soit [a|a] fois [x|x] plus [b|b]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 } },
+      de: { text: "setze [a|a] auf [2|a], [b|b] auf [3|b] und [x|x] auf [4|x], und lass [y|t] [a|a] mal [x|x] plus [b|b] sein", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 } },
+      it: { text: "metti [a|a] a [2|a], [b|b] a [3|b] e [x|x] a [4|x], e che [y|t] sia [a|a] per [x|x] più [b|b]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 } },
+      pt: { text: "põe [a|a] em [2|a], [b|b] em [3|b] e [x|x] em [4|x], e que [y|t] seja [a|a] vezes [x|x] mais [b|b]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 } }
+    },
+    letter: {
+      en: { text: "set [letter|W] to [b|w]", path: "letter", value: "b" },
+      es: { text: "pon [letra|W] en [b|w]", path: "letra", value: "b" },
+      fr: { text: "mets [lettre|W] à [b|w]", path: "lettre", value: "b" },
+      de: { text: "setze [buchstabe|W] auf [b|w]", path: "buchstabe", value: "b" },
+      it: { text: "metti [lettera|W] a [b|w]", path: "lettera", value: "b" },
+      pt: { text: "põe [letra|W] em [b|w]", path: "letra", value: "b" }
+    },
+    number: {
+      en: { text: "set [number|W] to [2|w]", path: "number", value: 2 },
+      es: { text: "pon [número|W] en [2|w]", path: "numero", value: 2 },
+      fr: { text: "mets [nombre|W] à [2|w]", path: "nombre", value: 2 },
+      de: { text: "setze [zahl|W] auf [2|w]", path: "zahl", value: 2 },
+      it: { text: "metti [numero|W] a [2|w]", path: "numero", value: 2 },
+      pt: { text: "põe [número|W] em [2|w]", path: "numero", value: 2 }
     },
     ours: {
       en: { text: "set [mine|a] to [8|a] and [yours|b] to [3|b], and let [ours|t] be [mine|a] times [yours|b] plus one", sets: [{ path: "mine", value: 8 }, { path: "yours", value: 3 }], define: { name: "ours", expr: "mine * yours + 1", result: 25 } },
@@ -132,22 +153,129 @@
     }
   };
 
-  function build(frame, langMeta, ex) {
-    var sets = ex.sets;
-    var def = ex.define;
-    var t = def.name;
-    var ROLE = { w: sets[0].path, W: t, a: sets[0].path, t: t };
-    if (sets[1]) ROLE.b = sets[1].path;
+  var MECtor = null;
+  var KERNEL_URL = "https://cdn.jsdelivr.net/npm/this.me@4.2.1/dist/me.es.js";
+
+  function literal(value) {
+    return typeof value === "number" ? String(value) : JSON.stringify(value);
+  }
+
+  function computeResult(sets, name, expr) {
+    if (!MECtor || !sets || !name || !expr) return null;
+    try {
+      var me = new MECtor();
+      sets.forEach(function (s) { me[s.path](s.value); });
+      me["="](name, expr);
+      return me(name);
+    } catch (err) {
+      return null;
+    }
+  }
+
+  function parseCaption(text, ROLE) {
     var segs = [], re = /\[([^|\]]+)\|([^\]]+)\]/g, i = 0, mm;
-    while ((mm = re.exec(ex.text))) {
-      if (mm.index > i) segs.push({ t: ex.text.slice(i, mm.index) });
+    while ((mm = re.exec(text))) {
+      if (mm.index > i) segs.push({ t: text.slice(i, mm.index) });
       segs.push({ t: mm[1], path: ROLE[mm[2]] });
       i = re.lastIndex;
     }
-    if (i < ex.text.length) segs.push({ t: ex.text.slice(i) });
+    if (i < text.length) segs.push({ t: text.slice(i) });
+    return segs;
+  }
 
+  function sep(x1, y1, r1, x2, y2, r2) {
+    var dx = x2 - x1, dy = y2 - y1, len = Math.sqrt(dx * dx + dy * dy) || 1;
+    var ux = dx / len, uy = dy / len;
+    return { sx: x1 + ux * r1, sy: y1 + uy * r1, ex: x2 - ux * r2, ey: y2 - uy * r2 };
+  }
+  function lineTo(x1, y1, r1, x2, y2, r2) {
+    var p = sep(x1, y1, r1, x2, y2, r2);
+    return "M" + p.sx.toFixed(1) + " " + p.sy.toFixed(1) + " L" + p.ex.toFixed(1) + " " + p.ey.toFixed(1);
+  }
+  function curveTo(x1, y1, r1, x2, y2, r2) {
+    var p = sep(x1, y1, r1, x2, y2, r2);
+    var cx = (p.sx + p.ex) / 2, cy = (p.sy + p.ey) / 2 + 8;
+    return {
+      d: "M" + p.sx.toFixed(1) + " " + p.sy.toFixed(1) + " Q" + cx.toFixed(1) + " " + cy.toFixed(1) + " " + p.ex.toFixed(1) + " " + p.ey.toFixed(1),
+      lx: cx,
+      ly: cy - 5
+    };
+  }
+
+  // Each input is a path: me -> whatever (key) -> what (value).
+  // If def is set, [=] edges feed a derived node, using real me["="](name, expr).
+  function layoutPaths(sets, def, icon) {
+    var n = sets.length;
+    var cx = 248;
+    var xs;
+    if (n <= 1) xs = [cx];
+    else if (n === 2) xs = [118, 378];
+    else if (n === 3) xs = [92, 248, 404];
+    else {
+      var span = 312, left = cx - span / 2;
+      xs = sets.map(function (_, i) { return left + (span * i) / (n - 1); });
+    }
+    var meY = 40, keyY = 145, valY = 255, derY = 375;
+    var keyR = 32, valR = 36, derR = icon ? 50 : 36;
+    var nodes = [{ path: "", x: cx, y: meY, r: 22, root: true }];
+    var edges = [];
+    var deps = [];
+    sets.forEach(function (s, i) {
+      var x = xs[i];
+      nodes.push({ path: s.path, x: x, y: keyY, r: keyR, label: "whatever", ly: keyY - 48, keyText: s.path, ky: keyY + 5 });
+      nodes.push({ path: s.path, x: x, y: valY, r: valR, label: "what", ly: valY - 52, value: String(s.value), vy: valY + 7, der: true, tunable: typeof s.value === "number" });
+      edges.push({ a: "", b: s.path, d: lineTo(cx, meY, 22, x, keyY, keyR) });
+      edges.push({ a: s.path, b: s.path, d: lineTo(x, keyY, keyR, x, valY, valR) });
+      if (def) {
+        var c = curveTo(x, valY, valR, cx, derY, derR);
+        var side = Math.abs(x - cx) > 20;
+        deps.push({ src: s.path, dst: def.name, d: c.d, label: side ? "[=]" : "", lx: c.lx, ly: c.ly });
+      }
+    });
+    if (def) {
+      var der = {
+        path: def.name, x: cx, y: derY, r: derR,
+        label: def.name + " [=]", ly: derY - (icon ? 66 : 52),
+        value: String(def.result), vy: derY + (icon ? 14 : 7),
+        der: true, expr: def.expr
+      };
+      if (icon) der.icon = icon;
+      nodes.push(der);
+      if (icon) nodes.push({ path: def.name + ".icon", x: cx, y: derY - 18, r: 13, iconGlyph: icon, ghost: true });
+    }
+    return { nodes: nodes, edges: edges, deps: deps };
+  }
+
+  function buildKv(frame, langMeta, ex) {
+    var path = ex.path;
+    var val = ex.value;
+    var ROLE = { W: path, w: path };
+    var segs = parseCaption(ex.text, ROLE);
+    var lines = [{ text: "me." + path + "(" + literal(val) + ");", path: path }];
+    var reads = [{ text: 'me("' + path + '");', path: path, value: String(val) }];
+    var lay = layoutPaths([{ path: path, value: val }], null, null);
+    return { frame: frame, lang: langMeta, q: path, segs: segs, lines: lines, reads: reads, nodes: lay.nodes, edges: lay.edges, deps: lay.deps, ex: ex };
+  }
+
+  function build(frame, langMeta, ex) {
+    if (frame.kind === "kv") return buildKv(frame, langMeta, ex);
+    var sets = ex.sets;
+    var def = ex.define;
+    var computed = computeResult(sets, def.name, def.expr);
+    if (computed != null) def.result = computed;
+    var t = def.name;
+    var ROLE = { w: sets[0].path, W: t, a: sets[0].path, t: t };
+    if (sets[1]) ROLE.b = sets[1].path;
+    if (sets[2]) ROLE.x = sets[2].path;
+    // 3-input algebra uses a, b, x in the caption (not a/b as the first two only).
+    if (sets.length >= 3) {
+      ROLE.a = sets[0].path;
+      ROLE.b = sets[1].path;
+      ROLE.x = sets[2].path;
+    }
+    var segs = parseCaption(ex.text, ROLE);
     var lines = sets.map(function (s) {
-      return { text: "me." + s.path + "(" + s.value + ");", path: s.path };
+      return { text: "me." + s.path + "(" + literal(s.value) + ");", path: s.path };
     });
     lines.push({ text: 'me["="](' + JSON.stringify(def.name) + ", " + JSON.stringify(def.expr) + ");", path: t });
     var reads = sets.map(function (sv) {
@@ -158,50 +286,19 @@
       lines.push({ text: "me." + t + ".icon(" + JSON.stringify(frame.icon) + ");", path: t + ".icon" });
       reads.push({ text: 'me("' + t + '.icon");', path: t + ".icon", icon: frame.icon });
     }
-
-    var nodes, edges, depsE;
-    if (frame.kind === "pair") {
-      nodes = [
-        { path: "", x: 248, y: 64, r: 22, root: true },
-        { path: sets[0].path, x: 140, y: 240, r: 32, label: sets[0].path, ly: 192, value: String(sets[0].value), vy: 246 },
-        { path: t, x: 360, y: 240, r: 36, label: t + " [=]", ly: 188, value: String(def.result), vy: 247, der: true }
-      ];
-      edges = [
-        { a: "", b: sets[0].path, d: "M226 86 L162 208" },
-        { a: "", b: t, d: "M270 86 L336 204" }
-      ];
-      depsE = [{ src: sets[0].path, dst: t, d: "M172 250 Q248 312 328 250" }];
-    } else {
-      nodes = [
-        { path: "", x: 248, y: 56, r: 22, root: true },
-        { path: sets[0].path, x: 110, y: 220, r: 32, label: sets[0].path, ly: 172, value: String(sets[0].value), vy: 226 },
-        { path: sets[1].path, x: 386, y: 220, r: 32, label: sets[1].path, ly: 172, value: String(sets[1].value), vy: 226 },
-        { path: t, x: 248, y: 310, r: 36, label: t + " [=]", ly: 258, value: String(def.result), vy: 317, der: true }
-      ];
-      edges = [
-        { a: "", b: sets[0].path, d: "M226 78 L132 190" },
-        { a: "", b: sets[1].path, d: "M270 78 L364 190" },
-        { a: "", b: t, d: "M248 78 V274" }
-      ];
-      depsE = [
-        { src: sets[0].path, dst: t, d: "M140 250 Q180 286 220 298" },
-        { src: sets[1].path, dst: t, d: "M356 250 Q316 286 276 298" }
-      ];
-      if (frame.icon) {
-        nodes[3].r = 50;
-        nodes[3].vy = 338;
-        nodes[3].icon = frame.icon;
-        nodes.push({ path: t + ".icon", x: 248, y: 292, r: 13, iconGlyph: frame.icon, ghost: true });
-      }
-    }
-    return { frame: frame, lang: langMeta, q: t, segs: segs, lines: lines, reads: reads, nodes: nodes, edges: edges, deps: depsE };
+    var lay = layoutPaths(sets, def, frame.icon);
+    return { frame: frame, lang: langMeta, q: t, segs: segs, lines: lines, reads: reads, nodes: lay.nodes, edges: lay.edges, deps: lay.deps, ex: ex };
   }
 
-  var MODELS = FRAMES.map(function (frame) {
-    return LANGS.map(function (langMeta) {
-      return build(frame, langMeta, EXAMPLES[frame.id][langMeta.lang]);
+  var MODELS = [];
+  function rebuildModels() {
+    MODELS = FRAMES.map(function (frame) {
+      return LANGS.map(function (langMeta) {
+        return build(frame, langMeta, EXAMPLES[frame.id][langMeta.lang]);
+      });
     });
-  });
+  }
+  rebuildModels();
 
   var CSS = [
     ".whatever-live{clear:both;display:flow-root;margin:12px 0 28px}",
@@ -215,7 +312,7 @@
     ".whatever-live .wl-say{font:600 17px/1.45 system-ui,-apple-system,sans-serif;margin:0 0 14px;color:var(--fg,#24292f)}",
     ".whatever-live .wl-w{cursor:pointer;border-radius:4px;padding:0 2px;margin:0 -2px;text-decoration:underline dotted color-mix(in srgb,var(--accent,#0969da) 55%,transparent);text-underline-offset:4px}",
     ".whatever-live .wl-w.on{background:color-mix(in srgb,var(--accent,#0969da) 16%,transparent);text-decoration-color:var(--accent,#0969da)}",
-    ".whatever-live .wl-pair{display:grid;grid-template-columns:300px minmax(0,1fr);gap:8px 24px;align-items:start}",
+    ".whatever-live .wl-pair{display:grid;grid-template-columns:360px minmax(0,1fr);gap:8px 24px;align-items:start}",
     "@media (max-width:720px){.whatever-live .wl-pair{grid-template-columns:1fr}}",
     ".whatever-live .wl-script-col{min-width:0}",
     ".whatever-live .wl-links{margin:8px 2px 0;font:12px/1.4 system-ui,-apple-system,sans-serif;color:var(--muted,#656d76)}.whatever-live .wl-links a{color:inherit;text-decoration:none}.whatever-live .wl-links a:hover{color:var(--accent,#0969da)}",
@@ -238,7 +335,7 @@
     ".whatever-live .wl-num{color:var(--hl-number,#b45309)}",
     ".whatever-live .wl-me{color:var(--accent,#0969da);font-weight:600}",
     ".whatever-live .wl-graph{display:flex;align-items:center;justify-content:center;min-height:0}",
-    ".whatever-live .wl-graph svg{display:block;width:100%;max-width:300px;height:auto;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow:visible}",
+    ".whatever-live .wl-graph svg{display:block;width:100%;max-width:360px;height:auto;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow:visible}",
     ".whatever-live .e{stroke:var(--border,#d0d7de);stroke-width:1.4;fill:none}",
     ".whatever-live .e.on{stroke:var(--accent,#0969da);stroke-width:2.2}",
     ".whatever-live .d{stroke:var(--accent,#0969da);fill:none}",
@@ -258,6 +355,9 @@
     ".whatever-live .n.path .lb,.whatever-live .n.sel .lb{fill:var(--accent,#0969da)}",
     ".whatever-live .n.der.sel .lb,.whatever-live .n.der.path .lb{fill:var(--wl-sun,#c69026)}",
     ".whatever-live .n .v{fill:var(--fg,#24292f);font:italic 18px Georgia,'DejaVu Serif',serif;text-anchor:middle}",
+    ".whatever-live .n .k{fill:var(--fg,#24292f);font:15px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;text-anchor:middle}",
+    ".whatever-live .n .ex{fill:var(--muted,#57606a);font:12px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;text-anchor:middle}",
+    ".whatever-live .op{fill:var(--accent,#0969da);font:11px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;text-anchor:middle}",
     ".whatever-live .n.der .v{fill:var(--wl-sun,#c69026);font-size:24px}",
     ".whatever-live .n .root{fill:var(--accent,#0969da);font-size:15px;text-anchor:middle}",
     ".whatever-live{--wl-sun:#c69026}",
@@ -449,7 +549,8 @@
         e.dd.setAttribute("class", "d dd" + (hot ? " hot" : ""));
       });
       nodes.forEach(function (n) {
-        var g = nodeEls[n.path];
+        var g = n.el;
+        if (!g) return;
         var cls = "n";
         if (n.der) cls += " der";
         if (n.ghost) cls += " ghost";
@@ -467,11 +568,39 @@
 
     function restore() { apply(pinned); }
 
+    function nudge(path, delta) {
+      var G = MODELS[fi][li];
+      if (!G || !G.ex || !G.ex.sets) return;
+      var set = null;
+      G.ex.sets.forEach(function (s) {
+        if (s.path === path && typeof s.value === "number") set = s;
+      });
+      if (!set) return;
+      set.value += delta;
+      if (G.ex.define) {
+        var got = computeResult(G.ex.sets, G.ex.define.name, G.ex.define.expr);
+        if (got != null) G.ex.define.result = got;
+      }
+      MODELS[fi][li] = build(G.frame, G.lang, G.ex);
+      draw();
+      pin(path);
+    }
+
     function bind(node, path) {
       node.addEventListener("mouseenter", function () { apply(path); });
       node.addEventListener("mouseleave", restore);
       node.addEventListener("click", function () { pin(path); });
       node.addEventListener("keydown", function (ev) {
+        if (ev.key === "ArrowUp" || ev.key === "+") {
+          ev.preventDefault();
+          nudge(path, 1);
+          return;
+        }
+        if (ev.key === "ArrowDown" || ev.key === "-") {
+          ev.preventDefault();
+          nudge(path, -1);
+          return;
+        }
         if (ev.key === "Enter" || ev.key === " ") {
           ev.preventDefault();
           pin(path);
@@ -515,7 +644,7 @@
       var wrap = el("div", { class: "wl-script-wrap" }, col);
       var pane = el("pre", { class: "wl-script", "aria-label": "me.whatever(what) script" }, wrap);
       var svgRoot = svg("svg", {
-        viewBox: "20 20 460 360",
+        viewBox: "20 0 460 440",
         role: "img",
         "aria-label": "Path tree: " + frameLabel(G.frame, G.lang.lang) + " in " + G.lang.name
       }, graph);
@@ -570,6 +699,7 @@
         var glow = svg("path", { class: "d dg", d: e.d }, gD);
         glow.setAttribute("filter", "url(#wlGlow)");
         depEls.push({ src: e.src, dst: e.dst, g: glow, dd: svg("path", { class: "d dd", d: e.d }, gD) });
+        if (e.label) svg("text", { class: "op", x: e.lx, y: e.ly, text: e.label }, gD);
       });
       nodeEls = {};
       G.nodes.forEach(function (n) {
@@ -588,10 +718,14 @@
           glyph.setAttribute("y", String(n.y - 11));
           g.appendChild(glyph);
         } else {
-          svg("text", { class: "lb", x: n.lx != null ? n.lx : n.x, y: n.ly, text: n.label }, g);
+          if (n.label) svg("text", { class: "lb", x: n.lx != null ? n.lx : n.x, y: n.ly, text: n.label }, g);
+          if (n.keyText) svg("text", { class: "k", x: n.x, y: n.ky != null ? n.ky : n.y + 5, text: n.keyText }, g);
           if (n.value) svg("text", { class: "v", x: n.x, y: n.vy, text: n.value }, g);
+          if (n.expr) svg("text", { class: "ex", x: n.x, y: n.y + n.r + 18, text: n.expr }, g);
         }
-        nodeEls[n.path] = g;
+        if (!nodeEls[n.path]) nodeEls[n.path] = [];
+        nodeEls[n.path].push(g);
+        n.el = g;
         bind(g, n.path);
       });
       apply(pinned);
@@ -651,8 +785,22 @@
     syncThemedPictures();
     var host = document.getElementById("whatever-live");
     if (!host || host.getAttribute("data-wl") === "1") return;
-    host.setAttribute("data-wl", "1");
-    mount(host);
+    var started = false;
+    function start() {
+      if (started) return;
+      started = true;
+      if (host.getAttribute("data-wl") === "1") return;
+      host.setAttribute("data-wl", "1");
+      rebuildModels();
+      mount(host);
+    }
+    var p;
+    try { p = import(KERNEL_URL); } catch (err) { p = Promise.reject(err); }
+    p.then(function (mod) {
+      MECtor = mod.ME || mod.default;
+      start();
+    }).catch(function () { start(); });
+    setTimeout(start, 1600);
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);

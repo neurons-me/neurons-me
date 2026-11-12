@@ -1,6 +1,6 @@
-<svg viewBox="20 20 460 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg viewBox="20 0 460 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">me.whatever(what)</title>
-  <desc id="desc">Path tree: what derives whatever.</desc>
+  <desc id="desc">Three paths from me: a(2), b(3), x(4). Derivation me[&quot;=&quot;](&quot;y&quot;, &quot;a * x + b&quot;) equals 11.</desc>
   <style>
     svg { --ink:#1f2328; --mut:#57606a; --line:rgba(127,127,127,.38); --bg:#ffffff; --link:#2a86c7; --sun:#c69026; --me:#0969da; }
     @media (prefers-color-scheme: dark) {
@@ -14,27 +14,55 @@
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
   </defs>
   <g stroke-width="1.4" fill="none" stroke="var(--line)">
-    <path d="M226 86 L162 208"/>
-    <path d="M270 86 L336 204"/>
+    <path d="M229.7 52.3 L118.5 127.1"/>
+    <path d="M248.0 62.0 L248.0 113.0"/>
+    <path d="M266.3 52.3 L377.5 127.1"/>
+    <path d="M92.0 177.0 L92.0 219.0"/>
+    <path d="M248.0 177.0 L248.0 219.0"/>
+    <path d="M404.0 177.0 L404.0 219.0"/>
   </g>
   <g stroke-width="2.4" fill="none" filter="url(#glow)" opacity=".7" stroke="var(--link)">
-    <path d="M172 250 Q248 312 328 250"/>
+    <path d="M120.5 276.9 Q170.0 323.0 219.5 353.1"/>
+    <path d="M248.0 291.0 Q248.0 323.0 248.0 339.0"/>
+    <path d="M375.5 276.9 Q326.0 323.0 276.5 353.1"/>
   </g>
   <g class="wave" stroke-width="1.6" fill="none" stroke="var(--link)">
-    <path d="M172 250 Q248 312 328 250"/>
+    <path d="M120.5 276.9 Q170.0 323.0 219.5 353.1"/>
+    <path d="M248.0 291.0 Q248.0 323.0 248.0 339.0"/>
+    <path d="M375.5 276.9 Q326.0 323.0 276.5 353.1"/>
   </g>
   <g stroke-width="1.4" fill="var(--bg)" stroke="var(--mut)">
-    <circle cx="248" cy="64" r="22"/>
-    <circle cx="140" cy="240" r="32"/>
+    <circle cx="248" cy="40" r="22"/>
+    <circle cx="92" cy="145" r="32"/>
+    <circle cx="248" cy="145" r="32"/>
+    <circle cx="404" cy="145" r="32"/>
   </g>
-  <circle cx="360" cy="240" r="36" fill="var(--bg)" stroke="var(--sun)" stroke-width="2"/>
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" text-anchor="middle" letter-spacing="0.4" fill="var(--mut)">
-    <text x="248" y="69" font-size="15" fill="var(--me)" letter-spacing="0">me</text>
-    <text x="140" y="192">what</text>
-    <text x="360" y="188" fill="var(--sun)">whatever [=]</text>
+  <g fill="var(--bg)" stroke="var(--sun)" stroke-width="2">
+    <circle cx="92" cy="255" r="36"/>
+    <circle cx="248" cy="255" r="36"/>
+    <circle cx="404" cy="255" r="36"/>
+    <circle cx="248" cy="375" r="36"/>
   </g>
-  <g font-family="Georgia, 'DejaVu Serif', serif" font-style="italic" text-anchor="middle" fill="var(--ink)">
-    <text x="140" y="246" font-size="18">8</text>
-    <text x="360" y="247" font-size="24" fill="var(--sun)">17</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" text-anchor="middle" letter-spacing="0.4">
+    <text x="248" y="45" font-size="15" fill="var(--me)" letter-spacing="0">me</text>
+    <text x="92" y="97" fill="var(--mut)">whatever</text>
+    <text x="248" y="97" fill="var(--mut)">whatever</text>
+    <text x="404" y="97" fill="var(--mut)">whatever</text>
+    <text x="92" y="150" font-size="15" fill="var(--ink)" letter-spacing="0">a</text>
+    <text x="248" y="150" font-size="15" fill="var(--ink)" letter-spacing="0">b</text>
+    <text x="404" y="150" font-size="15" fill="var(--ink)" letter-spacing="0">x</text>
+    <text x="92" y="203" fill="var(--sun)">what</text>
+    <text x="248" y="203" fill="var(--sun)">what</text>
+    <text x="404" y="203" fill="var(--sun)">what</text>
+    <text x="248" y="323" fill="var(--sun)">y [=]</text>
+    <text x="170" y="318" font-size="11" fill="var(--link)" letter-spacing="0">[=]</text>
+    <text x="326" y="318" font-size="11" fill="var(--link)" letter-spacing="0">[=]</text>
+    <text x="248" y="425" font-size="12" fill="var(--mut)" letter-spacing="0">a * x + b</text>
+  </g>
+  <g font-family="Georgia, 'DejaVu Serif', serif" font-style="italic" text-anchor="middle" fill="var(--sun)">
+    <text x="92" y="262" font-size="24">2</text>
+    <text x="248" y="262" font-size="24">3</text>
+    <text x="404" y="262" font-size="24">4</text>
+    <text x="248" y="382" font-size="24">11</text>
   </g>
 </svg>

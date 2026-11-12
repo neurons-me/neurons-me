@@ -80,12 +80,12 @@
 
   var EXAMPLES = {
     y: {
-      en: { text: "set [a|a] to [2|a], [b|b] to [3|b] and [x|x] to [4|x], let [y|t] be [a|a] times [x|x] plus [b|b], and let [z|z] be [y|t] minus [a|a]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 }, defines: [{ name: "y", expr: "a * x + b", result: 11 }, { name: "z", expr: "y - a", result: 9 }] },
-      es: { text: "pon [a|a] en [2|a], [b|b] en [3|b] y [x|x] en [4|x], que [y|t] sea [a|a] por [x|x] más [b|b], y que [z|z] sea [y|t] menos [a|a]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 }, defines: [{ name: "y", expr: "a * x + b", result: 11 }, { name: "z", expr: "y - a", result: 9 }] },
-      fr: { text: "mets [a|a] à [2|a], [b|b] à [3|b] et [x|x] à [4|x], que [y|t] soit [a|a] fois [x|x] plus [b|b], et que [z|z] soit [y|t] moins [a|a]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 }, defines: [{ name: "y", expr: "a * x + b", result: 11 }, { name: "z", expr: "y - a", result: 9 }] },
-      de: { text: "setze [a|a] auf [2|a], [b|b] auf [3|b] und [x|x] auf [4|x], lass [y|t] [a|a] mal [x|x] plus [b|b] sein, und lass [z|z] [y|t] minus [a|a] sein", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 }, defines: [{ name: "y", expr: "a * x + b", result: 11 }, { name: "z", expr: "y - a", result: 9 }] },
-      it: { text: "metti [a|a] a [2|a], [b|b] a [3|b] e [x|x] a [4|x], che [y|t] sia [a|a] per [x|x] più [b|b], e che [z|z] sia [y|t] meno [a|a]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 }, defines: [{ name: "y", expr: "a * x + b", result: 11 }, { name: "z", expr: "y - a", result: 9 }] },
-      pt: { text: "põe [a|a] em [2|a], [b|b] em [3|b] e [x|x] em [4|x], que [y|t] seja [a|a] vezes [x|x] mais [b|b], e que [z|z] seja [y|t] menos [a|a]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 }, defines: [{ name: "y", expr: "a * x + b", result: 11 }, { name: "z", expr: "y - a", result: 9 }] }
+      en: { text: "set [a|a] to [2|a] and [x|x] to [4|x], and let [y|t] be [a|a] times [x|x]", sets: [{ path: "a", value: 2 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x", result: 8 }, defines: [{ name: "y", expr: "a * x", result: 8 }] },
+      es: { text: "pon [a|a] en [2|a] y [x|x] en [4|x], y que [y|t] sea [a|a] por [x|x]", sets: [{ path: "a", value: 2 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x", result: 8 }, defines: [{ name: "y", expr: "a * x", result: 8 }] },
+      fr: { text: "mets [a|a] à [2|a] et [x|x] à [4|x], et que [y|t] soit [a|a] fois [x|x]", sets: [{ path: "a", value: 2 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x", result: 8 }, defines: [{ name: "y", expr: "a * x", result: 8 }] },
+      de: { text: "setze [a|a] auf [2|a] und [x|x] auf [4|x], und lass [y|t] [a|a] mal [x|x] sein", sets: [{ path: "a", value: 2 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x", result: 8 }, defines: [{ name: "y", expr: "a * x", result: 8 }] },
+      it: { text: "metti [a|a] a [2|a] e [x|x] a [4|x], e che [y|t] sia [a|a] per [x|x]", sets: [{ path: "a", value: 2 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x", result: 8 }, defines: [{ name: "y", expr: "a * x", result: 8 }] },
+      pt: { text: "põe [a|a] em [2|a] e [x|x] em [4|x], e que [y|t] seja [a|a] vezes [x|x]", sets: [{ path: "a", value: 2 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x", result: 8 }, defines: [{ name: "y", expr: "a * x", result: 8 }] }
     },
     letter: {
       en: { text: "set [letter|W] to [b|w]", path: "letter", value: "b" },
@@ -268,104 +268,59 @@
     return { nodes: nodes, edges: edges, deps: deps, rings: [] };
   }
 
-  // me at the center, five nodes at the vertices of a regular pentagon.
-  // Rays are me.whatever(what). The perimeter and feed edges are dashed glow.
+  // me at the center; five organic spiral branches.
+  // Each branch is me · whatever · what (3 nodes, 2 edges). Operator edges
+  // run between the outer what nodes: a,x,b → y and y,a → z.
   function layoutPentagon(sets, defines) {
-    var CX = 250, CY = 236, R = 136, ME_R = 22, NODE_R = 38;
-    var SLOT = { a: 0, x: 1, b: 2, y: 3, z: 4 };
-    function pos(k) {
-      var ang = (k * 72) * Math.PI / 180;
-      return { x: CX + R * Math.sin(ang), y: CY - R * Math.cos(ang) };
-    }
-    function unit(k) {
-      var ang = (k * 72) * Math.PI / 180;
-      return { ux: Math.sin(ang), uy: -Math.cos(ang) };
-    }
-    function outwardStack(k, d1, d2) {
-      var u = unit(k);
-      var base = R + NODE_R;
-      var x1 = CX + u.ux * (base + d1);
-      var y1 = CY + u.uy * (base + d1) + 4;
-      var sy = u.uy >= 0.15 ? 1 : -1;
-      return { x1: x1, y1: y1, x2: x1, y2: y1 + sy * (d2 - d1) };
-    }
-    function inwardMid(ka, kb, off) {
-      var a = pos(ka), b = pos(kb);
-      var mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
-      var dx = CX - mx, dy = CY - my;
-      var len = Math.sqrt(dx * dx + dy * dy) || 1;
-      return { x: mx + dx / len * off, y: my + dy / len * off + 4 };
-    }
+    var ME = { x: 300, y: 310, r: 32 };
+    var W_R = 40, V_R = 52;
+    var byName = {};
+    sets.forEach(function (s) { byName[s.path] = s; });
+    defines.forEach(function (d) { byName[d.name] = d; });
+    var ARMS = [{"name": "a", "wx": 288, "wy": 172, "vx": 378, "vy": 46, "lw": [220.7, 88.1], "lq": [370.5, -20.0], "le": null}, {"name": "x", "wx": 448, "wy": 332, "vx": 560, "vy": 428, "lw": [441.7, 277.9], "lq": [568.1, 511.2], "le": null}, {"name": "y", "wx": 200, "wy": 438, "vx": 118, "vy": 555, "lw": [278.0, 508.0], "lq": [118, 633], "le": [118, 659]}];
+    var SPOKES = [{"a": "me", "b": "a", "d": "M297.2 278.1 Q278.4 246.4 291.5 211.8"}, {"a": "a", "b": "a", "d": "M311.2 139.5 Q311.6 101.1 347.8 88.3"}, {"a": "me", "b": "x", "d": "M331.7 314.7 Q372.4 304.6 408.4 326.1"}, {"a": "x", "b": "x", "d": "M478.4 358.0 Q513.8 359.4 520.5 394.2"}, {"a": "me", "b": "y", "d": "M280.3 335.2 Q265.1 380.7 224.6 406.5"}, {"a": "y", "b": "y", "d": "M177.0 470.8 Q180.5 504.2 147.8 512.4"}];
+    var FEEDS = [{"src": "a", "dst": "y", "d": "M338.2 12.6 Q145.4 297.3 78.2 588.4"}, {"src": "x", "dst": "y", "d": "M608.9 445.8 Q339.7 551.0 70.5 576.2"}];
+    var OPS = [{"src": "a", "dst": "y", "x": 194.8, "y": 303.9}, {"src": "x", "dst": "y", "x": 357.7, "y": 536.0}];
 
-    var nodes = [{ path: "", x: CX, y: CY, r: ME_R, root: true }];
+    var nodes = [{ path: "", x: ME.x, y: ME.y, r: ME.r, root: true }];
     var edges = [];
-    var deps = [];
-    var rings = [];
-    var known = {};
-
-    sets.forEach(function (s) {
-      var k = SLOT[s.path];
-      if (k == null) return;
-      var p = pos(k), lab = outwardStack(k, 16, 32);
-      known[s.path] = k;
+    ARMS.forEach(function (arm) {
+      var rec = byName[arm.name];
+      var isDef = rec && rec.expr != null;
+      var val = isDef ? rec.result : (rec ? rec.value : null);
+      var tunable = !isDef && rec && typeof rec.value === "number";
       nodes.push({
-        path: s.path, x: p.x, y: p.y, r: NODE_R,
-        label: "whatever", lx: lab.x1, ly: lab.y1, labelClass: "wvr",
-        keyText: s.path, ky: p.y - 8,
-        what: "what", wx: lab.x2, wy: lab.y2,
-        value: String(s.value), vy: p.y + 14,
-        der: true, tunable: typeof s.value === "number"
+        path: arm.name, x: arm.wx, y: arm.wy, r: W_R,
+        label: "whatever", lx: arm.lw[0], ly: arm.lw[1], labelClass: "wvr",
+        keyText: arm.name, ky: arm.wy + 8
       });
-      edges.push({ a: "", b: s.path, d: lineTo(CX, CY, ME_R, p.x, p.y, NODE_R) });
-    });
-
-    defines.forEach(function (d) {
-      var k = SLOT[d.name];
-      if (k == null) return;
-      var p = pos(k), lab = outwardStack(k, 16, 32);
-      known[d.name] = k;
-      nodes.push({
-        path: d.name, x: p.x, y: p.y, r: NODE_R,
-        label: d.name, lx: lab.x1, ly: lab.y1,
-        value: String(d.result), vy: p.y + 8,
-        der: true, expr: d.expr, ex: lab.x2, ey: lab.y2
-      });
-      edges.push({ a: "", b: d.name, d: lineTo(CX, CY, ME_R, p.x, p.y, NODE_R) });
-    });
-
-    var names = Object.keys(known);
-    var feedPair = {};
-    function markFeed(src, dst) {
-      if (known[src] == null || known[dst] == null) return;
-      var ka = known[src], kb = known[dst];
-      var a = pos(ka), b = pos(kb);
-      var step = Math.abs(ka - kb) % 5;
-      if (step === 4) step = 1;
-      var isPerim = step === 1;
-      var dep = { src: src, dst: dst, d: lineTo(a.x, a.y, NODE_R, b.x, b.y, NODE_R) };
-      // Label only the roomy perimeter feeds, so [=] does not sit on a stroke or on me.
-      if (isPerim) {
-        var mid = inwardMid(ka, kb, 16);
-        dep.label = "[=]";
-        dep.lx = mid.x;
-        dep.ly = mid.y;
+      var vnode = {
+        path: arm.name, x: arm.vx, y: arm.vy, r: V_R,
+        what: "what", wx: arm.lq[0], wy: arm.lq[1],
+        value: val == null ? "" : String(val), vy: arm.vy + 13,
+        der: true, tunable: tunable
+      };
+      if (isDef && rec.expr) {
+        vnode.expr = rec.expr;
+        if (arm.le) { vnode.ex = arm.le[0]; vnode.ey = arm.le[1]; }
       }
-      if (isPerim) feedPair[Math.min(ka, kb) + "-" + Math.max(ka, kb)] = 1;
-      deps.push(dep);
-    }
-    defines.forEach(function (d) {
-      feedNames(d.expr, names).forEach(function (src) { markFeed(src, d.name); });
+      nodes.push(vnode);
     });
-
-    var periPairs = [[0, 1], [1, 2], [2, 3], [3, 4], [4, 0]];
-    periPairs.forEach(function (pair) {
-      var key = Math.min(pair[0], pair[1]) + "-" + Math.max(pair[0], pair[1]);
-      if (feedPair[key]) return;
-      var a = pos(pair[0]), b = pos(pair[1]);
-      rings.push({ d: lineTo(a.x, a.y, NODE_R, b.x, b.y, NODE_R) });
+    SPOKES.forEach(function (s) {
+      edges.push({ a: s.a === "me" ? "" : s.a, b: s.b, d: s.d });
     });
-
-    return { nodes: nodes, edges: edges, deps: deps, rings: rings, viewBox: "8 0 476 455" };
+    var deps = FEEDS.map(function (f) {
+      var dep = { src: f.src, dst: f.dst, d: f.d };
+      OPS.forEach(function (op) {
+        if (op.src === f.src && op.dst === f.dst) {
+          dep.label = "[=]";
+          dep.lx = op.x;
+          dep.ly = op.y;
+        }
+      });
+      return dep;
+    });
+    return { nodes: nodes, edges: edges, deps: deps, rings: [], viewBox: "42 -60 594 749" };
   }
 
   function buildKv(frame, langMeta, ex) {
@@ -391,14 +346,10 @@
     var def = defs[0];
     var t = def.name;
     var ROLE = { w: sets[0].path, W: t, a: sets[0].path, t: t };
-    if (sets[1]) ROLE.b = sets[1].path;
+    sets.forEach(function (s) { ROLE[s.path] = s.path; });
+    if (sets[1] && !ROLE.b) ROLE.b = sets[1].path;
+    if (sets[1] && !ROLE.x) ROLE.x = sets[1].path;
     if (sets[2]) ROLE.x = sets[2].path;
-    // 3-input algebra uses a, b, x in the caption (not a/b as the first two only).
-    if (sets.length >= 3) {
-      ROLE.a = sets[0].path;
-      ROLE.b = sets[1].path;
-      ROLE.x = sets[2].path;
-    }
     defs.forEach(function (d) { ROLE[d.name] = d.name; });
     var segs = parseCaption(ex.text, ROLE);
     var lines = sets.map(function (s) {
@@ -414,7 +365,7 @@
       lines.push({ text: "me." + t + ".icon(" + JSON.stringify(frame.icon) + ");", path: t + ".icon" });
       reads.push({ text: 'me("' + t + '.icon");', path: t + ".icon", icon: frame.icon });
     }
-    var lay = (defs.length >= 2) ? layoutPentagon(sets, defs) : layoutPaths(sets, def, frame.icon);
+    var lay = (frame.id === "y") ? layoutPentagon(sets, defs) : layoutPaths(sets, def, frame.icon);
     return { frame: frame, lang: langMeta, q: t, segs: segs, lines: lines, reads: reads, nodes: lay.nodes, edges: lay.edges, deps: lay.deps, rings: lay.rings || [], viewBox: lay.viewBox || "20 0 460 440", ex: ex };
   }
 
@@ -440,8 +391,8 @@
     ".whatever-live .wl-say{font:600 17px/1.45 system-ui,-apple-system,sans-serif;margin:0 0 14px;color:var(--fg,#24292f)}",
     ".whatever-live .wl-w{cursor:pointer;border-radius:4px;padding:0 2px;margin:0 -2px;text-decoration:underline dotted color-mix(in srgb,var(--accent,#0969da) 55%,transparent);text-underline-offset:4px}",
     ".whatever-live .wl-w.on{background:color-mix(in srgb,var(--accent,#0969da) 16%,transparent);text-decoration-color:var(--accent,#0969da)}",
-    ".whatever-live .wl-pair{display:grid;grid-template-columns:400px minmax(0,1fr);gap:8px 24px;align-items:start}",
-    "@media (max-width:720px){.whatever-live .wl-pair{grid-template-columns:1fr}}",
+    ".whatever-live .wl-pair{display:grid;grid-template-columns:520px minmax(0,1fr);gap:8px 24px;align-items:start}",
+    "@media (max-width:880px){.whatever-live .wl-pair{grid-template-columns:1fr}}",
     ".whatever-live .wl-script-col{min-width:0}",
     ".whatever-live .wl-links{margin:8px 2px 0;font:12px/1.4 system-ui,-apple-system,sans-serif;color:var(--muted,#656d76)}.whatever-live .wl-links a{color:inherit;text-decoration:none}.whatever-live .wl-links a:hover{color:var(--accent,#0969da)}",
     ".whatever-live .wl-script-wrap{border:1px solid var(--border,#d0d7de);border-radius:10px;background:var(--subtle,#f6f8fa);overflow:hidden}",
@@ -463,7 +414,7 @@
     ".whatever-live .wl-num{color:var(--hl-number,#b45309)}",
     ".whatever-live .wl-me{color:var(--accent,#0969da);font-weight:600}",
     ".whatever-live .wl-graph{display:flex;align-items:center;justify-content:center;min-height:0}",
-    ".whatever-live .wl-graph svg{display:block;width:100%;max-width:400px;height:auto;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow:visible}",
+    ".whatever-live .wl-graph svg{display:block;width:100%;max-width:400px;height:auto;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow:visible}.whatever-live .wl-graph svg.wl-airy{max-width:520px}.whatever-live .wl-graph svg.wl-airy .lb{font-size:16px}.whatever-live .wl-graph svg.wl-airy .k{font:22px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.whatever-live .wl-graph svg.wl-airy .v{font:italic 34px Georgia,'DejaVu Serif',serif}.whatever-live .wl-graph svg.wl-airy .n.der .v{font-size:36px}.whatever-live .wl-graph svg.wl-airy .root{font-size:22px}.whatever-live .wl-graph svg.wl-airy .ex{font-size:17px}.whatever-live .wl-graph svg.wl-airy .op{font-size:15px}.whatever-live .wl-graph svg.wl-airy .n circle{stroke-width:1.8}.whatever-live .wl-graph svg.wl-airy .n.der circle{stroke-width:2.4}",
     ".whatever-live .e{stroke:var(--border,#d0d7de);stroke-width:1.4;fill:none}",
     ".whatever-live .e.on{stroke:var(--accent,#0969da);stroke-width:2.2}",
     ".whatever-live .d{stroke:var(--accent,#0969da);fill:none}",
@@ -778,6 +729,7 @@
       var pane = el("pre", { class: "wl-script", "aria-label": "me.whatever(what) script" }, wrap);
       var svgRoot = svg("svg", {
         viewBox: G.viewBox || "20 0 460 440",
+        class: G.frame && G.frame.id === "y" ? "wl-airy" : "",
         role: "img",
         "aria-label": "Path tree: " + frameLabel(G.frame, G.lang.lang) + " in " + G.lang.name
       }, graph);

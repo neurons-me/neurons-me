@@ -13,9 +13,9 @@
        style="border-radius: 8px;">
 </picture>
 </td>
-<td valign="middle" align="center" width="420">
+<td valign="middle" align="center" width="560">
 <a href="https://neurons-me.github.io/.me/docs/me-whatever-what.html">
-<img src="./assets/whatever-tree.svg?v=4" width="400" alt="Pentagon: me at the center, a=2, b=3, x=4, y = a * x + b → 11, z = y - a → 9" />
+<img src="./assets/whatever-tree.svg?v=6" width="520" alt="Spiral branches from me: each is me · whatever · what — a(2), x(4), y = a * x → 8" />
 </a>
 </td>
 </tr>
@@ -24,8 +24,8 @@
 
 <div class="whatever-live" id="whatever-live">
 <h2>me.whatever(what)</h2>
-<p><em>“set a to 2, b to 3 and x to 4, let y be a times x plus b, and let z be y minus a”</em></p>
-<img src="./assets/whatever-script.svg?v=4" width="720" alt="me.a(2), me.b(3), me.x(4); me[&quot;=&quot;](&quot;y&quot;, &quot;a * x + b&quot;) → 11; me[&quot;=&quot;](&quot;z&quot;, &quot;y - a&quot;) → 9" />
+<p><em>“set a to 2 and x to 4, and let y be a times x”</em></p>
+<img src="./assets/whatever-script.svg?v=6" width="720" alt="me.a(2); me.x(4); me[&quot;=&quot;](&quot;y&quot;, &quot;a * x&quot;); me(&quot;y&quot;) → 8" />
 <p><small><a href="https://neurons-me.github.io/.me/docs/Syntax.html">.me syntax</a> · <a href="https://neurons-me.github.io/.me/docs/Operators.html">operators</a> · <a href="https://neurons-me.github.io/.me/docs/Explain.html">me.explain()</a></small></p>
 </div>
 

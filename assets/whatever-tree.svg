@@ -1,77 +1,63 @@
-<svg viewBox="8 0 476 455" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg viewBox="42 -60 594 749" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">me.whatever(what)</title>
-  <desc id="desc">me at the center of a pentagon: a(2), b(3), x(4), y = a * x + b → 11, z = y - a → 9, via me[&quot;=&quot;].</desc>
+  <desc id="desc">me at the center, three spiral branches. Each branch is me · whatever · what (3 nodes, 2 edges): a(2), x(4), y = a * x → 8, via me[&quot;=&quot;].</desc>
   <style>
     svg { --ink:#1f2328; --mut:#57606a; --line:rgba(127,127,127,.38); --bg:#ffffff; --link:#2a86c7; --sun:#c69026; --me:#0969da; }
     @media (prefers-color-scheme: dark) {
       svg { --ink:#c9d1d9; --mut:#8b949e; --line:rgba(127,127,127,.38); --bg:#0b1114; --link:#58a6ff; --sun:#d29922; --me:#58a6ff; }
     }
-    .wave { stroke-dasharray:4 5; animation:flow 1.6s linear infinite; }
-    @keyframes flow { to { stroke-dashoffset:-18; } }
+    .wave { stroke-dasharray:5 6; animation:flow 1.8s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset:-22; } }
     @media (prefers-reduced-motion:reduce) { .wave { animation:none; } }
   </style>
   <defs>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3.5"/></filter>
   </defs>
-  <g stroke-width="1.4" fill="none" stroke="var(--line)">
-    <path d="M250.0 214.0 L250.0 138.0"/>
-    <path d="M270.9 229.2 L343.2 205.7"/>
-    <path d="M262.9 253.8 L307.6 315.3"/>
-    <path d="M237.1 253.8 L192.4 315.3"/>
-    <path d="M229.1 229.2 L156.8 205.7"/>
+  <g stroke-width="1.8" fill="none" stroke="var(--line)">
+    <path d="M297.2 278.1 Q278.4 246.4 291.5 211.8"/>
+    <path d="M311.2 139.5 Q311.6 101.1 347.8 88.3"/>
+    <path d="M331.7 314.7 Q372.4 304.6 408.4 326.1"/>
+    <path d="M478.4 358.0 Q513.8 359.4 520.5 394.2"/>
+    <path d="M280.3 335.2 Q265.1 380.7 224.6 406.5"/>
+    <path d="M177.0 470.8 Q180.5 504.2 147.8 512.4"/>
   </g>
-  <g stroke-width="2.4" fill="none" filter="url(#glow)" opacity=".7" stroke="var(--link)">
-    <path d="M280.7 122.3 L348.6 171.6"/>
-    <path d="M367.6 230.1 L341.7 309.9"/>
-    <path d="M291.9 346.0 L208.1 346.0"/>
-    <path d="M158.3 309.9 L132.4 230.1"/>
-    <path d="M151.4 171.6 L219.3 122.3"/>
-    <path d="M238.3 136.1 L181.8 309.9"/>
-    <path d="M348.6 216.3 L200.8 323.7"/>
+  <g stroke-width="3" fill="none" filter="url(#glow)" opacity=".7" stroke="var(--link)">
+    <path d="M338.2 12.6 Q145.4 297.3 78.2 588.4"/>
+    <path d="M608.9 445.8 Q339.7 551.0 70.5 576.2"/>
   </g>
-  <g class="wave" stroke-width="1.6" fill="none" stroke="var(--link)">
-    <path d="M280.7 122.3 L348.6 171.6"/>
-    <path d="M367.6 230.1 L341.7 309.9"/>
-    <path d="M291.9 346.0 L208.1 346.0"/>
-    <path d="M158.3 309.9 L132.4 230.1"/>
-    <path d="M151.4 171.6 L219.3 122.3"/>
-    <path d="M238.3 136.1 L181.8 309.9"/>
-    <path d="M348.6 216.3 L200.8 323.7"/>
+  <g class="wave" stroke-width="2" fill="none" stroke="var(--link)">
+    <path d="M338.2 12.6 Q145.4 297.3 78.2 588.4"/>
+    <path d="M608.9 445.8 Q339.7 551.0 70.5 576.2"/>
   </g>
-  <g stroke-width="1.4" fill="var(--bg)" stroke="var(--mut)">
-    <circle cx="250" cy="236" r="22"/>
+  <g stroke-width="1.8" fill="var(--bg)" stroke="var(--mut)">
+    <circle cx="300" cy="310" r="32"/>
+    <circle cx="288.0" cy="172.0" r="40"/>
+    <circle cx="448.0" cy="332.0" r="40"/>
+    <circle cx="200.0" cy="438.0" r="40"/>
   </g>
-  <g fill="var(--bg)" stroke="var(--sun)" stroke-width="2">
-    <circle cx="250.0" cy="100.0" r="38"/>
-    <circle cx="379.3" cy="194.0" r="38"/>
-    <circle cx="329.9" cy="346.0" r="38"/>
-    <circle cx="170.1" cy="346.0" r="38"/>
-    <circle cx="120.7" cy="194.0" r="38"/>
+  <g fill="var(--bg)" stroke="var(--sun)" stroke-width="2.4">
+    <circle cx="378.0" cy="46.0" r="52"/>
+    <circle cx="560.0" cy="428.0" r="52"/>
+    <circle cx="118.0" cy="555.0" r="52"/>
   </g>
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" text-anchor="middle" letter-spacing="0.4">
-    <text x="250" y="241" font-size="15" fill="var(--me)" letter-spacing="0">me</text>
-    <text x="250.0" y="50.0" fill="var(--mut)">whatever</text>
-    <text x="250.0" y="92.0" font-size="15" fill="var(--ink)" letter-spacing="0">a</text>
-    <text x="250.0" y="34.0" fill="var(--sun)">what</text>
-    <text x="430.7" y="181.3" fill="var(--mut)">whatever</text>
-    <text x="379.3" y="186.0" font-size="15" fill="var(--ink)" letter-spacing="0">x</text>
-    <text x="430.7" y="165.3" fill="var(--sun)">what</text>
-    <text x="361.7" y="393.7" fill="var(--mut)">whatever</text>
-    <text x="329.9" y="338.0" font-size="15" fill="var(--ink)" letter-spacing="0">b</text>
-    <text x="361.7" y="409.7" fill="var(--sun)">what</text>
-    <text x="138.3" y="393.7" fill="var(--sun)" letter-spacing="0">y</text>
-    <text x="138.3" y="409.7" font-size="12" fill="var(--mut)" letter-spacing="0">a * x + b</text>
-    <text x="69.3" y="181.3" fill="var(--sun)" letter-spacing="0">z</text>
-    <text x="69.3" y="165.3" font-size="12" fill="var(--mut)" letter-spacing="0">y - a</text>
-    <text x="250.0" y="334.0" font-size="11" fill="var(--link)" letter-spacing="0">[=]</text>
-    <text x="160.6" y="269.1" font-size="11" fill="var(--link)" letter-spacing="0">[=]</text>
-    <text x="194.7" y="163.9" font-size="11" fill="var(--link)" letter-spacing="0">[=]</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" text-anchor="middle">
+    <text x="300" y="318" font-size="22" fill="var(--me)">me</text>
+    <text x="220.7" y="88.1" font-size="16" fill="var(--mut)">whatever</text>
+    <text x="288.0" y="180.0" font-size="22" fill="var(--ink)">a</text>
+    <text x="370.5" y="-20.0" font-size="16" fill="var(--sun)" letter-spacing="0.15">what</text>
+    <text x="441.7" y="277.9" font-size="16" fill="var(--mut)">whatever</text>
+    <text x="448.0" y="340.0" font-size="22" fill="var(--ink)">x</text>
+    <text x="568.1" y="511.2" font-size="16" fill="var(--sun)" letter-spacing="0.15">what</text>
+    <text x="278.0" y="508.0" font-size="16" fill="var(--mut)">whatever</text>
+    <text x="200.0" y="446.0" font-size="22" fill="var(--ink)">y</text>
+    <text x="118.0" y="633.0" font-size="16" fill="var(--sun)" letter-spacing="0.15">what</text>
+    <text x="118.0" y="659.0" font-size="17" fill="var(--mut)">a * x</text>
+    <text x="194.8" y="303.9" font-size="15" fill="var(--link)">[=]</text>
+    <text x="357.7" y="536.0" font-size="15" fill="var(--link)">[=]</text>
   </g>
   <g font-family="Georgia, 'DejaVu Serif', serif" font-style="italic" text-anchor="middle" fill="var(--sun)">
-    <text x="250.0" y="114.0" font-size="22">2</text>
-    <text x="379.3" y="208.0" font-size="22">4</text>
-    <text x="329.9" y="360.0" font-size="22">3</text>
-    <text x="170.1" y="354.0" font-size="24">11</text>
-    <text x="120.7" y="202.0" font-size="24">9</text>
+    <text x="378.0" y="59.0" font-size="34">2</text>
+    <text x="560.0" y="441.0" font-size="34">4</text>
+    <text x="118.0" y="568.0" font-size="36">8</text>
   </g>
 </svg>

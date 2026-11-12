@@ -42,12 +42,7 @@
   ];
 
   var FRAMES = [
-    { id: "y", kind: "paths",
-      label: { en: "y", es: "y", fr: "y", de: "y", it: "y", pt: "y" } },
-    { id: "letter", kind: "kv",
-      label: { en: "letter", es: "letra", fr: "lettre", de: "buchstabe", it: "lettera", pt: "letra" } },
-    { id: "number", kind: "kv",
-      label: { en: "number", es: "número", fr: "nombre", de: "zahl", it: "numero", pt: "número" } },
+    { id: "whatever", label: "whatever", kind: "pair" },
     { id: "ours", label: "ours", kind: "triple" },
     { id: "both", label: "both", kind: "triple" },
     { id: "bills", kind: "triple", life: true,
@@ -79,29 +74,13 @@
   }
 
   var EXAMPLES = {
-    y: {
-      en: { text: "set [a|a] to [2|a] and [x|x] to [4|x], and let [y|t] be [a|a] times [x|x]", sets: [{ path: "a", value: 2 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x", result: 8 }, defines: [{ name: "y", expr: "a * x", result: 8 }] },
-      es: { text: "pon [a|a] en [2|a] y [x|x] en [4|x], y que [y|t] sea [a|a] por [x|x]", sets: [{ path: "a", value: 2 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x", result: 8 }, defines: [{ name: "y", expr: "a * x", result: 8 }] },
-      fr: { text: "mets [a|a] à [2|a] et [x|x] à [4|x], et que [y|t] soit [a|a] fois [x|x]", sets: [{ path: "a", value: 2 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x", result: 8 }, defines: [{ name: "y", expr: "a * x", result: 8 }] },
-      de: { text: "setze [a|a] auf [2|a] und [x|x] auf [4|x], und lass [y|t] [a|a] mal [x|x] sein", sets: [{ path: "a", value: 2 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x", result: 8 }, defines: [{ name: "y", expr: "a * x", result: 8 }] },
-      it: { text: "metti [a|a] a [2|a] e [x|x] a [4|x], e che [y|t] sia [a|a] per [x|x]", sets: [{ path: "a", value: 2 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x", result: 8 }, defines: [{ name: "y", expr: "a * x", result: 8 }] },
-      pt: { text: "põe [a|a] em [2|a] e [x|x] em [4|x], e que [y|t] seja [a|a] vezes [x|x]", sets: [{ path: "a", value: 2 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x", result: 8 }, defines: [{ name: "y", expr: "a * x", result: 8 }] }
-    },
-    letter: {
-      en: { text: "set [letter|W] to [b|w]", path: "letter", value: "b" },
-      es: { text: "pon [letra|W] en [b|w]", path: "letra", value: "b" },
-      fr: { text: "mets [lettre|W] à [b|w]", path: "lettre", value: "b" },
-      de: { text: "setze [buchstabe|W] auf [b|w]", path: "buchstabe", value: "b" },
-      it: { text: "metti [lettera|W] a [b|w]", path: "lettera", value: "b" },
-      pt: { text: "põe [letra|W] em [b|w]", path: "letra", value: "b" }
-    },
-    number: {
-      en: { text: "set [number|W] to [2|w]", path: "number", value: 2 },
-      es: { text: "pon [número|W] en [2|w]", path: "numero", value: 2 },
-      fr: { text: "mets [nombre|W] à [2|w]", path: "nombre", value: 2 },
-      de: { text: "setze [zahl|W] auf [2|w]", path: "zahl", value: 2 },
-      it: { text: "metti [numero|W] a [2|w]", path: "numero", value: 2 },
-      pt: { text: "põe [número|W] em [2|w]", path: "numero", value: 2 }
+    whatever: {
+      en: { text: "set [what|w] to [8|w] and let [whatever|W] follow [what|w] times two plus one", sets: [{ path: "what", value: 8 }], define: { name: "whatever", expr: "what * 2 + 1", result: 17 } },
+      es: { text: "pon [qué|w] en [8|w] y que [cualquiera|W] siga a [qué|w] por dos más uno", sets: [{ path: "que", value: 8 }], define: { name: "cualquiera", expr: "que * 2 + 1", result: 17 } },
+      fr: { text: "mets [quoi|w] à [8|w] et que [quelconque|W] suive [quoi|w] fois deux plus un", sets: [{ path: "quoi", value: 8 }], define: { name: "quelconque", expr: "quoi * 2 + 1", result: 17 } },
+      de: { text: "setze [was|w] auf [8|w] und lass [beliebig|W] [was|w] mal zwei plus eins folgen", sets: [{ path: "was", value: 8 }], define: { name: "beliebig", expr: "was * 2 + 1", result: 17 } },
+      it: { text: "metti [cosa|w] a [8|w] e lascia che [qualunque|W] segua [cosa|w] per due più uno", sets: [{ path: "cosa", value: 8 }], define: { name: "qualunque", expr: "cosa * 2 + 1", result: 17 } },
+      pt: { text: "põe [o que|w] em [8|w] e que [qualquer|W] siga [o que|w] vezes dois mais um", sets: [{ path: "que", value: 8 }], define: { name: "qualquer", expr: "que * 2 + 1", result: 17 } }
     },
     ours: {
       en: { text: "set [mine|a] to [8|a] and [yours|b] to [3|b], and let [ours|t] be [mine|a] times [yours|b] plus one", sets: [{ path: "mine", value: 8 }, { path: "yours", value: 3 }], define: { name: "ours", expr: "mine * yours + 1", result: 25 } },
@@ -153,231 +132,76 @@
     }
   };
 
-  var MECtor = null;
-  var KERNEL_URL = "https://cdn.jsdelivr.net/npm/this.me@4.2.1/dist/me.es.js";
-
-  function literal(value) {
-    return typeof value === "number" ? String(value) : JSON.stringify(value);
-  }
-
-  function computeResult(sets, name, expr) {
-    if (!MECtor || !sets || !name || !expr) return null;
-    try {
-      var me = new MECtor();
-      sets.forEach(function (s) { me[s.path](s.value); });
-      me["="](name, expr);
-      return me(name);
-    } catch (err) {
-      return null;
-    }
-  }
-
-  function computeDefines(sets, defines) {
-    if (!MECtor || !sets || !defines || !defines.length) return null;
-    try {
-      var me = new MECtor();
-      sets.forEach(function (s) { me[s.path](s.value); });
-      defines.forEach(function (d) {
-        me["="](d.name, d.expr);
-        var got = me(d.name);
-        if (got != null) d.result = got;
-      });
-      return defines;
-    } catch (err) {
-      return null;
-    }
-  }
-
-  function feedNames(expr, names) {
-    return names.filter(function (n) {
-      return new RegExp("\\b" + n + "\\b").test(expr);
-    });
-  }
-
-  function parseCaption(text, ROLE) {
+  function build(frame, langMeta, ex) {
+    var sets = ex.sets;
+    var def = ex.define;
+    var t = def.name;
+    var ROLE = { w: sets[0].path, W: t, a: sets[0].path, t: t };
+    if (sets[1]) ROLE.b = sets[1].path;
     var segs = [], re = /\[([^|\]]+)\|([^\]]+)\]/g, i = 0, mm;
-    while ((mm = re.exec(text))) {
-      if (mm.index > i) segs.push({ t: text.slice(i, mm.index) });
+    while ((mm = re.exec(ex.text))) {
+      if (mm.index > i) segs.push({ t: ex.text.slice(i, mm.index) });
       segs.push({ t: mm[1], path: ROLE[mm[2]] });
       i = re.lastIndex;
     }
-    if (i < text.length) segs.push({ t: text.slice(i) });
-    return segs;
-  }
+    if (i < ex.text.length) segs.push({ t: ex.text.slice(i) });
 
-  function sep(x1, y1, r1, x2, y2, r2) {
-    var dx = x2 - x1, dy = y2 - y1, len = Math.sqrt(dx * dx + dy * dy) || 1;
-    var ux = dx / len, uy = dy / len;
-    return { sx: x1 + ux * r1, sy: y1 + uy * r1, ex: x2 - ux * r2, ey: y2 - uy * r2 };
-  }
-  function lineTo(x1, y1, r1, x2, y2, r2) {
-    var p = sep(x1, y1, r1, x2, y2, r2);
-    return "M" + p.sx.toFixed(1) + " " + p.sy.toFixed(1) + " L" + p.ex.toFixed(1) + " " + p.ey.toFixed(1);
-  }
-  function curveTo(x1, y1, r1, x2, y2, r2) {
-    var p = sep(x1, y1, r1, x2, y2, r2);
-    var cx = (p.sx + p.ex) / 2, cy = (p.sy + p.ey) / 2 + 8;
-    return {
-      d: "M" + p.sx.toFixed(1) + " " + p.sy.toFixed(1) + " Q" + cx.toFixed(1) + " " + cy.toFixed(1) + " " + p.ex.toFixed(1) + " " + p.ey.toFixed(1),
-      lx: cx,
-      ly: cy - 5
-    };
-  }
-
-  // Each input is a path: me -> whatever (key) -> what (value).
-  // If def is set, [=] edges feed a derived node, using real me["="](name, expr).
-  function layoutPaths(sets, def, icon) {
-    var n = sets.length;
-    var cx = 248;
-    var xs;
-    if (n <= 1) xs = [cx];
-    else if (n === 2) xs = [118, 378];
-    else if (n === 3) xs = [92, 248, 404];
-    else {
-      var span = 312, left = cx - span / 2;
-      xs = sets.map(function (_, i) { return left + (span * i) / (n - 1); });
-    }
-    var meY = 40, keyY = 145, valY = 255, derY = 375;
-    var keyR = 32, valR = 36, derR = icon ? 50 : 36;
-    var nodes = [{ path: "", x: cx, y: meY, r: 22, root: true }];
-    var edges = [];
-    var deps = [];
-    sets.forEach(function (s, i) {
-      var x = xs[i];
-      nodes.push({ path: s.path, x: x, y: keyY, r: keyR, label: "whatever", ly: keyY - 48, keyText: s.path, ky: keyY + 5 });
-      nodes.push({ path: s.path, x: x, y: valY, r: valR, label: "what", ly: valY - 52, value: String(s.value), vy: valY + 7, der: true, tunable: typeof s.value === "number" });
-      edges.push({ a: "", b: s.path, d: lineTo(cx, meY, 22, x, keyY, keyR) });
-      edges.push({ a: s.path, b: s.path, d: lineTo(x, keyY, keyR, x, valY, valR) });
-      if (def) {
-        var c = curveTo(x, valY, valR, cx, derY, derR);
-        var side = Math.abs(x - cx) > 20;
-        deps.push({ src: s.path, dst: def.name, d: c.d, label: side ? "[=]" : "", lx: c.lx, ly: c.ly });
-      }
-    });
-    if (def) {
-      var der = {
-        path: def.name, x: cx, y: derY, r: derR,
-        label: def.name + " [=]", ly: derY - (icon ? 66 : 52),
-        value: String(def.result), vy: derY + (icon ? 14 : 7),
-        der: true, expr: def.expr
-      };
-      if (icon) der.icon = icon;
-      nodes.push(der);
-      if (icon) nodes.push({ path: def.name + ".icon", x: cx, y: derY - 18, r: 13, iconGlyph: icon, ghost: true });
-    }
-    return { nodes: nodes, edges: edges, deps: deps, rings: [] };
-  }
-
-  // me at the center; five organic spiral branches.
-  // Each branch is me · whatever · what (3 nodes, 2 edges). Operator edges
-  // run between the outer what nodes: a,x,b → y and y,a → z.
-  function layoutPentagon(sets, defines) {
-    var ME = { x: 300, y: 310, r: 32 };
-    var W_R = 40, V_R = 52;
-    var byName = {};
-    sets.forEach(function (s) { byName[s.path] = s; });
-    defines.forEach(function (d) { byName[d.name] = d; });
-    var ARMS = [{"name": "a", "wx": 288, "wy": 172, "vx": 378, "vy": 46, "lw": [220.7, 88.1], "lq": [370.5, -20.0], "le": null}, {"name": "x", "wx": 448, "wy": 332, "vx": 560, "vy": 428, "lw": [441.7, 277.9], "lq": [568.1, 511.2], "le": null}, {"name": "y", "wx": 200, "wy": 438, "vx": 118, "vy": 555, "lw": [278.0, 508.0], "lq": [118, 633], "le": [118, 659]}];
-    var SPOKES = [{"a": "me", "b": "a", "d": "M297.2 278.1 Q278.4 246.4 291.5 211.8"}, {"a": "a", "b": "a", "d": "M311.2 139.5 Q311.6 101.1 347.8 88.3"}, {"a": "me", "b": "x", "d": "M331.7 314.7 Q372.4 304.6 408.4 326.1"}, {"a": "x", "b": "x", "d": "M478.4 358.0 Q513.8 359.4 520.5 394.2"}, {"a": "me", "b": "y", "d": "M280.3 335.2 Q265.1 380.7 224.6 406.5"}, {"a": "y", "b": "y", "d": "M177.0 470.8 Q180.5 504.2 147.8 512.4"}];
-    var FEEDS = [{"src": "a", "dst": "y", "d": "M338.2 12.6 Q145.4 297.3 78.2 588.4"}, {"src": "x", "dst": "y", "d": "M608.9 445.8 Q339.7 551.0 70.5 576.2"}];
-    var OPS = [{"src": "a", "dst": "y", "x": 194.8, "y": 303.9}, {"src": "x", "dst": "y", "x": 357.7, "y": 536.0}];
-
-    var nodes = [{ path: "", x: ME.x, y: ME.y, r: ME.r, root: true }];
-    var edges = [];
-    ARMS.forEach(function (arm) {
-      var rec = byName[arm.name];
-      var isDef = rec && rec.expr != null;
-      var val = isDef ? rec.result : (rec ? rec.value : null);
-      var tunable = !isDef && rec && typeof rec.value === "number";
-      nodes.push({
-        path: arm.name, x: arm.wx, y: arm.wy, r: W_R,
-        label: "whatever", lx: arm.lw[0], ly: arm.lw[1], labelClass: "wvr",
-        keyText: arm.name, ky: arm.wy + 8
-      });
-      var vnode = {
-        path: arm.name, x: arm.vx, y: arm.vy, r: V_R,
-        what: "what", wx: arm.lq[0], wy: arm.lq[1],
-        value: val == null ? "" : String(val), vy: arm.vy + 13,
-        der: true, tunable: tunable
-      };
-      if (isDef && rec.expr) {
-        vnode.expr = rec.expr;
-        if (arm.le) { vnode.ex = arm.le[0]; vnode.ey = arm.le[1]; }
-      }
-      nodes.push(vnode);
-    });
-    SPOKES.forEach(function (s) {
-      edges.push({ a: s.a === "me" ? "" : s.a, b: s.b, d: s.d });
-    });
-    var deps = FEEDS.map(function (f) {
-      var dep = { src: f.src, dst: f.dst, d: f.d };
-      OPS.forEach(function (op) {
-        if (op.src === f.src && op.dst === f.dst) {
-          dep.label = "[=]";
-          dep.lx = op.x;
-          dep.ly = op.y;
-        }
-      });
-      return dep;
-    });
-    return { nodes: nodes, edges: edges, deps: deps, rings: [], viewBox: "42 -60 594 749" };
-  }
-
-  function buildKv(frame, langMeta, ex) {
-    var path = ex.path;
-    var val = ex.value;
-    var ROLE = { W: path, w: path };
-    var segs = parseCaption(ex.text, ROLE);
-    var lines = [{ text: "me." + path + "(" + literal(val) + ");", path: path }];
-    var reads = [{ text: 'me("' + path + '");', path: path, value: String(val) }];
-    var lay = layoutPaths([{ path: path, value: val }], null, null);
-    return { frame: frame, lang: langMeta, q: path, segs: segs, lines: lines, reads: reads, nodes: lay.nodes, edges: lay.edges, deps: lay.deps, ex: ex };
-  }
-
-  function build(frame, langMeta, ex) {
-    if (frame.kind === "kv") return buildKv(frame, langMeta, ex);
-    var sets = ex.sets;
-    var defs = ex.defines || (ex.define ? [ex.define] : []);
-    if (defs.length) {
-      computeDefines(sets, defs);
-      ex.define = defs[0];
-      ex.defines = defs;
-    }
-    var def = defs[0];
-    var t = def.name;
-    var ROLE = { w: sets[0].path, W: t, a: sets[0].path, t: t };
-    sets.forEach(function (s) { ROLE[s.path] = s.path; });
-    if (sets[1] && !ROLE.b) ROLE.b = sets[1].path;
-    if (sets[1] && !ROLE.x) ROLE.x = sets[1].path;
-    if (sets[2]) ROLE.x = sets[2].path;
-    defs.forEach(function (d) { ROLE[d.name] = d.name; });
-    var segs = parseCaption(ex.text, ROLE);
     var lines = sets.map(function (s) {
-      return { text: "me." + s.path + "(" + literal(s.value) + ");", path: s.path };
+      return { text: "me." + s.path + "(" + s.value + ");", path: s.path };
     });
-    defs.forEach(function (d) {
-      lines.push({ text: 'me["="](' + JSON.stringify(d.name) + ", " + JSON.stringify(d.expr) + ");", path: d.name });
+    lines.push({ text: 'me["="](' + JSON.stringify(def.name) + ", " + JSON.stringify(def.expr) + ");", path: t });
+    var reads = sets.map(function (sv) {
+      return { text: 'me("' + sv.path + '");', path: sv.path, value: String(sv.value) };
     });
-    var reads = defs.map(function (d) {
-      return { text: 'me("' + d.name + '");', path: d.name, value: String(d.result), der: true };
-    });
+    reads.push({ text: 'me("' + t + '");', path: t, value: String(def.result), der: true });
     if (frame.icon) {
       lines.push({ text: "me." + t + ".icon(" + JSON.stringify(frame.icon) + ");", path: t + ".icon" });
       reads.push({ text: 'me("' + t + '.icon");', path: t + ".icon", icon: frame.icon });
     }
-    var lay = (frame.id === "y") ? layoutPentagon(sets, defs) : layoutPaths(sets, def, frame.icon);
-    return { frame: frame, lang: langMeta, q: t, segs: segs, lines: lines, reads: reads, nodes: lay.nodes, edges: lay.edges, deps: lay.deps, rings: lay.rings || [], viewBox: lay.viewBox || "20 0 460 440", ex: ex };
+
+    var nodes, edges, depsE;
+    if (frame.kind === "pair") {
+      nodes = [
+        { path: "", x: 248, y: 64, r: 22, root: true },
+        { path: sets[0].path, x: 140, y: 240, r: 32, label: sets[0].path, ly: 192, value: String(sets[0].value), vy: 246 },
+        { path: t, x: 360, y: 240, r: 36, label: t + " [=]", ly: 188, value: String(def.result), vy: 247, der: true }
+      ];
+      edges = [
+        { a: "", b: sets[0].path, d: "M226 86 L162 208" },
+        { a: "", b: t, d: "M270 86 L336 204" }
+      ];
+      depsE = [{ src: sets[0].path, dst: t, d: "M172 250 Q248 312 328 250" }];
+    } else {
+      nodes = [
+        { path: "", x: 248, y: 56, r: 22, root: true },
+        { path: sets[0].path, x: 110, y: 220, r: 32, label: sets[0].path, ly: 172, value: String(sets[0].value), vy: 226 },
+        { path: sets[1].path, x: 386, y: 220, r: 32, label: sets[1].path, ly: 172, value: String(sets[1].value), vy: 226 },
+        { path: t, x: 248, y: 310, r: 36, label: t + " [=]", ly: 258, value: String(def.result), vy: 317, der: true }
+      ];
+      edges = [
+        { a: "", b: sets[0].path, d: "M226 78 L132 190" },
+        { a: "", b: sets[1].path, d: "M270 78 L364 190" },
+        { a: "", b: t, d: "M248 78 V274" }
+      ];
+      depsE = [
+        { src: sets[0].path, dst: t, d: "M140 250 Q180 286 220 298" },
+        { src: sets[1].path, dst: t, d: "M356 250 Q316 286 276 298" }
+      ];
+      if (frame.icon) {
+        nodes[3].r = 50;
+        nodes[3].vy = 338;
+        nodes[3].icon = frame.icon;
+        nodes.push({ path: t + ".icon", x: 248, y: 292, r: 13, iconGlyph: frame.icon, ghost: true });
+      }
+    }
+    return { frame: frame, lang: langMeta, q: t, segs: segs, lines: lines, reads: reads, nodes: nodes, edges: edges, deps: depsE };
   }
 
-  var MODELS = [];
-  function rebuildModels() {
-    MODELS = FRAMES.map(function (frame) {
-      return LANGS.map(function (langMeta) {
-        return build(frame, langMeta, EXAMPLES[frame.id][langMeta.lang]);
-      });
+  var MODELS = FRAMES.map(function (frame) {
+    return LANGS.map(function (langMeta) {
+      return build(frame, langMeta, EXAMPLES[frame.id][langMeta.lang]);
     });
-  }
-  rebuildModels();
+  });
 
   var CSS = [
     ".whatever-live{clear:both;display:flow-root;margin:12px 0 28px}",
@@ -391,8 +215,8 @@
     ".whatever-live .wl-say{font:600 17px/1.45 system-ui,-apple-system,sans-serif;margin:0 0 14px;color:var(--fg,#24292f)}",
     ".whatever-live .wl-w{cursor:pointer;border-radius:4px;padding:0 2px;margin:0 -2px;text-decoration:underline dotted color-mix(in srgb,var(--accent,#0969da) 55%,transparent);text-underline-offset:4px}",
     ".whatever-live .wl-w.on{background:color-mix(in srgb,var(--accent,#0969da) 16%,transparent);text-decoration-color:var(--accent,#0969da)}",
-    ".whatever-live .wl-pair{display:grid;grid-template-columns:520px minmax(0,1fr);gap:8px 24px;align-items:start}",
-    "@media (max-width:880px){.whatever-live .wl-pair{grid-template-columns:1fr}}",
+    ".whatever-live .wl-pair{display:grid;grid-template-columns:300px minmax(0,1fr);gap:8px 24px;align-items:start}",
+    "@media (max-width:720px){.whatever-live .wl-pair{grid-template-columns:1fr}}",
     ".whatever-live .wl-script-col{min-width:0}",
     ".whatever-live .wl-links{margin:8px 2px 0;font:12px/1.4 system-ui,-apple-system,sans-serif;color:var(--muted,#656d76)}.whatever-live .wl-links a{color:inherit;text-decoration:none}.whatever-live .wl-links a:hover{color:var(--accent,#0969da)}",
     ".whatever-live .wl-script-wrap{border:1px solid var(--border,#d0d7de);border-radius:10px;background:var(--subtle,#f6f8fa);overflow:hidden}",
@@ -414,7 +238,7 @@
     ".whatever-live .wl-num{color:var(--hl-number,#b45309)}",
     ".whatever-live .wl-me{color:var(--accent,#0969da);font-weight:600}",
     ".whatever-live .wl-graph{display:flex;align-items:center;justify-content:center;min-height:0}",
-    ".whatever-live .wl-graph svg{display:block;width:100%;max-width:400px;height:auto;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow:visible}.whatever-live .wl-graph svg.wl-airy{max-width:520px}.whatever-live .wl-graph svg.wl-airy .lb{font-size:16px}.whatever-live .wl-graph svg.wl-airy .k{font:22px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.whatever-live .wl-graph svg.wl-airy .v{font:italic 34px Georgia,'DejaVu Serif',serif}.whatever-live .wl-graph svg.wl-airy .n.der .v{font-size:36px}.whatever-live .wl-graph svg.wl-airy .root{font-size:22px}.whatever-live .wl-graph svg.wl-airy .ex{font-size:17px}.whatever-live .wl-graph svg.wl-airy .op{font-size:15px}.whatever-live .wl-graph svg.wl-airy .n circle{stroke-width:1.8}.whatever-live .wl-graph svg.wl-airy .n.der circle{stroke-width:2.4}",
+    ".whatever-live .wl-graph svg{display:block;width:100%;max-width:300px;height:auto;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow:visible}",
     ".whatever-live .e{stroke:var(--border,#d0d7de);stroke-width:1.4;fill:none}",
     ".whatever-live .e.on{stroke:var(--accent,#0969da);stroke-width:2.2}",
     ".whatever-live .d{stroke:var(--accent,#0969da);fill:none}",
@@ -431,14 +255,9 @@
     ".whatever-live .n:focus-visible circle{stroke-dasharray:3 3}",
     ".whatever-live .n .lb{fill:var(--muted,#57606a);font-size:13px;letter-spacing:.4px;text-anchor:middle}",
     ".whatever-live .n.der .lb{fill:var(--wl-sun,#c69026)}",
-    ".whatever-live .n .lb.wvr,.whatever-live .n.der .lb.wvr{fill:var(--muted,#57606a)}",
-    ".whatever-live .n .lb.wht,.whatever-live .n.der .lb.wht{fill:var(--wl-sun,#c69026)}",
     ".whatever-live .n.path .lb,.whatever-live .n.sel .lb{fill:var(--accent,#0969da)}",
     ".whatever-live .n.der.sel .lb,.whatever-live .n.der.path .lb{fill:var(--wl-sun,#c69026)}",
     ".whatever-live .n .v{fill:var(--fg,#24292f);font:italic 18px Georgia,'DejaVu Serif',serif;text-anchor:middle}",
-    ".whatever-live .n .k{fill:var(--fg,#24292f);font:15px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;text-anchor:middle}",
-    ".whatever-live .n .ex{fill:var(--muted,#57606a);font:12px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;text-anchor:middle}",
-    ".whatever-live .op{fill:var(--accent,#0969da);font:11px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;text-anchor:middle}",
     ".whatever-live .n.der .v{fill:var(--wl-sun,#c69026);font-size:24px}",
     ".whatever-live .n .root{fill:var(--accent,#0969da);font-size:15px;text-anchor:middle}",
     ".whatever-live{--wl-sun:#c69026}",
@@ -630,8 +449,7 @@
         e.dd.setAttribute("class", "d dd" + (hot ? " hot" : ""));
       });
       nodes.forEach(function (n) {
-        var g = n.el;
-        if (!g) return;
+        var g = nodeEls[n.path];
         var cls = "n";
         if (n.der) cls += " der";
         if (n.ghost) cls += " ghost";
@@ -649,42 +467,11 @@
 
     function restore() { apply(pinned); }
 
-    function nudge(path, delta) {
-      var G = MODELS[fi][li];
-      if (!G || !G.ex || !G.ex.sets) return;
-      var set = null;
-      G.ex.sets.forEach(function (s) {
-        if (s.path === path && typeof s.value === "number") set = s;
-      });
-      if (!set) return;
-      set.value += delta;
-      if (G.ex.defines && G.ex.defines.length) {
-        computeDefines(G.ex.sets, G.ex.defines);
-        G.ex.define = G.ex.defines[0];
-      } else if (G.ex.define) {
-        var got = computeResult(G.ex.sets, G.ex.define.name, G.ex.define.expr);
-        if (got != null) G.ex.define.result = got;
-      }
-      MODELS[fi][li] = build(G.frame, G.lang, G.ex);
-      draw();
-      pin(path);
-    }
-
     function bind(node, path) {
       node.addEventListener("mouseenter", function () { apply(path); });
       node.addEventListener("mouseleave", restore);
       node.addEventListener("click", function () { pin(path); });
       node.addEventListener("keydown", function (ev) {
-        if (ev.key === "ArrowUp" || ev.key === "+") {
-          ev.preventDefault();
-          nudge(path, 1);
-          return;
-        }
-        if (ev.key === "ArrowDown" || ev.key === "-") {
-          ev.preventDefault();
-          nudge(path, -1);
-          return;
-        }
         if (ev.key === "Enter" || ev.key === " ") {
           ev.preventDefault();
           pin(path);
@@ -728,8 +515,7 @@
       var wrap = el("div", { class: "wl-script-wrap" }, col);
       var pane = el("pre", { class: "wl-script", "aria-label": "me.whatever(what) script" }, wrap);
       var svgRoot = svg("svg", {
-        viewBox: G.viewBox || "20 0 460 440",
-        class: G.frame && G.frame.id === "y" ? "wl-airy" : "",
+        viewBox: "20 20 460 360",
         role: "img",
         "aria-label": "Path tree: " + frameLabel(G.frame, G.lang.lang) + " in " + G.lang.name
       }, graph);
@@ -779,17 +565,11 @@
       G.edges.forEach(function (e) {
         edgeEls.push({ a: e.a, b: e.b, el: svg("path", { class: "e", d: e.d }, gE) });
       });
-      (G.rings || []).forEach(function (e) {
-        var rg = svg("path", { class: "d dg", d: e.d }, gD);
-        rg.setAttribute("filter", "url(#wlGlow)");
-        svg("path", { class: "d dd", d: e.d }, gD);
-      });
       depEls = [];
       G.deps.forEach(function (e) {
         var glow = svg("path", { class: "d dg", d: e.d }, gD);
         glow.setAttribute("filter", "url(#wlGlow)");
         depEls.push({ src: e.src, dst: e.dst, g: glow, dd: svg("path", { class: "d dd", d: e.d }, gD) });
-        if (e.label) svg("text", { class: "op", x: e.lx, y: e.ly, text: e.label }, gD);
       });
       nodeEls = {};
       G.nodes.forEach(function (n) {
@@ -808,15 +588,10 @@
           glyph.setAttribute("y", String(n.y - 11));
           g.appendChild(glyph);
         } else {
-          if (n.label) svg("text", { class: "lb" + (n.labelClass ? " " + n.labelClass : ""), x: n.lx != null ? n.lx : n.x, y: n.ly, text: n.label }, g);
-          if (n.keyText) svg("text", { class: "k", x: n.x, y: n.ky != null ? n.ky : n.y + 5, text: n.keyText }, g);
+          svg("text", { class: "lb", x: n.lx != null ? n.lx : n.x, y: n.ly, text: n.label }, g);
           if (n.value) svg("text", { class: "v", x: n.x, y: n.vy, text: n.value }, g);
-          if (n.what) svg("text", { class: "lb wht", x: n.wx, y: n.wy, text: n.what }, g);
-          if (n.expr) svg("text", { class: "ex", x: n.ex != null ? n.ex : n.x, y: n.ey != null ? n.ey : n.y + n.r + 18, text: n.expr }, g);
         }
-        if (!nodeEls[n.path]) nodeEls[n.path] = [];
-        nodeEls[n.path].push(g);
-        n.el = g;
+        nodeEls[n.path] = g;
         bind(g, n.path);
       });
       apply(pinned);
@@ -876,22 +651,8 @@
     syncThemedPictures();
     var host = document.getElementById("whatever-live");
     if (!host || host.getAttribute("data-wl") === "1") return;
-    var started = false;
-    function start() {
-      if (started) return;
-      started = true;
-      if (host.getAttribute("data-wl") === "1") return;
-      host.setAttribute("data-wl", "1");
-      rebuildModels();
-      mount(host);
-    }
-    var p;
-    try { p = import(KERNEL_URL); } catch (err) { p = Promise.reject(err); }
-    p.then(function (mod) {
-      MECtor = mod.ME || mod.default;
-      start();
-    }).catch(function () { start(); });
-    setTimeout(start, 1600);
+    host.setAttribute("data-wl", "1");
+    mount(host);
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);

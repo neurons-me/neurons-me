@@ -15,7 +15,7 @@
 </td>
 <td valign="middle" align="center" width="420">
 <a href="https://neurons-me.github.io/.me/docs/me-whatever-what.html">
-<img src="./assets/whatever-tree.svg?v=9" width="320" alt="me.whatever(what): what is 8, whatever is 17" />
+<img src="./assets/whatever-tree.svg?v=10" width="320" alt="me.whatever(what): me → letter → b (me.letter(&quot;b&quot;))" />
 </a>
 </td>
 </tr>

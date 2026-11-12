@@ -80,12 +80,12 @@
 
   var EXAMPLES = {
     y: {
-      en: { text: "set [a|a] to [2|a], [b|b] to [3|b] and [x|x] to [4|x], and let [y|t] be [a|a] times [x|x] plus [b|b]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 } },
-      es: { text: "pon [a|a] en [2|a], [b|b] en [3|b] y [x|x] en [4|x], y que [y|t] sea [a|a] por [x|x] más [b|b]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 } },
-      fr: { text: "mets [a|a] à [2|a], [b|b] à [3|b] et [x|x] à [4|x], et que [y|t] soit [a|a] fois [x|x] plus [b|b]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 } },
-      de: { text: "setze [a|a] auf [2|a], [b|b] auf [3|b] und [x|x] auf [4|x], und lass [y|t] [a|a] mal [x|x] plus [b|b] sein", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 } },
-      it: { text: "metti [a|a] a [2|a], [b|b] a [3|b] e [x|x] a [4|x], e che [y|t] sia [a|a] per [x|x] più [b|b]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 } },
-      pt: { text: "põe [a|a] em [2|a], [b|b] em [3|b] e [x|x] em [4|x], e que [y|t] seja [a|a] vezes [x|x] mais [b|b]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 } }
+      en: { text: "set [a|a] to [2|a], [b|b] to [3|b] and [x|x] to [4|x], let [y|t] be [a|a] times [x|x] plus [b|b], and let [z|z] be [y|t] minus [a|a]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 }, defines: [{ name: "y", expr: "a * x + b", result: 11 }, { name: "z", expr: "y - a", result: 9 }] },
+      es: { text: "pon [a|a] en [2|a], [b|b] en [3|b] y [x|x] en [4|x], que [y|t] sea [a|a] por [x|x] más [b|b], y que [z|z] sea [y|t] menos [a|a]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 }, defines: [{ name: "y", expr: "a * x + b", result: 11 }, { name: "z", expr: "y - a", result: 9 }] },
+      fr: { text: "mets [a|a] à [2|a], [b|b] à [3|b] et [x|x] à [4|x], que [y|t] soit [a|a] fois [x|x] plus [b|b], et que [z|z] soit [y|t] moins [a|a]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 }, defines: [{ name: "y", expr: "a * x + b", result: 11 }, { name: "z", expr: "y - a", result: 9 }] },
+      de: { text: "setze [a|a] auf [2|a], [b|b] auf [3|b] und [x|x] auf [4|x], lass [y|t] [a|a] mal [x|x] plus [b|b] sein, und lass [z|z] [y|t] minus [a|a] sein", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 }, defines: [{ name: "y", expr: "a * x + b", result: 11 }, { name: "z", expr: "y - a", result: 9 }] },
+      it: { text: "metti [a|a] a [2|a], [b|b] a [3|b] e [x|x] a [4|x], che [y|t] sia [a|a] per [x|x] più [b|b], e che [z|z] sia [y|t] meno [a|a]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 }, defines: [{ name: "y", expr: "a * x + b", result: 11 }, { name: "z", expr: "y - a", result: 9 }] },
+      pt: { text: "põe [a|a] em [2|a], [b|b] em [3|b] e [x|x] em [4|x], que [y|t] seja [a|a] vezes [x|x] mais [b|b], e que [z|z] seja [y|t] menos [a|a]", sets: [{ path: "a", value: 2 }, { path: "b", value: 3 }, { path: "x", value: 4 }], define: { name: "y", expr: "a * x + b", result: 11 }, defines: [{ name: "y", expr: "a * x + b", result: 11 }, { name: "z", expr: "y - a", result: 9 }] }
     },
     letter: {
       en: { text: "set [letter|W] to [b|w]", path: "letter", value: "b" },
@@ -172,6 +172,28 @@
     }
   }
 
+  function computeDefines(sets, defines) {
+    if (!MECtor || !sets || !defines || !defines.length) return null;
+    try {
+      var me = new MECtor();
+      sets.forEach(function (s) { me[s.path](s.value); });
+      defines.forEach(function (d) {
+        me["="](d.name, d.expr);
+        var got = me(d.name);
+        if (got != null) d.result = got;
+      });
+      return defines;
+    } catch (err) {
+      return null;
+    }
+  }
+
+  function feedNames(expr, names) {
+    return names.filter(function (n) {
+      return new RegExp("\\b" + n + "\\b").test(expr);
+    });
+  }
+
   function parseCaption(text, ROLE) {
     var segs = [], re = /\[([^|\]]+)\|([^\]]+)\]/g, i = 0, mm;
     while ((mm = re.exec(text))) {
@@ -243,7 +265,107 @@
       nodes.push(der);
       if (icon) nodes.push({ path: def.name + ".icon", x: cx, y: derY - 18, r: 13, iconGlyph: icon, ghost: true });
     }
-    return { nodes: nodes, edges: edges, deps: deps };
+    return { nodes: nodes, edges: edges, deps: deps, rings: [] };
+  }
+
+  // me at the center, five nodes at the vertices of a regular pentagon.
+  // Rays are me.whatever(what). The perimeter and feed edges are dashed glow.
+  function layoutPentagon(sets, defines) {
+    var CX = 250, CY = 236, R = 136, ME_R = 22, NODE_R = 38;
+    var SLOT = { a: 0, x: 1, b: 2, y: 3, z: 4 };
+    function pos(k) {
+      var ang = (k * 72) * Math.PI / 180;
+      return { x: CX + R * Math.sin(ang), y: CY - R * Math.cos(ang) };
+    }
+    function unit(k) {
+      var ang = (k * 72) * Math.PI / 180;
+      return { ux: Math.sin(ang), uy: -Math.cos(ang) };
+    }
+    function outwardStack(k, d1, d2) {
+      var u = unit(k);
+      var base = R + NODE_R;
+      var x1 = CX + u.ux * (base + d1);
+      var y1 = CY + u.uy * (base + d1) + 4;
+      var sy = u.uy >= 0.15 ? 1 : -1;
+      return { x1: x1, y1: y1, x2: x1, y2: y1 + sy * (d2 - d1) };
+    }
+    function inwardMid(ka, kb, off) {
+      var a = pos(ka), b = pos(kb);
+      var mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
+      var dx = CX - mx, dy = CY - my;
+      var len = Math.sqrt(dx * dx + dy * dy) || 1;
+      return { x: mx + dx / len * off, y: my + dy / len * off + 4 };
+    }
+
+    var nodes = [{ path: "", x: CX, y: CY, r: ME_R, root: true }];
+    var edges = [];
+    var deps = [];
+    var rings = [];
+    var known = {};
+
+    sets.forEach(function (s) {
+      var k = SLOT[s.path];
+      if (k == null) return;
+      var p = pos(k), lab = outwardStack(k, 16, 32);
+      known[s.path] = k;
+      nodes.push({
+        path: s.path, x: p.x, y: p.y, r: NODE_R,
+        label: "whatever", lx: lab.x1, ly: lab.y1, labelClass: "wvr",
+        keyText: s.path, ky: p.y - 8,
+        what: "what", wx: lab.x2, wy: lab.y2,
+        value: String(s.value), vy: p.y + 14,
+        der: true, tunable: typeof s.value === "number"
+      });
+      edges.push({ a: "", b: s.path, d: lineTo(CX, CY, ME_R, p.x, p.y, NODE_R) });
+    });
+
+    defines.forEach(function (d) {
+      var k = SLOT[d.name];
+      if (k == null) return;
+      var p = pos(k), lab = outwardStack(k, 16, 32);
+      known[d.name] = k;
+      nodes.push({
+        path: d.name, x: p.x, y: p.y, r: NODE_R,
+        label: d.name, lx: lab.x1, ly: lab.y1,
+        value: String(d.result), vy: p.y + 8,
+        der: true, expr: d.expr, ex: lab.x2, ey: lab.y2
+      });
+      edges.push({ a: "", b: d.name, d: lineTo(CX, CY, ME_R, p.x, p.y, NODE_R) });
+    });
+
+    var names = Object.keys(known);
+    var feedPair = {};
+    function markFeed(src, dst) {
+      if (known[src] == null || known[dst] == null) return;
+      var ka = known[src], kb = known[dst];
+      var a = pos(ka), b = pos(kb);
+      var step = Math.abs(ka - kb) % 5;
+      if (step === 4) step = 1;
+      var isPerim = step === 1;
+      var dep = { src: src, dst: dst, d: lineTo(a.x, a.y, NODE_R, b.x, b.y, NODE_R) };
+      // Label only the roomy perimeter feeds, so [=] does not sit on a stroke or on me.
+      if (isPerim) {
+        var mid = inwardMid(ka, kb, 16);
+        dep.label = "[=]";
+        dep.lx = mid.x;
+        dep.ly = mid.y;
+      }
+      if (isPerim) feedPair[Math.min(ka, kb) + "-" + Math.max(ka, kb)] = 1;
+      deps.push(dep);
+    }
+    defines.forEach(function (d) {
+      feedNames(d.expr, names).forEach(function (src) { markFeed(src, d.name); });
+    });
+
+    var periPairs = [[0, 1], [1, 2], [2, 3], [3, 4], [4, 0]];
+    periPairs.forEach(function (pair) {
+      var key = Math.min(pair[0], pair[1]) + "-" + Math.max(pair[0], pair[1]);
+      if (feedPair[key]) return;
+      var a = pos(pair[0]), b = pos(pair[1]);
+      rings.push({ d: lineTo(a.x, a.y, NODE_R, b.x, b.y, NODE_R) });
+    });
+
+    return { nodes: nodes, edges: edges, deps: deps, rings: rings, viewBox: "8 0 476 455" };
   }
 
   function buildKv(frame, langMeta, ex) {
@@ -260,9 +382,13 @@
   function build(frame, langMeta, ex) {
     if (frame.kind === "kv") return buildKv(frame, langMeta, ex);
     var sets = ex.sets;
-    var def = ex.define;
-    var computed = computeResult(sets, def.name, def.expr);
-    if (computed != null) def.result = computed;
+    var defs = ex.defines || (ex.define ? [ex.define] : []);
+    if (defs.length) {
+      computeDefines(sets, defs);
+      ex.define = defs[0];
+      ex.defines = defs;
+    }
+    var def = defs[0];
     var t = def.name;
     var ROLE = { w: sets[0].path, W: t, a: sets[0].path, t: t };
     if (sets[1]) ROLE.b = sets[1].path;
@@ -273,21 +399,23 @@
       ROLE.b = sets[1].path;
       ROLE.x = sets[2].path;
     }
+    defs.forEach(function (d) { ROLE[d.name] = d.name; });
     var segs = parseCaption(ex.text, ROLE);
     var lines = sets.map(function (s) {
       return { text: "me." + s.path + "(" + literal(s.value) + ");", path: s.path };
     });
-    lines.push({ text: 'me["="](' + JSON.stringify(def.name) + ", " + JSON.stringify(def.expr) + ");", path: t });
-    var reads = sets.map(function (sv) {
-      return { text: 'me("' + sv.path + '");', path: sv.path, value: String(sv.value) };
+    defs.forEach(function (d) {
+      lines.push({ text: 'me["="](' + JSON.stringify(d.name) + ", " + JSON.stringify(d.expr) + ");", path: d.name });
     });
-    reads.push({ text: 'me("' + t + '");', path: t, value: String(def.result), der: true });
+    var reads = defs.map(function (d) {
+      return { text: 'me("' + d.name + '");', path: d.name, value: String(d.result), der: true };
+    });
     if (frame.icon) {
       lines.push({ text: "me." + t + ".icon(" + JSON.stringify(frame.icon) + ");", path: t + ".icon" });
       reads.push({ text: 'me("' + t + '.icon");', path: t + ".icon", icon: frame.icon });
     }
-    var lay = layoutPaths(sets, def, frame.icon);
-    return { frame: frame, lang: langMeta, q: t, segs: segs, lines: lines, reads: reads, nodes: lay.nodes, edges: lay.edges, deps: lay.deps, ex: ex };
+    var lay = (defs.length >= 2) ? layoutPentagon(sets, defs) : layoutPaths(sets, def, frame.icon);
+    return { frame: frame, lang: langMeta, q: t, segs: segs, lines: lines, reads: reads, nodes: lay.nodes, edges: lay.edges, deps: lay.deps, rings: lay.rings || [], viewBox: lay.viewBox || "20 0 460 440", ex: ex };
   }
 
   var MODELS = [];
@@ -312,7 +440,7 @@
     ".whatever-live .wl-say{font:600 17px/1.45 system-ui,-apple-system,sans-serif;margin:0 0 14px;color:var(--fg,#24292f)}",
     ".whatever-live .wl-w{cursor:pointer;border-radius:4px;padding:0 2px;margin:0 -2px;text-decoration:underline dotted color-mix(in srgb,var(--accent,#0969da) 55%,transparent);text-underline-offset:4px}",
     ".whatever-live .wl-w.on{background:color-mix(in srgb,var(--accent,#0969da) 16%,transparent);text-decoration-color:var(--accent,#0969da)}",
-    ".whatever-live .wl-pair{display:grid;grid-template-columns:360px minmax(0,1fr);gap:8px 24px;align-items:start}",
+    ".whatever-live .wl-pair{display:grid;grid-template-columns:400px minmax(0,1fr);gap:8px 24px;align-items:start}",
     "@media (max-width:720px){.whatever-live .wl-pair{grid-template-columns:1fr}}",
     ".whatever-live .wl-script-col{min-width:0}",
     ".whatever-live .wl-links{margin:8px 2px 0;font:12px/1.4 system-ui,-apple-system,sans-serif;color:var(--muted,#656d76)}.whatever-live .wl-links a{color:inherit;text-decoration:none}.whatever-live .wl-links a:hover{color:var(--accent,#0969da)}",
@@ -335,7 +463,7 @@
     ".whatever-live .wl-num{color:var(--hl-number,#b45309)}",
     ".whatever-live .wl-me{color:var(--accent,#0969da);font-weight:600}",
     ".whatever-live .wl-graph{display:flex;align-items:center;justify-content:center;min-height:0}",
-    ".whatever-live .wl-graph svg{display:block;width:100%;max-width:360px;height:auto;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow:visible}",
+    ".whatever-live .wl-graph svg{display:block;width:100%;max-width:400px;height:auto;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow:visible}",
     ".whatever-live .e{stroke:var(--border,#d0d7de);stroke-width:1.4;fill:none}",
     ".whatever-live .e.on{stroke:var(--accent,#0969da);stroke-width:2.2}",
     ".whatever-live .d{stroke:var(--accent,#0969da);fill:none}",
@@ -352,6 +480,8 @@
     ".whatever-live .n:focus-visible circle{stroke-dasharray:3 3}",
     ".whatever-live .n .lb{fill:var(--muted,#57606a);font-size:13px;letter-spacing:.4px;text-anchor:middle}",
     ".whatever-live .n.der .lb{fill:var(--wl-sun,#c69026)}",
+    ".whatever-live .n .lb.wvr,.whatever-live .n.der .lb.wvr{fill:var(--muted,#57606a)}",
+    ".whatever-live .n .lb.wht,.whatever-live .n.der .lb.wht{fill:var(--wl-sun,#c69026)}",
     ".whatever-live .n.path .lb,.whatever-live .n.sel .lb{fill:var(--accent,#0969da)}",
     ".whatever-live .n.der.sel .lb,.whatever-live .n.der.path .lb{fill:var(--wl-sun,#c69026)}",
     ".whatever-live .n .v{fill:var(--fg,#24292f);font:italic 18px Georgia,'DejaVu Serif',serif;text-anchor:middle}",
@@ -577,7 +707,10 @@
       });
       if (!set) return;
       set.value += delta;
-      if (G.ex.define) {
+      if (G.ex.defines && G.ex.defines.length) {
+        computeDefines(G.ex.sets, G.ex.defines);
+        G.ex.define = G.ex.defines[0];
+      } else if (G.ex.define) {
         var got = computeResult(G.ex.sets, G.ex.define.name, G.ex.define.expr);
         if (got != null) G.ex.define.result = got;
       }
@@ -644,7 +777,7 @@
       var wrap = el("div", { class: "wl-script-wrap" }, col);
       var pane = el("pre", { class: "wl-script", "aria-label": "me.whatever(what) script" }, wrap);
       var svgRoot = svg("svg", {
-        viewBox: "20 0 460 440",
+        viewBox: G.viewBox || "20 0 460 440",
         role: "img",
         "aria-label": "Path tree: " + frameLabel(G.frame, G.lang.lang) + " in " + G.lang.name
       }, graph);
@@ -694,6 +827,11 @@
       G.edges.forEach(function (e) {
         edgeEls.push({ a: e.a, b: e.b, el: svg("path", { class: "e", d: e.d }, gE) });
       });
+      (G.rings || []).forEach(function (e) {
+        var rg = svg("path", { class: "d dg", d: e.d }, gD);
+        rg.setAttribute("filter", "url(#wlGlow)");
+        svg("path", { class: "d dd", d: e.d }, gD);
+      });
       depEls = [];
       G.deps.forEach(function (e) {
         var glow = svg("path", { class: "d dg", d: e.d }, gD);
@@ -718,10 +856,11 @@
           glyph.setAttribute("y", String(n.y - 11));
           g.appendChild(glyph);
         } else {
-          if (n.label) svg("text", { class: "lb", x: n.lx != null ? n.lx : n.x, y: n.ly, text: n.label }, g);
+          if (n.label) svg("text", { class: "lb" + (n.labelClass ? " " + n.labelClass : ""), x: n.lx != null ? n.lx : n.x, y: n.ly, text: n.label }, g);
           if (n.keyText) svg("text", { class: "k", x: n.x, y: n.ky != null ? n.ky : n.y + 5, text: n.keyText }, g);
           if (n.value) svg("text", { class: "v", x: n.x, y: n.vy, text: n.value }, g);
-          if (n.expr) svg("text", { class: "ex", x: n.x, y: n.y + n.r + 18, text: n.expr }, g);
+          if (n.what) svg("text", { class: "lb wht", x: n.wx, y: n.wy, text: n.what }, g);
+          if (n.expr) svg("text", { class: "ex", x: n.ex != null ? n.ex : n.x, y: n.ey != null ? n.ey : n.y + n.r + 18, text: n.expr }, g);
         }
         if (!nodeEls[n.path]) nodeEls[n.path] = [];
         nodeEls[n.path].push(g);

@@ -1,6 +1,6 @@
-<svg viewBox="0 0 720 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg viewBox="0 0 720 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">me.whatever(what)</title>
-  <desc id="desc">me.a(2), me.b(3), me.x(4), then me[&quot;=&quot;](&quot;y&quot;, &quot;a * x + b&quot;) reads 11.</desc>
+  <desc id="desc">me.a(2), me.b(3), me.x(4), then me[&quot;=&quot;](&quot;y&quot;, &quot;a * x + b&quot;) reads 11 and me[&quot;=&quot;](&quot;z&quot;, &quot;y - a&quot;) reads 9.</desc>
   <style>
     svg { --ink:#24292f; --me:#0969da; --str:#0a7d3f; --num:#b45309; --com:#6b7280; --sun:#c69026; --mut:#656d76; }
     @media (prefers-color-scheme: dark) {
@@ -12,7 +12,11 @@
     <text x="4" y="48"><tspan fill="var(--me)">me</tspan><tspan fill="var(--ink)">.b(</tspan><tspan fill="var(--num)">3</tspan><tspan fill="var(--ink)">);</tspan></text>
     <text x="4" y="74"><tspan fill="var(--me)">me</tspan><tspan fill="var(--ink)">.x(</tspan><tspan fill="var(--num)">4</tspan><tspan fill="var(--ink)">);</tspan></text>
     <text x="4" y="100"><tspan fill="var(--me)">me</tspan><tspan fill="var(--ink)">[</tspan><tspan fill="var(--str)">&quot;=&quot;</tspan><tspan fill="var(--ink)">](</tspan><tspan fill="var(--str)">&quot;y&quot;</tspan><tspan fill="var(--ink)">, </tspan><tspan fill="var(--str)">&quot;a * x + b&quot;</tspan><tspan fill="var(--ink)">);</tspan></text>
-    <text x="4" y="138"><tspan fill="var(--me)">me</tspan><tspan fill="var(--ink)">(</tspan><tspan fill="var(--str)">&quot;y&quot;</tspan><tspan fill="var(--ink)">);</tspan></text>
-    <text x="420" y="138" text-anchor="start" fill="var(--mut)">→</text>
-    <text x="448" y="138" font-style="italic" fill="var(--sun)" font-size="20" font-family="Georgia, 'DejaVu Serif', serif">11</text>
+    <text x="4" y="126"><tspan fill="var(--me)">me</tspan><tspan fill="var(--ink)">[</tspan><tspan fill="var(--str)">&quot;=&quot;</tspan><tspan fill="var(--ink)">](</tspan><tspan fill="var(--str)">&quot;z&quot;</tspan><tspan fill="var(--ink)">, </tspan><tspan fill="var(--str)">&quot;y - a&quot;</tspan><tspan fill="var(--ink)">);</tspan></text>
+    <text x="4" y="164"><tspan fill="var(--me)">me</tspan><tspan fill="var(--ink)">(</tspan><tspan fill="var(--str)">&quot;y&quot;</tspan><tspan fill="var(--ink)">);</tspan></text>
+    <text x="420" y="164" text-anchor="start" fill="var(--mut)">→</text>
+    <text x="448" y="164" font-style="italic" fill="var(--sun)" font-size="20" font-family="Georgia, 'DejaVu Serif', serif">11</text>
+    <text x="4" y="190"><tspan fill="var(--me)">me</tspan><tspan fill="var(--ink)">(</tspan><tspan fill="var(--str)">&quot;z&quot;</tspan><tspan fill="var(--ink)">);</tspan></text>
+    <text x="420" y="190" text-anchor="start" fill="var(--mut)">→</text>
+    <text x="448" y="190" font-style="italic" fill="var(--sun)" font-size="20" font-family="Georgia, 'DejaVu Serif', serif">9</text>
 </svg>
